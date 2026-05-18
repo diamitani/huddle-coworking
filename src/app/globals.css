@@ -1,26 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-brand-50: #FEF2F0;
+  --color-brand-100: #FDE0DA;
+  --color-brand-200: #FCC0B6;
+  --color-brand-300: #FA9A88;
+  --color-brand-400: #F77B63;
+  --color-brand-500: #E8614D;
+  --color-brand-600: #D14A35;
+  --color-brand-700: #B03A28;
+  --color-brand-800: #8F3122;
+  --color-brand-900: #762B1F;
+
+  --color-navy-50: #F0F1F8;
+  --color-navy-100: #D5D7EB;
+  --color-navy-200: #AEB2D9;
+  --color-navy-300: #7E84BD;
+  --color-navy-400: #565DA0;
+  --color-navy-500: #1B1B2F;
+  --color-navy-600: #151528;
+  --color-navy-700: #101020;
+  --color-navy-800: #0B0B18;
+  --color-navy-900: #060610;
+
+  --color-warm-50: #FEFCFB;
+  --color-warm-100: #FBF9F7;
+  --color-warm-200: #F7F3EF;
+  --color-warm-300: #EFE9E3;
+  --color-warm-400: #E3DBD1;
+  --color-warm-500: #D4C9BC;
+  --color-warm-600: #B8A99A;
+  --color-warm-700: #9A897A;
+  --color-warm-800: #7D6D5E;
+  --color-warm-900: #635548;
+
+  --color-accent-50: #FFF8F0;
+  --color-accent-100: #FEF0D6;
+  --color-accent-200: #FDE0A8;
+  --color-accent-300: #FCCB70;
+  --color-accent-400: #FAB53E;
+  --color-accent-500: #F4A261;
+  --color-accent-600: #E88835;
+  --color-accent-700: #D06E1E;
+  --color-accent-800: #AD5A18;
+  --color-accent-900: #8C4A15;
+
+  --color-background: var(--color-warm-100);
+  --color-foreground: var(--color-navy-500);
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    border-color: var(--color-warm-300);
+  }
+
+  body {
+    background: var(--color-warm-100);
+    color: var(--color-navy-500);
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    font-weight: 600;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
