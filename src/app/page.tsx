@@ -3,8 +3,7 @@ import FeaturesBanner from "@/components/FeaturesBanner"
 import HowItWorks from "@/components/HowItWorks"
 import FeaturedSpaces from "@/components/FeaturedSpaces"
 import CityGrid from "@/components/CityGrid"
-import TestimonialsSection from "@/components/TestimonialsSection"
-import MembershipCTA from "@/components/MembershipCTA"
+import StateExplorer from "@/components/StateExplorer"
 import NewsletterSection from "@/components/NewsletterSection"
 
 export default function Home() {
@@ -15,8 +14,7 @@ export default function Home() {
       <HowItWorks />
       <FeaturedSpaces />
       <CityGrid />
-      <TestimonialsSection />
-      <MembershipCTA />
+      <StateExplorer />
       <NewsletterSection />
     </>
   )
