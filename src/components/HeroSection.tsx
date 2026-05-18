@@ -1,17 +1,56 @@
 "use client"
 
-import { ArrowRight, TrendingUp, Building2, Award } from "lucide-react"
-import Link from "next/link"
+import { useState, useEffect } from "react"
+import { Building2, TrendingUp, MapPin, Globe } from "lucide-react"
 import SearchBar from "./SearchBar"
 
-const stats = [
-  { label: "Coworking Spaces", value: "1,200+", icon: Building2 },
-  { label: "Cities Covered", value: "50+", icon: TrendingUp },
-  { label: "Active Members", value: "85K+", icon: Users },
-  { label: "Avg. Rating", value: "4.7", icon: Star },
-]
-
 export default function HeroSection() {
+  const [stats, setStats] = useState({
+    totalSpaces: 0,
+    totalCities: 0,
+    topStates: {} as Record<string, number>,
+  })
+
+  useEffect(() => {
+    fetch("/data/stats.json")
+      .then((r) => r.json())
+      .then((d) =>
+        setStats({
+          totalSpaces: d.totalSpaces,
+          totalCities: d.totalCities,
+          topStates: d.topStates,
+        })
+      )
+      .catch(() => {})
+  }, [])
+
+  const statItems = [
+    {
+      label: "Coworking Spaces",
+      value: stats.totalSpaces
+        ? `${(stats.totalSpaces / 1000).toFixed(1)}K+`
+        : "7.4K+",
+      icon: Building2,
+    },
+    {
+      label: "Cities Covered",
+      value: stats.totalCities ? `${stats.totalCities}+` : "1,100+",
+      icon: MapPin,
+    },
+    {
+      label: "States",
+      value: Object.keys(stats.topStates).length
+        ? `${Object.keys(stats.topStates).length}+`
+        : "50",
+      icon: Globe,
+    },
+    {
+      label: "Top State",
+      value: stats.topStates.CA ? "California" : "CA",
+      icon: TrendingUp,
+    },
+  ]
+
   return (
     <section className="relative min-h-[90dvh] flex items-center overflow-hidden">
       <div className="absolute inset-0">
@@ -40,14 +79,14 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-lg sm:text-xl text-white/70 max-w-xl leading-relaxed mb-8">
-            Discover 1,200+ coworking spaces across 50+ US cities. Compare amenities, pricing, and community — then book or apply for membership in minutes.
+            Discover {stats.totalSpaces || "7,000+"} coworking spaces across {stats.totalCities || "1,100+"} US cities. Compare amenities, locations, and contact spaces directly.
           </p>
 
           <SearchBar variant="hero" />
         </div>
 
         <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-2xl">
-          {stats.map((stat) => (
+          {statItems.map((stat) => (
             <div key={stat.label} className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center shrink-0">
                 <stat.icon className="w-5 h-5 text-brand-300" />
@@ -62,27 +101,4 @@ export default function HeroSection() {
       </div>
     </section>
   )
-}
-
-function Users({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-      <circle cx="9" cy="7" r="4" />
-      <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-    </svg>
-  )
-}
-
-function Star({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-    </svg>
-  )
-}
-
-function UsersPlaceholder() {
-  return null
 }

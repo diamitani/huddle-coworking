@@ -3,9 +3,12 @@
 import { Suspense, useState, useEffect, useCallback } from "react"
 import { useSearchParams } from "next/navigation"
 import { motion } from "framer-motion"
-import { Search, MapPin, Star } from "lucide-react"
+import { Search, MapPin, Star, Map } from "lucide-react"
+import dynamic from "next/dynamic"
 import Link from "next/link"
 import { cn } from "@/lib/cn"
+
+const MapView = dynamic(() => import("@/components/MapView"), { ssr: false })
 
 interface SpaceResult {
   id: number
@@ -16,23 +19,26 @@ interface SpaceResult {
   d: string
   a: string[]
   ct: number
+  lat?: number
+  lng?: number
 }
 
 function SpacesContent() {
   const searchParams = useSearchParams()
 
   const [results, setResults] = useState<SpaceResult[]>([])
+  const [allSpaces, setAllSpaces] = useState<SpaceResult[]>([])
   const [total, setTotal] = useState(0)
   const [cities, setCities] = useState<string[]>([])
   const [states, setStates] = useState<string[]>([])
   const [loading, setLoading] = useState(true)
+  const [showMap, setShowMap] = useState(false)
 
   const [query, setQuery] = useState(searchParams.get("q") || "")
   const [selectedCity, setSelectedCity] = useState(searchParams.get("city") || "")
   const [selectedState, setSelectedState] = useState(searchParams.get("state") || "")
   const [sort, setSort] = useState("ct")
   const [page, setPage] = useState(1)
-  const [showFilters, setShowFilters] = useState(false)
 
   const fetchSpaces = useCallback(async () => {
     setLoading(true)
@@ -57,6 +63,14 @@ function SpacesContent() {
       setLoading(false)
     }
   }, [query, selectedCity, selectedState, sort, page])
+
+  // Load full dataset once for map
+  useEffect(() => {
+    fetch("/data/directory.json")
+      .then((r) => r.json())
+      .then((d) => setAllSpaces(d))
+      .catch(() => {})
+  }, [])
 
   useEffect(() => {
     fetchSpaces()
@@ -149,15 +163,44 @@ function SpacesContent() {
               </button>
             )}
           </p>
-          <select
-            value={sort}
-            onChange={(e) => setSort(e.target.value)}
-            className="rounded-xl border border-warm-200 px-3.5 py-2 text-sm text-navy-500 bg-white"
-          >
-            <option value="ct">Most Popular</option>
-            <option value="name">Name: A-Z</option>
-          </select>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setShowMap(!showMap)}
+              className={cn(
+                "flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-sm font-medium transition-all",
+                showMap
+                  ? "bg-brand-50 text-brand-600 border border-brand-200"
+                  : "border border-warm-200 text-warm-700 hover:bg-warm-50"
+              )}
+            >
+              <Map className="w-4 h-4" />
+              {showMap ? "Hide Map" : "Show Map"}
+            </button>
+            <select
+              value={sort}
+              onChange={(e) => setSort(e.target.value)}
+              className="rounded-xl border border-warm-200 px-3.5 py-2 text-sm text-navy-500 bg-white"
+            >
+              <option value="ct">Most Popular</option>
+              <option value="name">Name: A-Z</option>
+            </select>
+          </div>
         </div>
+
+        {showMap && (
+          <div className="mb-6">
+            <MapView
+              spaces={allSpaces}
+              height="400px"
+              onCitySelect={(city, state) => {
+                setSelectedCity(city)
+                setSelectedState(state)
+                setPage(1)
+                setShowMap(false)
+              }}
+            />
+          </div>
+        )}
 
         {loading ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
