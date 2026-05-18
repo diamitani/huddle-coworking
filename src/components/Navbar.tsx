@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Menu, X, Search, MapPin, User } from "lucide-react"
+import { Menu, X, Search, MapPin, User, LogOut, LayoutDashboard } from "lucide-react"
 import { cn } from "@/lib/cn"
+import { createClient } from "@/lib/supabase"
 
 const navLinks = [
   { href: "/spaces", label: "Discover" },
@@ -15,11 +16,29 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [user, setUser] = useState<any>(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
     window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
+
+    // Check auth state
+    const supabase = createClient()
+    supabase.auth.getUser().then(({ data }) => {
+      if (data?.user) setUser(data.user)
+    })
+
+    // Listen for auth changes
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null)
+    })
+
+    return () => {
+      window.removeEventListener("scroll", onScroll)
+      subscription.unsubscribe()
+    }
   }, [])
 
   return (
@@ -73,17 +92,32 @@ export default function Navbar() {
               <Search className="w-4 h-4" />
               <span>Search Spaces</span>
             </Link>
-            <Link
-              href="/saved"
-              className={cn(
-                "p-2 rounded-lg transition-all",
-                scrolled
-                  ? "text-navy-500/60 hover:text-navy-500 hover:bg-warm-100"
-                  : "text-white/80 hover:text-white hover:bg-white/10"
-              )}
-            >
-              <User className="w-5 h-5" />
-            </Link>
+            {user ? (
+              <Link
+                href="/dashboard"
+                className={cn(
+                  "flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium transition-all",
+                  scrolled
+                    ? "text-brand-600 bg-brand-50 hover:bg-brand-100"
+                    : "text-white bg-white/15 hover:bg-white/25 backdrop-blur-sm"
+                )}
+              >
+                <LayoutDashboard className="w-4 h-4" />
+                <span className="hidden sm:inline">Dashboard</span>
+              </Link>
+            ) : (
+              <Link
+                href="/login"
+                className={cn(
+                  "p-2 rounded-lg transition-all",
+                  scrolled
+                    ? "text-navy-500/60 hover:text-navy-500 hover:bg-warm-100"
+                    : "text-white/80 hover:text-white hover:bg-white/10"
+                )}
+              >
+                <User className="w-5 h-5" />
+              </Link>
+            )}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className={cn(
@@ -122,11 +156,11 @@ export default function Navbar() {
               Search Spaces
             </Link>
             <Link
-              href="/saved"
+              href={user ? "/dashboard" : "/login"}
               onClick={() => setMobileOpen(false)}
               className="block px-4 py-3 rounded-xl text-navy-500/70 hover:text-navy-500 hover:bg-warm-100 font-medium"
             >
-              My Account
+              {user ? "Dashboard" : "Sign In"}
             </Link>
           </div>
         </div>
