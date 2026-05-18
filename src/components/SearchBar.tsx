@@ -4,11 +4,15 @@ import { useState, useRef, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { Search, MapPin, SlidersHorizontal, X } from "lucide-react"
 import { cn } from "@/lib/cn"
-import { cities, states, allAmenities } from "@/data/spaces"
 
 interface SearchBarProps {
   variant?: "hero" | "compact"
 }
+
+const COMMON_AMENITIES = [
+  "Wi-Fi", "Coffee & Tea", "Meeting Rooms", "Printing", "Parking",
+  "24/7 Access", "Kitchen", "Phone Booths", "Outdoor Terrace", "Event Space"
+]
 
 export default function SearchBar({ variant = "hero" }: SearchBarProps) {
   const router = useRouter()
@@ -18,7 +22,19 @@ export default function SearchBar({ variant = "hero" }: SearchBarProps) {
   const [selectedState, setSelectedState] = useState("")
   const [selectedAmenities, setSelectedAmenities] = useState<string[]>([])
   const [showSuggestions, setShowSuggestions] = useState(false)
+  const [cities, setCities] = useState<string[]>([])
+  const [states, setStates] = useState<string[]>([])
   const inputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    fetch("/api/spaces?limit=1")
+      .then((r) => r.json())
+      .then((d) => {
+        if (d.cities) setCities(d.cities)
+        if (d.states) setStates(d.states)
+      })
+      .catch(() => {})
+  }, [])
 
   const filteredCities = cities.filter(c =>
     c.toLowerCase().includes(query.toLowerCase())
@@ -108,7 +124,7 @@ export default function SearchBar({ variant = "hero" }: SearchBarProps) {
               </select>
             </div>
             <div className="flex flex-wrap gap-1.5">
-              {allAmenities.slice(0, 10).map(amenity => (
+              {COMMON_AMENITIES.slice(0, 10).map(amenity => (
                 <button
                   key={amenity}
                   onClick={() => toggleAmenity(amenity)}
@@ -253,7 +269,7 @@ export default function SearchBar({ variant = "hero" }: SearchBarProps) {
             <div>
               <label className="block text-xs font-semibold text-warm-700 uppercase tracking-wider mb-2">Amenities</label>
               <div className="flex flex-wrap gap-2">
-                {allAmenities.map(amenity => (
+                {COMMON_AMENITIES.map(amenity => (
                   <button
                     key={amenity}
                     onClick={() => toggleAmenity(amenity)}

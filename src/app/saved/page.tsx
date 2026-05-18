@@ -1,12 +1,18 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Heart } from "lucide-react"
-import SpaceCard from "@/components/SpaceCard"
-import { getFeaturedSpaces } from "@/data/spaces"
+import { Heart, MapPin } from "lucide-react"
 
 export default function SavedPage() {
-  const suggested = getFeaturedSpaces().slice(0, 3)
+  const [suggested, setSuggested] = useState<Array<{ n: string; c: string; st: string }>>([])
+
+  useEffect(() => {
+    fetch("/api/spaces?sort=ct&limit=3")
+      .then((r) => r.json())
+      .then((d) => setSuggested(d.results || []))
+      .catch(() => {})
+  }, [])
 
   return (
     <div className="min-h-screen pt-24 pb-20 bg-warm-100">
@@ -22,7 +28,7 @@ export default function SavedPage() {
           </div>
           <h2 className="text-xl font-heading font-semibold text-navy-500 mb-2">No saved spaces yet</h2>
           <p className="text-warm-600 text-sm mb-6 max-w-sm mx-auto">
-            Start exploring and save spaces you like. They&#39;ll be here for quick access.
+            Start exploring and save spaces you like. They&apos;ll be here for quick access.
           </p>
           <Link
             href="/spaces"
@@ -34,10 +40,28 @@ export default function SavedPage() {
 
         {suggested.length > 0 && (
           <div className="mt-12">
-            <h2 className="text-xl font-heading font-semibold text-navy-500 mb-6">Featured spaces you might like</h2>
+            <h2 className="text-xl font-heading font-semibold text-navy-500 mb-6">Popular coworking spaces</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {suggested.map((space) => (
-                <SpaceCard key={space.id} space={space} />
+              {suggested.map((space, i) => (
+                <Link
+                  key={i}
+                  href={`/spaces/${space.n.toLowerCase().replace(/[^\w\s-]/g, "").replace(/[-\s]+/g, "-").replace(/^-+|-+$/g, "").substring(0, 100)}`}
+                  className="block group bg-white rounded-2xl border border-warm-200 overflow-hidden hover:shadow-lg transition-all"
+                >
+                  <div className="aspect-[4/3] bg-warm-200 overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600"
+                      alt={space.n}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-heading font-semibold text-navy-500 line-clamp-1">{space.n}</h3>
+                    <p className="text-sm text-warm-700 mt-1">
+                      <MapPin className="w-3.5 h-3.5 inline" /> {space.c}, {space.st}
+                    </p>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
