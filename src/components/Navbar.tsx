@@ -23,21 +23,21 @@ export default function Navbar() {
     window.addEventListener("scroll", onScroll, { passive: true })
 
     // Check auth state
-    const supabase = createClient()
-    supabase.auth.getUser().then(({ data }) => {
-      if (data?.user) setUser(data.user)
-    })
+    let cleanup = () => {}
+    try {
+      const supabase = createClient() as any
+      supabase.auth.getUser().then((result: any) => {
+        if (result?.data?.user) setUser(result.data.user)
+      })
 
-    // Listen for auth changes
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ?? null)
-    })
-
+      const sub = supabase.auth.onAuthStateChange((_event: string, session: any) => {
+        setUser(session?.user ?? null)
+      })
+      cleanup = () => sub?.data?.subscription?.unsubscribe?.()
+    } catch {}
     return () => {
       window.removeEventListener("scroll", onScroll)
-      subscription.unsubscribe()
+      cleanup()
     }
   }, [])
 

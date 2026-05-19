@@ -66,15 +66,13 @@ export default function SpaceDetailPage() {
         setLastName(data.user.user_metadata?.full_name?.split(" ").slice(1).join(" ") || "")
 
         // Check if space is saved
-        supabase
-          .from("saved_spaces")
-          .select("*")
-          .eq("user_id", data.user.id)
-          .eq("space_slug", slug)
-          .single()
-          .then(({ data: savedData }) => {
-            if (savedData) setSaved(true)
-          })
+          try {
+            ;(supabase as any).from("saved_spaces").select("*").eq("user_id", data.user.id)
+              .then((res: any) => {
+                const items = res?.data || []
+                if (items.some((s: any) => s.space_slug === slug)) setSaved(true)
+              })
+          } catch {}  // Silently fail if Supabase not available
       }
     })
   }, [slug])
@@ -128,25 +126,22 @@ export default function SpaceDetailPage() {
       return
     }
 
-    const supabase = createClient()
-
-    if (saved) {
-      await supabase
-        .from("saved_spaces")
-        .delete()
-        .eq("user_id", user.id)
-        .eq("space_slug", slug)
-      setSaved(false)
-    } else {
-      await supabase.from("saved_spaces").insert({
-        user_id: user.id,
-        space_name: space?.n || "",
-        space_city: space?.c || "",
-        space_state: space?.st || "",
-        space_slug: slug,
-      })
-      setSaved(true)
-    }
+    try {
+      const s = createClient() as any
+      if (saved) {
+        await s.from("saved_spaces").delete().eq("user_id", user.id)
+        setSaved(false)
+      } else {
+        await s.from("saved_spaces").insert({
+          user_id: user.id,
+          space_name: space?.n || "",
+          space_city: space?.c || "",
+          space_state: space?.st || "",
+          space_slug: slug,
+        })
+        setSaved(true)
+      }
+    } catch {}  // Silently fail if Supabase not available
   }
 
   if (loading) {

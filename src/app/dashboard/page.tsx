@@ -36,7 +36,8 @@ export default function DashboardPage() {
   useEffect(() => {
     const supabase = createClient()
 
-    supabase.auth.getUser().then(({ data: { user } }) => {
+    supabase.auth.getUser().then((result: any) => {
+      const user = result?.data?.user
       if (!user) {
         router.push("/login")
         return
@@ -44,8 +45,8 @@ export default function DashboardPage() {
       setUser(user)
 
       // Fetch profile
-      supabase.from("profiles").select("*").eq("id", user.id).single().then(({ data }) => {
-        if (data) setProfile(data)
+      supabase.from("profiles").select("*").eq("id", user.id).single().then((result: any) => {
+        if (result?.data) setProfile(result.data)
       })
 
       // Fetch inquiries
@@ -54,8 +55,8 @@ export default function DashboardPage() {
         .select("*")
         .eq("user_id", user.id)
         .order("created_at", { ascending: false })
-        .then(({ data }) => {
-          if (data) setInquiries(data)
+        .then((result: any) => {
+          if (result?.data) setInquiries(result.data)
         })
 
       // Fetch saved spaces
@@ -64,8 +65,8 @@ export default function DashboardPage() {
         .select("*")
         .eq("user_id", user.id)
         .order("created_at", { ascending: false })
-        .then(({ data }) => {
-          if (data) setSavedSpaces(data)
+        .then((result: any) => {
+          if (result?.data) setSavedSpaces(result.data)
         })
 
       setLoading(false)
@@ -81,8 +82,8 @@ export default function DashboardPage() {
 
   const handleUnsave = async (id: string) => {
     const supabase = createClient()
-    await supabase.from("saved_spaces").delete().eq("id", id)
-    setSavedSpaces((prev) => prev.filter((s) => s.id !== id))
+    await supabase.from("saved_spaces").delete().eq("id", id).then(() => {})
+    setSavedSpaces((prev) => prev.filter((s: SavedSpace) => s.id !== id))
   }
 
   const statusIcon = (status: string) => {
