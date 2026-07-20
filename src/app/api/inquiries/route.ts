@@ -1,33 +1,9 @@
 import { NextRequest, NextResponse } from "next/server"
+import { getCurrentUser } from "@/lib/auth-cognito"
+import { query } from "@/lib/db"
 
 export async function POST(req: NextRequest) {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-
-  if (!supabaseUrl || !supabaseKey) {
-    return NextResponse.json(
-      { error: "Contact form not available. Set up Supabase to enable." },
-      { status: 503 }
-    )
-  }
-
-  const { createServerClient } = await import("@supabase/ssr")
-  const { cookies } = await import("next/headers")
-  const cookieStore = await cookies()
-
-  const supabase = createServerClient(supabaseUrl, supabaseKey, {
-    cookies: {
-      getAll() {
-        return cookieStore.getAll()
-      },
-      setAll() {},
-    },
-  })
-
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
-
+  const user = await getCurrentUser()
   if (!user) {
     return NextResponse.json({ error: "Not authenticated" }, { status: 401 })
   }
@@ -39,24 +15,32 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Space name is required" }, { status: 400 })
   }
 
-  const { data, error } = await supabase
-    .from("inquiries")
-    .insert({
-      user_id: user.id,
-      space_name,
-      space_city: space_city || "",
-      space_state: space_state || "",
-      space_website: space_website || "",
-      inquiry_type: inquiry_type || "membership",
-      message: message || "",
-      status: "pending",
-    })
-    .select()
-    .single()
+  try {
+    const result = await query(
+      `INSERT INTO inquiries (user_sub, user_email, space_name, space_city, space_state, space_website, inquiry_type, message)
+       VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+       RETURNING *`,
+      [user.sub, user.email, space_name, space_city || "", space_state || "", space_website || "", inquiry_type || "membership", message || ""]
+    )
+    return NextResponse.json({ inquiry: result.rows[0] })
+  } catch (err: any) {
+    return NextResponse.json({ error: err.message }, { status: 500 })
+  }
+}
 
-  if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 })
+export async function GET() {
+  const user = await getCurrentUser()
+  if (!user) {
+    return NextResponse.json({ error: "Not authenticated" }, { status: 401 })
   }
 
-  return NextResponse.json({ inquiry: data })
+  try {
+    const result = await query(
+      `SELECT * FROM inquiries WHERE user_sub = $1 ORDER BY created_at DESC`,
+      [user.sub]
+    )
+    return NextResponse.json({ inquiries: result.rows })
+  } catch (err: any) {
+    return NextResponse.json({ error: err.message }, { status: 500 })
+  }
 }

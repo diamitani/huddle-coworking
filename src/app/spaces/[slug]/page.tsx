@@ -9,7 +9,6 @@ import {
   Building2, Heart, Share2, Users, X, Send
 } from "lucide-react"
 import { cn } from "@/lib/cn"
-import { createClient } from "@/lib/supabase"
 
 interface SpaceDetail {
   id: number
@@ -56,25 +55,27 @@ export default function SpaceDetailPage() {
       .catch(() => setNotFound(true))
       .finally(() => setLoading(false))
 
-    // Check auth
-    const supabase = createClient()
-    supabase.auth.getUser().then(({ data }) => {
-      if (data?.user) {
-        setUser(data.user)
-        setEmail(data.user.email || "")
-        setFirstName(data.user.user_metadata?.full_name?.split(" ")[0] || "")
-        setLastName(data.user.user_metadata?.full_name?.split(" ").slice(1).join(" ") || "")
+    // Check auth via Cognito cookie
+    fetch("/api/auth/me")
+      .then((r) => r.ok ? r.json() : null)
+      .then((me) => {
+        if (me?.sub) {
+          setUser(me)
+          setEmail(me.email || "")
+          const parts = (me.name || "").split(" ")
+          setFirstName(parts[0] || "")
+          setLastName(parts.slice(1).join(" ") || "")
+        }
+      })
+      .catch(() => {})
 
-        // Check if space is saved
-          try {
-            ;(supabase as any).from("saved_spaces").select("*").eq("user_id", data.user.id)
-              .then((res: any) => {
-                const items = res?.data || []
-                if (items.some((s: any) => s.space_slug === slug)) setSaved(true)
-              })
-          } catch {}  // Silently fail if Supabase not available
-      }
-    })
+    // Check if saved
+    fetch("/api/saved")
+      .then((r) => r.ok ? r.json() : { saved: [] })
+      .then((data) => {
+        if (data.saved?.some((s: any) => s.space_slug === slug)) setSaved(true)
+      })
+      .catch(() => {})
   }, [slug])
 
   const handleContact = async () => {
@@ -126,22 +127,21 @@ export default function SpaceDetailPage() {
       return
     }
 
-    try {
-      const s = createClient() as any
-      if (saved) {
-        await s.from("saved_spaces").delete().eq("user_id", user.id)
-        setSaved(false)
-      } else {
-        await s.from("saved_spaces").insert({
-          user_id: user.id,
-          space_name: space?.n || "",
-          space_city: space?.c || "",
-          space_state: space?.st || "",
-          space_slug: slug,
-        })
-        setSaved(true)
-      }
-    } catch {}  // Silently fail if Supabase not available
+    if (saved) {
+      await fetch("/api/saved", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ space_slug: slug }),
+      })
+      setSaved(false)
+    } else {
+      await fetch("/api/saved", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ space_name: space?.n || "", space_city: space?.c || "", space_state: space?.st || "", space_slug: slug }),
+      })
+      setSaved(true)
+    }
   }
 
   if (loading) {

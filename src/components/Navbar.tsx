@@ -1,10 +1,10 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 import Link from "next/link"
-import { Menu, X, Search, MapPin, User, LogOut, LayoutDashboard } from "lucide-react"
+import { Menu, X, Search, MapPin, User, LayoutDashboard } from "lucide-react"
 import { cn } from "@/lib/cn"
-import { createClient } from "@/lib/supabase"
 
 const navLinks = [
   { href: "/spaces", label: "Discover" },
@@ -13,33 +13,32 @@ const navLinks = [
   { href: "/list-your-space", label: "List Your Space" },
 ]
 
+interface AuthUser { sub: string; email: string; name: string }
+
 export default function Navbar() {
+  const router = useRouter()
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [user, setUser] = useState<any>(null)
+  const [user, setUser] = useState<AuthUser | null>(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
     window.addEventListener("scroll", onScroll, { passive: true })
 
-    // Check auth state
-    let cleanup = () => {}
-    try {
-      const supabase = createClient() as any
-      supabase.auth.getUser().then((result: any) => {
-        if (result?.data?.user) setUser(result.data.user)
-      })
+    fetch("/api/auth/me")
+      .then((r) => r.ok ? r.json() : null)
+      .then((data) => { if (data?.sub) setUser(data) })
+      .catch(() => {})
 
-      const sub = supabase.auth.onAuthStateChange((_event: string, session: any) => {
-        setUser(session?.user ?? null)
-      })
-      cleanup = () => sub?.data?.subscription?.unsubscribe?.()
-    } catch {}
-    return () => {
-      window.removeEventListener("scroll", onScroll)
-      cleanup()
-    }
+    return () => window.removeEventListener("scroll", onScroll)
   }, [])
+
+  const handleLogout = async () => {
+    await fetch("/api/auth/logout", { method: "POST" })
+    setUser(null)
+    router.push("/")
+    router.refresh()
+  }
 
   return (
     <header
@@ -92,19 +91,33 @@ export default function Navbar() {
               <Search className="w-4 h-4" />
               <span>Search Spaces</span>
             </Link>
+
             {user ? (
-              <Link
-                href="/dashboard"
-                className={cn(
-                  "flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium transition-all",
-                  scrolled
-                    ? "text-brand-600 bg-brand-50 hover:bg-brand-100"
-                    : "text-white bg-white/15 hover:bg-white/25 backdrop-blur-sm"
-                )}
-              >
-                <LayoutDashboard className="w-4 h-4" />
-                <span className="hidden sm:inline">Dashboard</span>
-              </Link>
+              <div className="flex items-center gap-2">
+                <Link
+                  href="/dashboard"
+                  className={cn(
+                    "flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium transition-all",
+                    scrolled
+                      ? "text-brand-600 bg-brand-50 hover:bg-brand-100"
+                      : "text-white bg-white/15 hover:bg-white/25 backdrop-blur-sm"
+                  )}
+                >
+                  <LayoutDashboard className="w-4 h-4" />
+                  <span className="hidden sm:inline">Dashboard</span>
+                </Link>
+                <button
+                  onClick={handleLogout}
+                  className={cn(
+                    "p-2 rounded-lg transition-all text-xs font-medium",
+                    scrolled
+                      ? "text-warm-500 hover:text-navy-500 hover:bg-warm-100"
+                      : "text-white/70 hover:text-white hover:bg-white/10"
+                  )}
+                >
+                  Sign Out
+                </button>
+              </div>
             ) : (
               <Link
                 href="/login"
@@ -118,6 +131,7 @@ export default function Navbar() {
                 <User className="w-5 h-5" />
               </Link>
             )}
+
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className={cn(
@@ -155,13 +169,31 @@ export default function Navbar() {
               <Search className="w-4 h-4" />
               Search Spaces
             </Link>
-            <Link
-              href={user ? "/dashboard" : "/login"}
-              onClick={() => setMobileOpen(false)}
-              className="block px-4 py-3 rounded-xl text-navy-500/70 hover:text-navy-500 hover:bg-warm-100 font-medium"
-            >
-              {user ? "Dashboard" : "Sign In"}
-            </Link>
+            {user ? (
+              <>
+                <Link
+                  href="/dashboard"
+                  onClick={() => setMobileOpen(false)}
+                  className="block px-4 py-3 rounded-xl text-navy-500/70 hover:text-navy-500 hover:bg-warm-100 font-medium"
+                >
+                  Dashboard
+                </Link>
+                <button
+                  onClick={() => { setMobileOpen(false); handleLogout() }}
+                  className="block w-full text-left px-4 py-3 rounded-xl text-warm-500 hover:text-navy-500 hover:bg-warm-100 font-medium"
+                >
+                  Sign Out
+                </button>
+              </>
+            ) : (
+              <Link
+                href="/login"
+                onClick={() => setMobileOpen(false)}
+                className="block px-4 py-3 rounded-xl text-navy-500/70 hover:text-navy-500 hover:bg-warm-100 font-medium"
+              >
+                Sign In
+              </Link>
+            )}
           </div>
         </div>
       )}

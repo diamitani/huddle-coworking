@@ -1,16 +1,21 @@
 "use client"
 
 import { useState } from "react"
-import { useRouter } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 import Link from "next/link"
-import { MapPin, Mail, Lock, User, ArrowRight } from "lucide-react"
-import { createClient } from "@/lib/supabase"
+import { MapPin, Mail, Lock, User, ArrowRight, CheckCircle } from "lucide-react"
+import { Suspense } from "react"
 
-export default function SignupPage() {
+function SignupForm() {
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const redirect = searchParams.get("redirect") || "/dashboard"
+
+  const [step, setStep] = useState<"form" | "confirm">("form")
   const [fullName, setFullName] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const [code, setCode] = useState("")
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
 
@@ -19,36 +24,109 @@ export default function SignupPage() {
     setLoading(true)
     setError("")
 
-    if (password.length < 6) {
-      setError("Password must be at least 6 characters.")
-      setLoading(false)
-      return
-    }
-
-    const supabase = createClient()
-    const { error } = await supabase.auth.signUp({
-      email,
-      password,
-      options: {
-        data: { full_name: fullName },
-        emailRedirectTo: `${location.origin}/auth/callback`,
-      },
+    const res = await fetch("/api/auth/signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password, name: fullName }),
     })
+    const data = await res.json()
 
-    if (error) {
-      setError(error.message)
+    if (!res.ok) {
+      setError(data.error || "Signup failed")
+    } else if (data.userConfirmed) {
+      // Auto-confirmed (admin setting) — log in directly
+      await loginAfterConfirm()
+    } else {
+      setStep("confirm")
+    }
+    setLoading(false)
+  }
+
+  const handleConfirm = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setLoading(true)
+    setError("")
+
+    const res = await fetch("/api/auth/confirm", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, code }),
+    })
+    const data = await res.json()
+
+    if (!res.ok) {
+      setError(data.error || "Confirmation failed")
       setLoading(false)
     } else {
-      router.push("/login?message=Check your email to confirm your account")
+      await loginAfterConfirm()
     }
   }
 
-  const handleGoogleLogin = async () => {
-    const supabase = createClient()
-    await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: { redirectTo: `${location.origin}/auth/callback?next=/dashboard` },
+  const loginAfterConfirm = async () => {
+    const res = await fetch("/api/auth/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password }),
     })
+    if (res.ok) {
+      router.push(redirect)
+      router.refresh()
+    } else {
+      router.push("/login?message=Account created! Please sign in.")
+    }
+  }
+
+  if (step === "confirm") {
+    return (
+      <div className="min-h-screen bg-warm-100 flex items-center justify-center p-4">
+        <div className="w-full max-w-md">
+          <Link href="/" className="flex items-center justify-center gap-2 mb-8">
+            <div className="w-9 h-9 rounded-xl bg-brand-500 flex items-center justify-center">
+              <MapPin className="w-5 h-5 text-white" />
+            </div>
+            <span className="text-xl font-heading font-bold text-navy-500">Huddle</span>
+          </Link>
+
+          <div className="bg-white rounded-2xl border border-warm-200 p-6 sm:p-8 shadow-sm">
+            <div className="flex justify-center mb-4">
+              <CheckCircle className="w-10 h-10 text-brand-500" />
+            </div>
+            <h1 className="text-2xl font-heading font-bold text-navy-500 mb-2 text-center">Check your email</h1>
+            <p className="text-warm-600 text-sm mb-6 text-center">
+              We sent a confirmation code to <strong>{email}</strong>. Enter it below to activate your account.
+            </p>
+
+            {error && (
+              <div className="p-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-sm mb-4">
+                {error}
+              </div>
+            )}
+
+            <form onSubmit={handleConfirm} className="space-y-4">
+              <div>
+                <label className="block text-xs font-semibold text-warm-700 mb-1.5">Confirmation Code</label>
+                <input
+                  type="text"
+                  value={code}
+                  onChange={(e) => setCode(e.target.value.trim())}
+                  placeholder="123456"
+                  required
+                  className="w-full px-4 py-2.5 rounded-xl border border-warm-200 text-sm text-navy-500 bg-white outline-none focus:border-brand-300 text-center text-lg tracking-widest"
+                />
+              </div>
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full bg-brand-500 text-white rounded-xl py-3 font-semibold hover:bg-brand-600 transition-all disabled:opacity-50 flex items-center justify-center gap-2"
+              >
+                {loading ? "Confirming..." : "Confirm & Sign In"}
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -63,7 +141,8 @@ export default function SignupPage() {
 
         <div className="bg-white rounded-2xl border border-warm-200 p-6 sm:p-8 shadow-sm">
           <h1 className="text-2xl font-heading font-bold text-navy-500 mb-2">Create your account</h1>
-          <p className="text-warm-600 text-sm mb-6">Start finding and booking coworking spaces.</p>
+          <p className="text-warm-600 text-sm mb-1">Start finding and booking coworking spaces.</p>
+          <p className="text-xs text-brand-600 font-medium mb-6">Free forever — no credit card required.</p>
 
           {error && (
             <div className="p-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-sm mb-4">
@@ -80,7 +159,7 @@ export default function SignupPage() {
                   type="text"
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
-                  placeholder="John Doe"
+                  placeholder="Jane Doe"
                   required
                   className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-warm-200 text-sm text-navy-500 bg-white outline-none focus:border-brand-300"
                 />
@@ -108,9 +187,9 @@ export default function SignupPage() {
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  placeholder="At least 6 characters"
+                  placeholder="8+ chars, uppercase, number, symbol"
                   required
-                  minLength={6}
+                  minLength={8}
                   className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-warm-200 text-sm text-navy-500 bg-white outline-none focus:border-brand-300"
                 />
               </div>
@@ -120,34 +199,18 @@ export default function SignupPage() {
               disabled={loading}
               className="w-full bg-brand-500 text-white rounded-xl py-3 font-semibold hover:bg-brand-600 transition-all disabled:opacity-50 flex items-center justify-center gap-2"
             >
-              {loading ? "Creating account..." : "Create Account"}
+              {loading ? "Creating account..." : "Create Free Account"}
               <ArrowRight className="w-4 h-4" />
             </button>
           </form>
 
-          <div className="relative my-6">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-warm-200" />
-            </div>
-            <div className="relative flex justify-center text-xs">
-              <span className="bg-white px-3 text-warm-500">or continue with</span>
-            </div>
-          </div>
+          <p className="text-center text-xs text-warm-500 mt-4">
+            By signing up, you agree to our{" "}
+            <Link href="/terms" className="text-brand-500 hover:underline">Terms</Link> and{" "}
+            <Link href="/privacy" className="text-brand-500 hover:underline">Privacy Policy</Link>.
+          </p>
 
-          <button
-            onClick={handleGoogleLogin}
-            className="w-full flex items-center justify-center gap-2.5 bg-white text-navy-500 rounded-xl py-3 font-medium border border-warm-200 hover:bg-warm-50 transition-all text-sm"
-          >
-            <svg className="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4" />
-              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
-              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
-              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
-            </svg>
-            Continue with Google
-          </button>
-
-          <p className="text-center text-sm text-warm-600 mt-6">
+          <p className="text-center text-sm text-warm-600 mt-4">
             Already have an account?{" "}
             <Link href="/login" className="text-brand-600 font-medium hover:text-brand-700">
               Sign in
@@ -156,5 +219,17 @@ export default function SignupPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function SignupPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-warm-100 flex items-center justify-center">
+        <div className="animate-pulse w-12 h-12 bg-warm-200 rounded-2xl" />
+      </div>
+    }>
+      <SignupForm />
+    </Suspense>
   )
 }
