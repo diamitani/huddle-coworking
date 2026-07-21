@@ -10,8 +10,14 @@ import {
 import { cookies } from "next/headers"
 
 const REGION = process.env.AWS_REGION || "us-east-2"
-const CLIENT_ID = process.env.COGNITO_CLIENT_ID!
-export const USER_POOL_ID = process.env.COGNITO_USER_POOL_ID!
+const CLIENT_ID = process.env.COGNITO_CLIENT_ID
+const USER_POOL_ID = process.env.COGNITO_USER_POOL_ID
+
+if (!CLIENT_ID || !USER_POOL_ID) {
+  throw new Error(`Missing Cognito env vars. CLIENT_ID=${!!CLIENT_ID}, POOL_ID=${!!USER_POOL_ID}`)
+}
+
+export { USER_POOL_ID }
 
 export const cognitoClient = new CognitoIdentityProviderClient({ region: REGION })
 

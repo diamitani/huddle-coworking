@@ -14,12 +14,16 @@ export async function POST(request: Request) {
     const result = await signUp(email, password, name || "")
     return NextResponse.json(result)
   } catch (err: any) {
+    console.error("[signup error]", err)
     const msg = err?.message || "Signup failed"
     if (msg.includes("UsernameExistsException")) {
       return NextResponse.json({ error: "An account with this email already exists." }, { status: 400 })
     }
     if (msg.includes("InvalidPasswordException")) {
       return NextResponse.json({ error: "Password must be 8+ characters with uppercase, number, and symbol." }, { status: 400 })
+    }
+    if (msg.includes("Missing Cognito env vars")) {
+      return NextResponse.json({ error: "Server misconfigured: AWS Cognito not set up" }, { status: 500 })
     }
     return NextResponse.json({ error: msg }, { status: 400 })
   }
