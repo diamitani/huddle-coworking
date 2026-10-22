@@ -36,7 +36,7 @@ export default function NewsletterSection() {
           </h2>
 
           <p className="text-white/60 text-lg leading-relaxed mb-8 max-w-lg mx-auto">
-            Join 12,000+ members. We&#39;ll send you new coworking spaces, curated city guides, and exclusive member perks.
+            We&#39;ll send you new coworking spaces, curated city guides, and exclusive member perks.
           </p>
 
           {submitted ? (
