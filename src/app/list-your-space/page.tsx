@@ -8,7 +8,7 @@ import { cn } from "@/lib/cn"
 const benefits = [
   {
     icon: Users,
-    title: "Reach 85K+ Members",
+    title: "Get Discovered",
     description: "Get your space in front of thousands of professionals actively searching for coworking spaces.",
   },
   {
@@ -19,7 +19,7 @@ const benefits = [
   {
     icon: DollarSign,
     title: "Grow Revenue",
-    description: "Convert directory traffic into paying members. Our Pro listings see 3x more inquiries.",
+    description: "Convert directory traffic into paying members with a featured Pro listing.",
   },
   {
     icon: Building2,
@@ -43,7 +43,7 @@ export default function ListYourSpacePage() {
               Put Your Coworking Space on the Map
             </h1>
             <p className="text-warm-700 text-lg leading-relaxed mb-8">
-              Join 1,200+ spaces on the world&#39;s fastest-growing coworking directory. Get discovered by thousands of professionals looking for their next workspace.
+              Join 1,073 spaces on a coworking directory built on verified data. Get discovered by thousands of professionals looking for their next workspace.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">

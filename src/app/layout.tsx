@@ -7,11 +7,11 @@ import SpaceGate from "@/components/SpaceGate"
 export const metadata: Metadata = {
   title: "Huddle — The #1 Coworking Space Directory",
   description:
-    "Find, compare, and book the perfect coworking space near you. 1,200+ spaces across 50+ US cities. Real reviews, transparent pricing, instant booking.",
+    "Find, compare, and book the perfect coworking space near you. 1,073 spaces across 476 US cities. Compare amenities and contact spaces directly.",
   keywords: ["coworking", "coworking space", "shared office", "workspace", "remote work", "office rental"],
   openGraph: {
     title: "Huddle — Find Your Perfect Coworking Space",
-    description: "The world's #1 coworking space directory. Discover 1,200+ spaces across 50+ US cities.",
+    description: "The world's #1 coworking space directory. Discover 1,073 spaces across 476 US cities.",
     type: "website",
   },
 }

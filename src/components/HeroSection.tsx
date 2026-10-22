@@ -29,12 +29,12 @@ export default function HeroSection() {
       label: "Coworking Spaces",
       value: stats.totalSpaces
         ? `${(stats.totalSpaces / 1000).toFixed(1)}K+`
-        : "7.4K+",
+        : "1.1K+",
       icon: Building2,
     },
     {
       label: "Cities Covered",
-      value: stats.totalCities ? `${stats.totalCities}+` : "1,100+",
+      value: stats.totalCities ? `${stats.totalCities}+` : "476+",
       icon: MapPin,
     },
     {
@@ -79,7 +79,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-lg sm:text-xl text-white/70 max-w-xl leading-relaxed mb-8">
-            Discover {stats.totalSpaces || "7,000+"} coworking spaces across {stats.totalCities || "1,100+"} US cities. Compare amenities, locations, and contact spaces directly.
+            Discover {stats.totalSpaces || "1,073"} coworking spaces across {stats.totalCities || "476"} US cities. Compare amenities, locations, and contact spaces directly.
           </p>
 
           <SearchBar variant="hero" />

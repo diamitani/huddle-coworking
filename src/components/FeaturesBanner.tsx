@@ -22,7 +22,7 @@ const features = [
   {
     icon: Globe,
     title: "Nationwide Coverage",
-    description: "From NYC to San Francisco, Austin to Miami — find coworking spaces in 50+ cities across the United States.",
+    description: "From NYC to San Francisco, Austin to Miami — find coworking spaces in 476 cities across the United States.",
   },
   {
     icon: Heart,

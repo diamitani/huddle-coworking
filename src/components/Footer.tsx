@@ -47,7 +47,7 @@ export default function Footer() {
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2 text-sm text-warm-300">
                 <Heart className="w-4 h-4 text-brand-400" fill="currentColor" />
-                <span>1,200+ spaces listed</span>
+                <span>1,073 spaces listed</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-warm-300">
                 <Mail className="w-4 h-4" />

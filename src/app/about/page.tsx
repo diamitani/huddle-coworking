@@ -4,10 +4,10 @@ import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 
 const stats = [
-  { label: "Spaces Listed", value: "1,200+" },
-  { label: "Cities Covered", value: "150+" },
-  { label: "Members", value: "10,000+" },
-  { label: "Countries", value: "12" },
+  { label: "Spaces Listed", value: "1,073" },
+  { label: "Cities Covered", value: "476" },
+  { label: "States + DC", value: "43" },
+  { label: "Cost to Browse", value: "Free" },
 ]
 
 export default function AboutPage() {
@@ -57,9 +57,9 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { icon: Building2, label: "Verified Listings", desc: "Every space is reviewed and confirmed" },
-                  { icon: Globe, label: "Global Coverage", desc: "Spaces in 12 countries and counting" },
-                  { icon: Users, label: "Community", desc: "10,000+ professionals trust Huddle" },
-                  { icon: MapPin, label: "City Guides", desc: "Explore coworking in 150+ cities" },
+                  { icon: Globe, label: "Nationwide Coverage", desc: "Spaces in 42 states plus Washington, DC" },
+                  { icon: Users, label: "Direct Contact", desc: "Inquire with space operators right from their listing" },
+                  { icon: MapPin, label: "City Guides", desc: "Explore coworking in 476 cities" },
                 ].map(({ icon: Icon, label, desc }) => (
                   <div key={label} className="bg-white rounded-xl p-4 shadow-sm border border-warm-100">
                     <Icon className="w-6 h-6 text-brand-500 mb-2" />
@@ -75,7 +75,7 @@ export default function AboutPage() {
         <section className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-2xl font-heading font-bold text-navy-500 mb-4">Want to list your space?</h2>
-            <p className="text-warm-600 mb-6">Join 1,200+ spaces already on Huddle and reach thousands of professionals looking for workspace.</p>
+            <p className="text-warm-600 mb-6">Join 1,073 spaces already on Huddle and reach thousands of professionals looking for workspace.</p>
             <Link href="/list-your-space" className="inline-flex items-center gap-2 bg-brand-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-brand-600 transition-colors">
               List Your Space
             </Link>

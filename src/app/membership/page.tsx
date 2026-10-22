@@ -11,7 +11,7 @@ const userPlans = [
     price: 0,
     description: "Get started with basic search and discovery.",
     features: [
-      "Search 1,200+ coworking spaces",
+      "Search 1,073 coworking spaces",
       "View basic space details",
       "Save up to 5 favorites",
       "Monthly newsletter",

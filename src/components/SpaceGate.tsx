@@ -114,7 +114,7 @@ export default function SpaceGate({ children }: SpaceGateProps) {
               <div className="w-4 h-4 rounded-full bg-green-100 flex items-center justify-center">
                 <div className="w-2 h-2 rounded-full bg-green-500" />
               </div>
-              1,200+ spaces
+              1,073 spaces
             </div>
           </div>
         </div>
