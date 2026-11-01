@@ -6,12 +6,28 @@ import { Send, Sparkles } from "lucide-react"
 export default function NewsletterSection() {
   const [email, setEmail] = useState("")
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState("")
+  const [sending, setSending] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (email) {
+    if (!email) return
+    setSending(true)
+    setError("")
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email.trim(), company_website: "" }),
+      })
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error || "Signup failed")
       setSubmitted(true)
       setEmail("")
+    } catch (err) {
+      setError((err as Error).message)
+    } finally {
+      setSending(false)
     }
   }
 
@@ -36,7 +52,7 @@ export default function NewsletterSection() {
           </h2>
 
           <p className="text-white/60 text-lg leading-relaxed mb-8 max-w-lg mx-auto">
-            Join 12,000+ members. We&#39;ll send you new coworking spaces, curated city guides, and exclusive member perks.
+            New coworking spaces, city guides, and workspace tips — straight to your inbox.
           </p>
 
           {submitted ? (
@@ -44,7 +60,7 @@ export default function NewsletterSection() {
               <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center">
                 <Send className="w-4 h-4 text-green-400" />
               </div>
-              <p className="text-white font-medium">You&#39;re in! Check your inbox for a welcome email.</p>
+              <p className="text-white font-medium">You&#39;re in! Watch your inbox.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
@@ -58,11 +74,15 @@ export default function NewsletterSection() {
               />
               <button
                 type="submit"
-                className="px-6 py-3 rounded-xl bg-brand-500 text-white font-semibold text-sm hover:bg-brand-600 transition-all whitespace-nowrap flex items-center justify-center gap-2"
+                disabled={sending}
+                className="px-6 py-3 rounded-xl bg-brand-500 text-white font-semibold text-sm hover:bg-brand-600 transition-all whitespace-nowrap flex items-center justify-center gap-2 disabled:opacity-50"
               >
-                Subscribe <Send className="w-4 h-4" />
+                {sending ? "Subscribing..." : "Subscribe"} <Send className="w-4 h-4" />
               </button>
             </form>
+          )}
+          {error && !submitted && (
+            <p className="text-red-300 text-sm mt-4">{error}</p>
           )}
         </div>
       </div>

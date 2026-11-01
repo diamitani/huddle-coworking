@@ -1,0 +1,142 @@
+[
+ {
+  "slug": "co-hoots-coworking-mesa-mesa",
+  "name": "Co+Hoots Coworking | Mesa",
+  "city": "Mesa",
+  "state": "AZ",
+  "phone": "+16026882825",
+  "match": "domain",
+  "area_code_state": "AZ",
+  "source_file": "Coworking-Space-Arizona-[State]-Contacts.csv"
+ },
+ {
+  "slug": "buro-worspaces-miami-beach",
+  "name": "B\u00fcro Worspaces",
+  "city": "Miami Beach",
+  "state": "FL",
+  "phone": "+17868884525",
+  "match": "domain",
+  "area_code_state": "FL",
+  "source_file": "Coworking-Space-Florida-[State]-Contacts.csv"
+ },
+ {
+  "slug": "enclave-executive-center-naples",
+  "name": "Enclave Executive Center",
+  "city": "Naples",
+  "state": "FL",
+  "phone": "+12392612888",
+  "match": "company-unique",
+  "area_code_state": "FL",
+  "source_file": "Coworking-Space-Florida-[State]-Contacts.csv"
+ },
+ {
+  "slug": "crowne-office-suites-cumberland-atlanta",
+  "name": "Crowne Office Suites Cumberland",
+  "city": "Atlanta",
+  "state": "GA",
+  "phone": "+17709802500",
+  "match": "domain",
+  "area_code_state": "GA",
+  "source_file": "Coworking-Space-Georgia-[State]-Contacts.csv"
+ },
+ {
+  "slug": "second-shift-chicago",
+  "name": "Second Shift",
+  "city": "Chicago",
+  "state": "IL",
+  "phone": "+17736986142",
+  "match": "domain",
+  "area_code_state": "IL",
+  "source_file": "Coworking-Space-Illinois-[State]-Contacts.csv"
+ },
+ {
+  "slug": "plexpod-crossroads-kansas-city",
+  "name": "PlexPod Crossroads",
+  "city": "Kansas City",
+  "state": "MO",
+  "phone": "+18447539763",
+  "match": "domain",
+  "area_code_state": null,
+  "source_file": "Coworking-Space-Kansas-[State]-Contacts.csv"
+ },
+ {
+  "slug": "the-village-works-jamaica-plain",
+  "name": "The Village Works",
+  "city": "Jamaica Plain",
+  "state": "MA",
+  "phone": "+16176510681",
+  "match": "domain",
+  "area_code_state": "MA",
+  "source_file": "Coworking-Space-Massachusetts-[State]-Contacts.csv"
+ },
+ {
+  "slug": "green-garage-detroit",
+  "name": "Green Garage",
+  "city": "Detroit",
+  "state": "MI",
+  "phone": "+13134444054",
+  "match": "domain",
+  "area_code_state": "MI",
+  "source_file": "Coworking-Space-Michigan-[State]-Contacts.csv"
+ },
+ {
+  "slug": "the-yard-brooklyn",
+  "name": "The Yard",
+  "city": "Brooklyn",
+  "state": "NY",
+  "phone": "+12122037847",
+  "match": "domain+company",
+  "area_code_state": "NY",
+  "source_file": "Coworking-Space-New-Jersey-[State]-Contacts.csv"
+ },
+ {
+  "slug": "greendesk-long-island-city",
+  "name": "Greendesk",
+  "city": "Long Island City",
+  "state": "NY",
+  "phone": "+17182103650",
+  "match": "domain",
+  "area_code_state": "NY",
+  "source_file": "Coworking-Space-New-Jersey-[State]-Contacts.csv"
+ },
+ {
+  "slug": "blankspaces-hollywood-coworking-office-space-formerly-sandhouse-los-angeles",
+  "name": "Blankspaces - Hollywood Coworking Office Space (Formerly Sandhouse)",
+  "city": "Los Angeles",
+  "state": "CA",
+  "phone": "+13233309520",
+  "match": "domain",
+  "area_code_state": "CA",
+  "source_file": "Coworking-Space-Pennsylvania-[State]-Contacts.csv"
+ },
+ {
+  "slug": "oakstop-oakland",
+  "name": "OakStop",
+  "city": "Oakland",
+  "state": "CA",
+  "phone": "+15106989370",
+  "match": "domain",
+  "area_code_state": "CA",
+  "source_file": "coworking-spaces-California-[State]-Contacts.csv"
+ },
+ {
+  "slug": "the-port-workspaces-oakland",
+  "name": "The Port Workspaces",
+  "city": "Oakland",
+  "state": "CA",
+  "phone": "+15104440770",
+  "match": "domain+company",
+  "area_code_state": "CA",
+  "source_file": "coworking-spaces-California-[State]-Contacts.csv"
+ },
+ {
+  "slug": "pacific-workplaces-san-jose",
+  "name": "Pacific Workplaces",
+  "city": "San Jose",
+  "state": "CA",
+  "phone": "+14152305300",
+  "match": "domain+company",
+  "area_code_state": "CA",
+  "source_file": "coworking-spaces-San-Francisco-CA-Contacts.csv"
+ }
+]

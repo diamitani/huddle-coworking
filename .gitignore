@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# PII — never commit
+audit/drive_contacts_raw/
+audit/operator_contacts.json
+audit/drive_contacts_ids.json
+audit/phone_restore_map.json
+**/*contacts*.csv
+deprecated/

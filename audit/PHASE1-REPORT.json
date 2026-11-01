@@ -1,0 +1,1170 @@
+{
+ "phase": "Phase 1 data surgery (2026-10-31)",
+ "listings_before": 1073,
+ "listings_after": 1000,
+ "closed_removed": 17,
+ "junk_removed": 26,
+ "junk_names": [
+  "AfterSchool HQ",
+  "Axios HQ",
+  "Azofficespace",
+  "BlockSpaces",
+  "Centre Region Senior Citizens' Center",
+  "Centre Region Senior Citizens' Center",
+  "CommonGround-AI",
+  "Crosschq",
+  "Data Regus",
+  "DentalHQ",
+  "GrowthQ",
+  "IntegrateHQ",
+  "My Office Suite",
+  "Opo Cafe",
+  "Regus Data",
+  "Roam",
+  "Roami",
+  "Salon Suites",
+  "Salon Suites",
+  "SalonHQ",
+  "Schoolhouse Business Center",
+  "University Business Center (Flagstaff)",
+  "Us Global",
+  "WeWork Seattle",
+  "Wright Note Cafe",
+  "Wright Note Cafe"
+ ],
+ "closed_names": [
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')",
+  "- Closed listings (name contained '- Closed')"
+ ],
+ "city_state_fixed": 21,
+ "city_fixed": 1,
+ "empty_dropped": 40,
+ "empty_inferred": 50,
+ "fallback_coords_nulled": 33,
+ "crosscity_coords_nulled": 68,
+ "descriptions_blanked": 740,
+ "amenities_stripped": 997,
+ "phones_restored": 727,
+ "websites_checked": 902,
+ "websites_alive": 513,
+ "websites_fixed": 4,
+ "websites_blanked": 47,
+ "websites_unverifiable": 338,
+ "websites_method_note": "Blanked only definitive server verdicts. ReadTimeout/ProxyError verdicts are unverifiable from the sandbox network and were kept as-is.",
+ "websites_empty": 98,
+ "osm_validated": 429,
+ "osm_added": 9,
+ "osm_net_surviving": 4,
+ "osm_dupes": 261,
+ "osm_dead": 0,
+ "junk_decisions": [
+  {
+   "id": 44,
+   "name": null,
+   "verdict": "closed",
+   "evidence": "Name contained '- Closed'"
+  },
+  {
+   "id": 81,
+   "name": "19Eighty Co-Working Space",
+   "verdict": "closed",
+   "evidence": "19Eighty Co-Working Space: permanently closed (Highland IN)"
+  },
+  {
+   "id": 87,
+   "name": "Lifeworking Coworking",
+   "verdict": "closed",
+   "evidence": "Lifeworking Coworking: permanently closed (Lake Forest IL)"
+  },
+  {
+   "id": 92,
+   "name": "My Office Suite",
+   "verdict": "junk",
+   "evidence": "My Office Suite: roberthalf.com staffing link; no such coworking business"
+  },
+  {
+   "id": 737,
+   "name": "Axios HQ",
+   "verdict": "junk",
+   "evidence": "Axios HQ: internal-comms SaaS company, not coworking"
+  },
+  {
+   "id": 843,
+   "name": "Centre Region Senior Citizens' Center",
+   "verdict": "junk",
+   "evidence": "Centre Region Senior Citizens' Center: senior center, not coworking"
+  },
+  {
+   "id": 867,
+   "name": "CommonGround-AI",
+   "verdict": "junk",
+   "evidence": "CommonGround-AI: AI avatar software (acquired by Apple), not coworking"
+  },
+  {
+   "id": 935,
+   "name": "Roami",
+   "verdict": "junk",
+   "evidence": "Roami: vacation-rental hospitality brand, not coworking"
+  },
+  {
+   "id": 942,
+   "name": "The Workshop (Nashville)",
+   "verdict": "closed",
+   "evidence": "The Workshop (Nashville): permanently closed music business, not coworking"
+  },
+  {
+   "id": 994,
+   "name": "The Gray Lab",
+   "verdict": "closed",
+   "evidence": "The Gray Lab: permanently closed"
+  },
+  {
+   "id": 1104,
+   "name": "Salon Suites",
+   "verdict": "junk",
+   "evidence": "Salon Suites: beauty salon suites, not coworking"
+  },
+  {
+   "id": 1192,
+   "name": "Wright Note Cafe",
+   "verdict": "junk",
+   "evidence": "Wright Note Cafe: cafe inside The Wright Village, not a coworking space"
+  },
+  {
+   "id": 1466,
+   "name": "Crosschq",
+   "verdict": "junk",
+   "evidence": "Crosschq: HR reference-check SaaS, not coworking"
+  },
+  {
+   "id": 2674,
+   "name": "IntegrateHQ",
+   "verdict": "junk",
+   "evidence": "IntegrateHQ: CRM data-integration SaaS (merged into SyncMatters), not coworking"
+  },
+  {
+   "id": 2680,
+   "name": "AfterSchool HQ",
+   "verdict": "junk",
+   "evidence": "AfterSchool HQ: edtech startup (afterschoolhq.com), not coworking"
+  },
+  {
+   "id": 2753,
+   "name": "SalonHQ",
+   "verdict": "junk",
+   "evidence": "SalonHQ: salon ecommerce SaaS, not coworking"
+  },
+  {
+   "id": 3130,
+   "name": "Roam",
+   "verdict": "junk",
+   "evidence": "Roam: no physical coworking venue at roam.app (physical Roam brand = meetatroam.com)"
+  },
+  {
+   "id": 3194,
+   "name": "GrowthQ",
+   "verdict": "junk",
+   "evidence": "GrowthQ: AI career-navigation platform, not coworking"
+  },
+  {
+   "id": 4365,
+   "name": "DentalHQ",
+   "verdict": "junk",
+   "evidence": "DentalHQ: dental membership-plan SaaS, not coworking"
+  },
+  {
+   "id": 5437,
+   "name": "BlockSpaces",
+   "verdict": "junk",
+   "evidence": "BlockSpaces: blockchain SaaS company, not a coworking space"
+  },
+  {
+   "id": 5957,
+   "name": null,
+   "verdict": "closed",
+   "evidence": "Name contained '- Closed'"
+  },
+  {
+   "id": 6005,
+   "name": "Us Global",
+   "verdict": "junk",
+   "evidence": "Us Global: scrape artifact, no business presence"
+  },
+  {
+   "id": 6153,
+   "name": "Schoolhouse Business Center",
+   "verdict": "junk",
+   "evidence": "Schoolhouse Business Center: yoga studio (schoolhouseyoga.com), not coworking"
+  },
+  {
+   "id": 6157,
+   "name": "Regus Data",
+   "verdict": "junk",
+   "evidence": "Regus Data: scrape artifact, no business presence"
+  },
+  {
+   "id": 6218,
+   "name": "Data Regus",
+   "verdict": "junk",
+   "evidence": "Data Regus: scrape artifact, no business presence"
+  },
+  {
+   "id": 6227,
+   "name": null,
+   "verdict": "closed",
+   "evidence": "Name contained '- Closed'"
+  },
+  {
+   "id": 6232,
+   "name": null,
+   "verdict": "closed",
+   "evidence": "Name contained '- Closed'"
+  },
+  {
+   "id": 6269,
+   "name": null,
+   "verdict": "closed",
+   "evidence": "Name contained '- Closed'"
+  },
+  {
+   "id": 6357,
+   "name": null,
+   "verdict": "closed",
+   "evidence": "Name contained '- Closed'"
+  },
+  {
+   "id": 6758,
+   "name": null,
+   "verdict": "closed",
+   "evidence": "Name contained '- Closed'"
+  },
+  {
+   "id": 6966,
+   "name": "Opo Cafe",
+   "verdict": "junk",
+   "evidence": "Opo Cafe: cafe at OPO Startups, not a coworking space"
+  },
+  {
+   "id": 6983,
+   "name": null,
+   "verdict": "closed",
+   "evidence": "Name contained '- Closed'"
+  },
+  {
+   "id": 7250,
+   "name": null,
+   "verdict": "closed",
+   "evidence": "Name contained '- Closed'"
+  },
+  {
+   "id": 7524,
+   "name": null,
+   "verdict": "closed",
+   "evidence": "Name contained '- Closed'"
+  },
+  {
+   "id": 7697,
+   "name": null,
+   "verdict": "closed",
+   "evidence": "Name contained '- Closed'"
+  },
+  {
+   "id": 7748,
+   "name": "University Business Center (Flagstaff)",
+   "verdict": "junk",
+   "evidence": "University Business Center (Flagstaff): business service/real estate co, not coworking"
+  },
+  {
+   "id": 7749,
+   "name": "Azofficespace",
+   "verdict": "junk",
+   "evidence": "Azofficespace: OSM junk (website is a glossary page, no venue)"
+  },
+  {
+   "id": 7759,
+   "name": "Centre Region Senior Citizens' Center",
+   "verdict": "junk",
+   "evidence": "Centre Region Senior Citizens' Center: senior center (OSM re-add of deleted 843)"
+  },
+  {
+   "id": 7761,
+   "name": "Creative Coworking Chicago",
+   "verdict": "closed",
+   "evidence": "Creative Coworking Chicago: permanently closed location (1407 W Chicago Ave)"
+  },
+  {
+   "id": 7764,
+   "name": "Salon Suites",
+   "verdict": "junk",
+   "evidence": "Salon Suites: beauty salon (OSM re-add of deleted 1104)"
+  },
+  {
+   "id": 7765,
+   "name": "The Gray Lab",
+   "verdict": "closed",
+   "evidence": "The Gray Lab: permanently closed (OSM re-add of deleted 994)"
+  },
+  {
+   "id": 7766,
+   "name": "WeWork Seattle",
+   "verdict": "junk",
+   "evidence": "WeWork Seattle: non-specific record (no website/phone/address)"
+  },
+  {
+   "id": 7767,
+   "name": "Wright Note Cafe",
+   "verdict": "junk",
+   "evidence": "Wright Note Cafe: cafe (OSM re-add of deleted 1192)"
+  }
+ ],
+ "schema_fields_added": [
+  "address",
+  "pricing",
+  "hours",
+  "membership_tiers",
+  "event_space",
+  "events",
+  "programs",
+  "services"
+ ],
+ "schema_note": "2026-11-01: minified keys retired per the master directory backend mapping. Served records now use full names EXACTLY: id, name, city, state, website, phone, email (always null publicly), description, amenities, latitude, longitude, slug, featured_tier ('featured'|'none'), address (or null), pricing {day_pass, hot_desk_monthly, dedicated_desk_monthly, private_office_monthly, meeting_room_hourly, source} (or null), hours, membership_tiers, event_space, events, programs, services. Dropped: ct, claimed, street (folded into address), currency/updated_at (provenance stays in brand_pricing). The pipeline maps via to_internal/to_public; to_internal accepts both shapes for idempotent re-runs.",
+ "service_vocabulary": [
+  "mail_handling",
+  "virtual_office",
+  "event_hosting",
+  "meeting_rooms",
+  "phone_booth",
+  "wellness",
+  "childcare",
+  "podcast_studio"
+ ],
+ "program_types": [
+  "workshop",
+  "course",
+  "accelerator",
+  "open_studio",
+  "class"
+ ],
+ "brands_researched": [
+  {
+   "brand": "WeWork",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": 39,
+    "hot_desk_monthly": 350,
+    "dedicated_desk_monthly": null,
+    "private_office_monthly": 1000,
+    "meeting_room_hourly": null
+   },
+   "source_url": "https://www.nucamp.co/blog/top-10-tech-coworking-spaces-and-incubators-in-bellevue-wa-in-2026",
+   "retrieved": "2026-10-31",
+   "notes": "Day pass $39 and hot desk ~$350/mo (Bellevue, nucamp 2026); private office past $1,000/person/mo in major markets (alliancevirtualoffices 2026). Location-specific rates vary; dedicated-desk pricing not published online."
+  },
+  {
+   "brand": "Regus",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": 49,
+    "hot_desk_monthly": 330,
+    "dedicated_desk_monthly": null,
+    "private_office_monthly": 600,
+    "meeting_room_hourly": null
+   },
+   "source_url": "https://2727coworking.com/articles/regus-alternatives-montreal-coworking-virtual-office",
+   "retrieved": "2026-10-31",
+   "notes": "Day pass ~$49, 30-day access plan ~$330/mo (Montreal, 2727 Coworking 2026); desk memberships $300-400/mo and small private offices from ~$600/mo (Bellevue, nucamp 2026). Flat monthly hot-desk rate not published."
+  },
+  {
+   "brand": "Spaces",
+   "pricing_found": false,
+   "pricing": null,
+   "source_url": "https://2727coworking.com/articles/pdfs/hot-desk-cost-per-month-montreal-ae713b02025e5ca8.pdf",
+   "retrieved": "2026-10-31",
+   "notes": "Spaces (IWG) prices per-day, not monthly: dedicated desks from ~$8/person/day, individual offices ~$11/person/day (Montreal, spacesworks.com 2026). No flat monthly rate published; pricing null."
+  },
+  {
+   "brand": "HQ",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": 45,
+    "hot_desk_monthly": 309,
+    "dedicated_desk_monthly": null,
+    "private_office_monthly": 650,
+    "meeting_room_hourly": null
+   },
+   "source_url": "https://workin.space/en/coworking/united-states/west-virginia/triadelphia-wv",
+   "retrieved": "2026-10-31",
+   "notes": "Thin US published data; figures from workin.space aggregator for HQ Triadelphia WV: day pass $45, coworking from $309/mo, private office from $650/mo."
+  },
+  {
+   "brand": "Industrious",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": 60,
+    "hot_desk_monthly": 399,
+    "dedicated_desk_monthly": null,
+    "private_office_monthly": 1100,
+    "meeting_room_hourly": null
+   },
+   "source_url": "https://www.nucamp.co/blog/top-10-tech-coworking-spaces-and-incubators-in-washington-dc-in-2026",
+   "retrieved": "2026-10-31",
+   "notes": "Coworking from $399/mo, day passes $60-68, private offices from ~$1,100/mo (DC/Durham/Charlotte, nucamp 2026); community memberships $419-918/mo by market (alliancevirtualoffices 2026)."
+  },
+  {
+   "brand": "Office Evolution",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": 30,
+    "hot_desk_monthly": 99,
+    "dedicated_desk_monthly": 400,
+    "private_office_monthly": 500,
+    "meeting_room_hourly": 30
+   },
+   "source_url": "https://www.officeevolution.com/locations/usa/colorado/broomfield/?agency=215_marketing",
+   "retrieved": "2026-10-31",
+   "notes": "Brand site (officeevolution.com): Day Pass from $30/day, Coworking Plan from $99/mo, Dedicated Desks from $400/mo, Dedicated Offices from $500/mo, Meeting Rooms from $30/hr. Rates vary by franchise location."
+  },
+  {
+   "brand": "Venture X",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": 25,
+    "hot_desk_monthly": 99,
+    "dedicated_desk_monthly": 349,
+    "private_office_monthly": 865,
+    "meeting_room_hourly": null
+   },
+   "source_url": "https://venturex.com/blog/education/how-to-calculate-your-true-office-space-costs-a-business-owners-guide/",
+   "retrieved": "2026-10-31",
+   "notes": "Venture X blog: memberships from $99/mo, day passes from $25/day. Location pages: dedicated desks from $349 (Orlando), private offices from $865 (Atlanta Cumberland). Varies by franchise."
+  },
+  {
+   "brand": "Serendipity Labs",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": null,
+    "hot_desk_monthly": 179,
+    "dedicated_desk_monthly": 249,
+    "private_office_monthly": 529,
+    "meeting_room_hourly": null
+   },
+   "source_url": "https://liquidspace.com/us/ga/atlanta/serendipity-labs-atlanta-buckhead",
+   "retrieved": "2026-10-31",
+   "notes": "Unlimited coworking monthly pass from $179 (Atlanta Buckhead, liquidspace); dedicated desks from $249/desk/mo, private offices from $529/office/mo (serendipitylabs.com Alpharetta). Day offices $59/day (Buckhead) - not a coworking day pass."
+  },
+  {
+   "brand": "Expansive",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": 33,
+    "hot_desk_monthly": 149,
+    "dedicated_desk_monthly": 250,
+    "private_office_monthly": 527,
+    "meeting_room_hourly": 40
+   },
+   "source_url": "https://expansive.com/what-is-coworking/",
+   "retrieved": "2026-10-31",
+   "notes": "expansive.com: coworking from $149/mo (up to $199 some locations). Listings: day pass from $33, dedicated desks from $250 (Wauwatosa), private offices from $527 (Wauwatosa), meeting rooms from $40/hr (Charlotte). Wide market variance."
+  },
+  {
+   "brand": "Carr Workplaces",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": null,
+    "hot_desk_monthly": 249,
+    "dedicated_desk_monthly": 550,
+    "private_office_monthly": 1800,
+    "meeting_room_hourly": null
+   },
+   "source_url": "https://liquidspace.com/us/dc/washington/carr-workplaces-georgetown/office-216-copy",
+   "retrieved": "2026-10-31",
+   "notes": "LiquidSpace listings: Coworking Home Base from $249/mo, Dedicated desk $550/mo, 1-person executive office from $1,800/mo (Chevy Chase). Private offices vary widely by market."
+  },
+  {
+   "brand": "The Yard",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": 30,
+    "hot_desk_monthly": 425,
+    "dedicated_desk_monthly": 420,
+    "private_office_monthly": 650,
+    "meeting_room_hourly": 48
+   },
+   "source_url": "https://www.commercialsearch.com/coworking-property/us/ny/new-york/the-yard-columbus-circle/",
+   "retrieved": "2026-10-31",
+   "notes": "Columbus Circle listing: day pass from $30, coworking membership from $425/mo, meeting room from $48/hr. Gowanus (liquidspace): dedicated desk $420/mo, 1-person private office from $650/mo."
+  },
+  {
+   "brand": "Kiln",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": null,
+    "hot_desk_monthly": 275,
+    "dedicated_desk_monthly": 525,
+    "private_office_monthly": 1200,
+    "meeting_room_hourly": null
+   },
+   "source_url": "https://kiln.com/communities/holladay/",
+   "retrieved": "2026-10-31",
+   "notes": "kiln.com: Club (shared desk) from $275/mo (Daybreak standard rate; founding $99/mo is promotional), Resident dedicated desk from $525/mo (Holladay), private offices from $1,200/mo (Holladay). Rates vary widely by location; day passes sold per location."
+  },
+  {
+   "brand": "Convene",
+   "pricing_found": false,
+   "pricing": null,
+   "source_url": null,
+   "retrieved": "2026-10-31",
+   "notes": "Convene publishes no public membership pricing; meeting/event rates quoted on request. Pricing null."
+  },
+  {
+   "brand": "Bond Collective",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": 35,
+    "hot_desk_monthly": 300,
+    "dedicated_desk_monthly": 500,
+    "private_office_monthly": 700,
+    "meeting_room_hourly": 50
+   },
+   "source_url": "https://bondcollective.com/locations/market-street",
+   "retrieved": "2026-10-31",
+   "notes": "bondcollective.com Market Street: day passes from $35/day, coworking from $300/mo, dedicated desks from $500/mo, private offices from $700/mo, conference rooms from $50-55/hr."
+  },
+  {
+   "brand": "Workbar",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": null,
+    "hot_desk_monthly": 349,
+    "dedicated_desk_monthly": 499,
+    "private_office_monthly": 399,
+    "meeting_room_hourly": null
+   },
+   "source_url": "https://www.workbar.com/coworking",
+   "retrieved": "2026-10-31",
+   "notes": "workbar.com: Unlimited $349-499/mo, Dedicated Desk $499-699/mo, Private Office starting $399/desk/mo; Hybrid part-time plan $199-279/mo. Boston-area network; day passes not published."
+  },
+  {
+   "brand": "Pipeline Workspaces",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": 50,
+    "hot_desk_monthly": 199,
+    "dedicated_desk_monthly": null,
+    "private_office_monthly": null,
+    "meeting_room_hourly": 75
+   },
+   "source_url": "https://www.nucamp.co/blog/top-10-tech-coworking-spaces-and-incubators-in-fort-lauderdale-fl-in-2026",
+   "retrieved": "2026-10-31",
+   "notes": "Day passes from $50, monthly coworking from ~$199 (Fort Lauderdale, nucamp 2026); meeting rooms from $75/hr (Doral, commercialsearch). Florida-focused network."
+  },
+  {
+   "brand": "Novel Coworking",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": null,
+    "hot_desk_monthly": 179,
+    "dedicated_desk_monthly": 299,
+    "private_office_monthly": 629,
+    "meeting_room_hourly": null
+   },
+   "source_url": "https://workmobile.today/properties/novel-coworking-golden-triangle-pittsburgh/",
+   "retrieved": "2026-10-31",
+   "notes": "Pittsburgh rate card: coworking from $179/mo, dedicated desks from $299/mo, private offices (1-2 person) from $629/mo. Advertises under WeWork/Regus pricing."
+  },
+  {
+   "brand": "CommonGrounds",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": null,
+    "hot_desk_monthly": 250,
+    "dedicated_desk_monthly": 475,
+    "private_office_monthly": 800,
+    "meeting_room_hourly": null
+   },
+   "source_url": "https://liquidspace.com/us/ca/carlsbad/commongrounds-workplace-carlsbad/event-space-1",
+   "retrieved": "2026-10-31",
+   "notes": "Carlsbad HQ (liquidspace): Communal $250/mo, Dedicated desk $475/mo; private offices from $800/mo (commercialsearch). Enterprise-focused network."
+  },
+  {
+   "brand": "Hera Hub",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": null,
+    "hot_desk_monthly": 199,
+    "dedicated_desk_monthly": null,
+    "private_office_monthly": null,
+    "meeting_room_hourly": 35
+   },
+   "source_url": "https://herahub.com/chicago/membership/",
+   "retrieved": "2026-10-31",
+   "notes": "Women-focused licensing network; pricing varies by location. Chicago: coworking membership $199/mo. DC (Oct 2026 pricing PDF): membership $99-149/mo + workspace add-ons; non-member meeting room $35/hr. Membership + add-on model."
+  },
+  {
+   "brand": "Mindspace",
+   "pricing_found": true,
+   "pricing": {
+    "day_pass": 42,
+    "hot_desk_monthly": 229,
+    "dedicated_desk_monthly": 450,
+    "private_office_monthly": 770,
+    "meeting_room_hourly": 60
+   },
+   "source_url": "https://www.mindspace.me/blog/the-best-areas-in-miami-for-your-next-flex-office-location/",
+   "retrieved": "2026-10-31",
+   "notes": "mindspace.me: day pass from $42 (SF) / $60 (Miami/NYC), coworking from $229/mo (Miami), meeting rooms from $60/hr (Miami). Dedicated desk $450 (DC K St, liquidspace); private office from $770 (DC, devx). Wide market variance."
+  }
+ ],
+ "brand_pricing": {
+  "WeWork": {
+   "source_url": "https://www.nucamp.co/blog/top-10-tech-coworking-spaces-and-incubators-in-bellevue-wa-in-2026",
+   "retrieved": "2026-10-31",
+   "notes": "Day pass $39 and hot desk ~$350/mo (Bellevue, nucamp 2026); private office past $1,000/person/mo in major markets (alliancevirtualoffices 2026). Location-specific rates vary; dedicated-desk pricing not published online.",
+   "pricing": {
+    "day_pass": 39,
+    "hot_desk_monthly": 350,
+    "dedicated_desk_monthly": null,
+    "private_office_monthly": 1000,
+    "meeting_room_hourly": null
+   }
+  },
+  "Regus": {
+   "source_url": "https://2727coworking.com/articles/regus-alternatives-montreal-coworking-virtual-office",
+   "retrieved": "2026-10-31",
+   "notes": "Day pass ~$49, 30-day access plan ~$330/mo (Montreal, 2727 Coworking 2026); desk memberships $300-400/mo and small private offices from ~$600/mo (Bellevue, nucamp 2026). Flat monthly hot-desk rate not published.",
+   "pricing": {
+    "day_pass": 49,
+    "hot_desk_monthly": 330,
+    "dedicated_desk_monthly": null,
+    "private_office_monthly": 600,
+    "meeting_room_hourly": null
+   }
+  },
+  "Spaces": {
+   "source_url": "https://2727coworking.com/articles/pdfs/hot-desk-cost-per-month-montreal-ae713b02025e5ca8.pdf",
+   "retrieved": "2026-10-31",
+   "notes": "Spaces (IWG) prices per-day, not monthly: dedicated desks from ~$8/person/day, individual offices ~$11/person/day (Montreal, spacesworks.com 2026). No flat monthly rate published; pricing null.",
+   "pricing": null
+  },
+  "HQ": {
+   "source_url": "https://workin.space/en/coworking/united-states/west-virginia/triadelphia-wv",
+   "retrieved": "2026-10-31",
+   "notes": "Thin US published data; figures from workin.space aggregator for HQ Triadelphia WV: day pass $45, coworking from $309/mo, private office from $650/mo.",
+   "pricing": {
+    "day_pass": 45,
+    "hot_desk_monthly": 309,
+    "dedicated_desk_monthly": null,
+    "private_office_monthly": 650,
+    "meeting_room_hourly": null
+   }
+  },
+  "Industrious": {
+   "source_url": "https://www.nucamp.co/blog/top-10-tech-coworking-spaces-and-incubators-in-washington-dc-in-2026",
+   "retrieved": "2026-10-31",
+   "notes": "Coworking from $399/mo, day passes $60-68, private offices from ~$1,100/mo (DC/Durham/Charlotte, nucamp 2026); community memberships $419-918/mo by market (alliancevirtualoffices 2026).",
+   "pricing": {
+    "day_pass": 60,
+    "hot_desk_monthly": 399,
+    "dedicated_desk_monthly": null,
+    "private_office_monthly": 1100,
+    "meeting_room_hourly": null
+   }
+  },
+  "Office Evolution": {
+   "source_url": "https://www.officeevolution.com/locations/usa/colorado/broomfield/?agency=215_marketing",
+   "retrieved": "2026-10-31",
+   "notes": "Brand site (officeevolution.com): Day Pass from $30/day, Coworking Plan from $99/mo, Dedicated Desks from $400/mo, Dedicated Offices from $500/mo, Meeting Rooms from $30/hr. Rates vary by franchise location.",
+   "pricing": {
+    "day_pass": 30,
+    "hot_desk_monthly": 99,
+    "dedicated_desk_monthly": 400,
+    "private_office_monthly": 500,
+    "meeting_room_hourly": 30
+   }
+  },
+  "Venture X": {
+   "source_url": "https://venturex.com/blog/education/how-to-calculate-your-true-office-space-costs-a-business-owners-guide/",
+   "retrieved": "2026-10-31",
+   "notes": "Venture X blog: memberships from $99/mo, day passes from $25/day. Location pages: dedicated desks from $349 (Orlando), private offices from $865 (Atlanta Cumberland). Varies by franchise.",
+   "pricing": {
+    "day_pass": 25,
+    "hot_desk_monthly": 99,
+    "dedicated_desk_monthly": 349,
+    "private_office_monthly": 865,
+    "meeting_room_hourly": null
+   }
+  },
+  "Serendipity Labs": {
+   "source_url": "https://liquidspace.com/us/ga/atlanta/serendipity-labs-atlanta-buckhead",
+   "retrieved": "2026-10-31",
+   "notes": "Unlimited coworking monthly pass from $179 (Atlanta Buckhead, liquidspace); dedicated desks from $249/desk/mo, private offices from $529/office/mo (serendipitylabs.com Alpharetta). Day offices $59/day (Buckhead) - not a coworking day pass.",
+   "pricing": {
+    "day_pass": null,
+    "hot_desk_monthly": 179,
+    "dedicated_desk_monthly": 249,
+    "private_office_monthly": 529,
+    "meeting_room_hourly": null
+   }
+  },
+  "Expansive": {
+   "source_url": "https://expansive.com/what-is-coworking/",
+   "retrieved": "2026-10-31",
+   "notes": "expansive.com: coworking from $149/mo (up to $199 some locations). Listings: day pass from $33, dedicated desks from $250 (Wauwatosa), private offices from $527 (Wauwatosa), meeting rooms from $40/hr (Charlotte). Wide market variance.",
+   "pricing": {
+    "day_pass": 33,
+    "hot_desk_monthly": 149,
+    "dedicated_desk_monthly": 250,
+    "private_office_monthly": 527,
+    "meeting_room_hourly": 40
+   }
+  },
+  "Carr Workplaces": {
+   "source_url": "https://liquidspace.com/us/dc/washington/carr-workplaces-georgetown/office-216-copy",
+   "retrieved": "2026-10-31",
+   "notes": "LiquidSpace listings: Coworking Home Base from $249/mo, Dedicated desk $550/mo, 1-person executive office from $1,800/mo (Chevy Chase). Private offices vary widely by market.",
+   "pricing": {
+    "day_pass": null,
+    "hot_desk_monthly": 249,
+    "dedicated_desk_monthly": 550,
+    "private_office_monthly": 1800,
+    "meeting_room_hourly": null
+   }
+  },
+  "The Yard": {
+   "source_url": "https://www.commercialsearch.com/coworking-property/us/ny/new-york/the-yard-columbus-circle/",
+   "retrieved": "2026-10-31",
+   "notes": "Columbus Circle listing: day pass from $30, coworking membership from $425/mo, meeting room from $48/hr. Gowanus (liquidspace): dedicated desk $420/mo, 1-person private office from $650/mo.",
+   "pricing": {
+    "day_pass": 30,
+    "hot_desk_monthly": 425,
+    "dedicated_desk_monthly": 420,
+    "private_office_monthly": 650,
+    "meeting_room_hourly": 48
+   }
+  },
+  "Kiln": {
+   "source_url": "https://kiln.com/communities/holladay/",
+   "retrieved": "2026-10-31",
+   "notes": "kiln.com: Club (shared desk) from $275/mo (Daybreak standard rate; founding $99/mo is promotional), Resident dedicated desk from $525/mo (Holladay), private offices from $1,200/mo (Holladay). Rates vary widely by location; day passes sold per location.",
+   "pricing": {
+    "day_pass": null,
+    "hot_desk_monthly": 275,
+    "dedicated_desk_monthly": 525,
+    "private_office_monthly": 1200,
+    "meeting_room_hourly": null
+   }
+  },
+  "Convene": {
+   "source_url": null,
+   "retrieved": "2026-10-31",
+   "notes": "Convene publishes no public membership pricing; meeting/event rates quoted on request. Pricing null.",
+   "pricing": null
+  },
+  "Bond Collective": {
+   "source_url": "https://bondcollective.com/locations/market-street",
+   "retrieved": "2026-10-31",
+   "notes": "bondcollective.com Market Street: day passes from $35/day, coworking from $300/mo, dedicated desks from $500/mo, private offices from $700/mo, conference rooms from $50-55/hr.",
+   "pricing": {
+    "day_pass": 35,
+    "hot_desk_monthly": 300,
+    "dedicated_desk_monthly": 500,
+    "private_office_monthly": 700,
+    "meeting_room_hourly": 50
+   }
+  },
+  "Workbar": {
+   "source_url": "https://www.workbar.com/coworking",
+   "retrieved": "2026-10-31",
+   "notes": "workbar.com: Unlimited $349-499/mo, Dedicated Desk $499-699/mo, Private Office starting $399/desk/mo; Hybrid part-time plan $199-279/mo. Boston-area network; day passes not published.",
+   "pricing": {
+    "day_pass": null,
+    "hot_desk_monthly": 349,
+    "dedicated_desk_monthly": 499,
+    "private_office_monthly": 399,
+    "meeting_room_hourly": null
+   }
+  },
+  "Pipeline Workspaces": {
+   "source_url": "https://www.nucamp.co/blog/top-10-tech-coworking-spaces-and-incubators-in-fort-lauderdale-fl-in-2026",
+   "retrieved": "2026-10-31",
+   "notes": "Day passes from $50, monthly coworking from ~$199 (Fort Lauderdale, nucamp 2026); meeting rooms from $75/hr (Doral, commercialsearch). Florida-focused network.",
+   "pricing": {
+    "day_pass": 50,
+    "hot_desk_monthly": 199,
+    "dedicated_desk_monthly": null,
+    "private_office_monthly": null,
+    "meeting_room_hourly": 75
+   }
+  },
+  "Novel Coworking": {
+   "source_url": "https://workmobile.today/properties/novel-coworking-golden-triangle-pittsburgh/",
+   "retrieved": "2026-10-31",
+   "notes": "Pittsburgh rate card: coworking from $179/mo, dedicated desks from $299/mo, private offices (1-2 person) from $629/mo. Advertises under WeWork/Regus pricing.",
+   "pricing": {
+    "day_pass": null,
+    "hot_desk_monthly": 179,
+    "dedicated_desk_monthly": 299,
+    "private_office_monthly": 629,
+    "meeting_room_hourly": null
+   }
+  },
+  "CommonGrounds": {
+   "source_url": "https://liquidspace.com/us/ca/carlsbad/commongrounds-workplace-carlsbad/event-space-1",
+   "retrieved": "2026-10-31",
+   "notes": "Carlsbad HQ (liquidspace): Communal $250/mo, Dedicated desk $475/mo; private offices from $800/mo (commercialsearch). Enterprise-focused network.",
+   "pricing": {
+    "day_pass": null,
+    "hot_desk_monthly": 250,
+    "dedicated_desk_monthly": 475,
+    "private_office_monthly": 800,
+    "meeting_room_hourly": null
+   }
+  },
+  "Hera Hub": {
+   "source_url": "https://herahub.com/chicago/membership/",
+   "retrieved": "2026-10-31",
+   "notes": "Women-focused licensing network; pricing varies by location. Chicago: coworking membership $199/mo. DC (Oct 2026 pricing PDF): membership $99-149/mo + workspace add-ons; non-member meeting room $35/hr. Membership + add-on model.",
+   "pricing": {
+    "day_pass": null,
+    "hot_desk_monthly": 199,
+    "dedicated_desk_monthly": null,
+    "private_office_monthly": null,
+    "meeting_room_hourly": 35
+   }
+  },
+  "Mindspace": {
+   "source_url": "https://www.mindspace.me/blog/the-best-areas-in-miami-for-your-next-flex-office-location/",
+   "retrieved": "2026-10-31",
+   "notes": "mindspace.me: day pass from $42 (SF) / $60 (Miami/NYC), coworking from $229/mo (Miami), meeting rooms from $60/hr (Miami). Dedicated desk $450 (DC K St, liquidspace); private office from $770 (DC, devx). Wide market variance.",
+   "pricing": {
+    "day_pass": 42,
+    "hot_desk_monthly": 229,
+    "dedicated_desk_monthly": 450,
+    "private_office_monthly": 770,
+    "meeting_room_hourly": 60
+   }
+  }
+ },
+ "brand_locations_priced": 96,
+ "programs_researched": [
+  {
+   "brand": "Kiln",
+   "program": {
+    "title": "Member Events & Community Programming",
+    "type": "workshop",
+    "schedule": "Weekly",
+    "price": "Members only",
+    "url": "https://kiln.com/member-events/",
+    "source": "brand"
+   },
+   "source_url": "https://kiln.com/member-events/",
+   "retrieved": "2026-11-01",
+   "notes": "Kiln's 'Member Events and Community Programming' page; each Kiln location plans weekly events (yoga, presentations, screenings, 3D-printing workshops, Waffle Wednesday); events are exclusive to current Kiln members."
+  }
+ ],
+ "brand_locations_programmed": 1,
+ "operator_merge_supported": true,
+ "operator_pricing_merged": 0,
+ "operator_contacts": 905,
+ "drive_files_pulled": [
+  {
+   "name": "Coworking-Space-Alabama-[State]-Contacts.csv",
+   "rows": 67
+  },
+  {
+   "name": "Coworking-Space-Arizona-[State]-Contacts.csv",
+   "rows": 88
+  },
+  {
+   "name": "Coworking-Space-Colorado-[State]-Contacts.csv",
+   "rows": 106
+  },
+  {
+   "name": "Coworking-Space-Connecticut-[State]-Contacts.csv",
+   "rows": 155
+  },
+  {
+   "name": "Coworking-Space-Florida-[State]-Contacts.csv",
+   "rows": 288
+  },
+  {
+   "name": "Coworking-Space-Georgia-[State]-Contacts.csv",
+   "rows": 148
+  },
+  {
+   "name": "Coworking-Space-Hawaii-[State]-Contacts.csv",
+   "rows": 17
+  },
+  {
+   "name": "Coworking-Space-Idaho-[State]-Contacts.csv",
+   "rows": 17
+  },
+  {
+   "name": "Coworking-Space-Illinois-[State]-Contacts.csv",
+   "rows": 161
+  },
+  {
+   "name": "Coworking-Space-Iowa-[State]-Contacts.csv",
+   "rows": 16
+  },
+  {
+   "name": "Coworking-Space-Kansas-[State]-Contacts.csv",
+   "rows": 32
+  },
+  {
+   "name": "Coworking-Space-Kentucky-[State]-Contacts.csv",
+   "rows": 24
+  },
+  {
+   "name": "Coworking-Space-Louisiana-[State]-Contacts.csv",
+   "rows": 31
+  },
+  {
+   "name": "Coworking-Space-Maine-[State]-Contacts.csv",
+   "rows": 11
+  },
+  {
+   "name": "Coworking-Space-Massachusetts-[State]-Contacts.csv",
+   "rows": 59
+  },
+  {
+   "name": "Coworking-Space-Michigan-[State]-Contacts.csv",
+   "rows": 96
+  },
+  {
+   "name": "Coworking-Space-Minnesota-[State]-Contacts.csv",
+   "rows": 96
+  },
+  {
+   "name": "Coworking-Space-Missouri-[State]-Contacts.csv",
+   "rows": 43
+  },
+  {
+   "name": "Coworking-Space-Nebraska-[State]-Contacts.csv",
+   "rows": 8
+  },
+  {
+   "name": "Coworking-Space-Nevada-[State]-Contacts.csv",
+   "rows": 26
+  },
+  {
+   "name": "Coworking-Space-New-Hampshire-[State]-Contacts.csv",
+   "rows": 18
+  },
+  {
+   "name": "Coworking-Space-New-Jersey-[State]-Contacts.csv",
+   "rows": 105
+  },
+  {
+   "name": "Coworking-Space-New-Mexico-[State]-Contacts.csv",
+   "rows": 10
+  },
+  {
+   "name": "Coworking-Space-Ohio-[State]-Contacts.csv",
+   "rows": 99
+  },
+  {
+   "name": "Coworking-Space-Oklahoma-[State]-Contacts.csv",
+   "rows": 24
+  },
+  {
+   "name": "Coworking-Space-Oregon-[State]-Contacts.csv",
+   "rows": 24
+  },
+  {
+   "name": "Coworking-Space-Pennsylvania-[State]-Contacts.csv",
+   "rows": 99
+  },
+  {
+   "name": "coworking-Arkansas-[State]-Contacts.csv",
+   "rows": 45
+  },
+  {
+   "name": "coworking-Kansas-City-MO-Contacts.csv",
+   "rows": 43
+  },
+  {
+   "name": "coworking-spaces-Atlanta-GA-Contacts.csv",
+   "rows": 67
+  },
+  {
+   "name": "coworking-spaces-Boston-MA-Contacts.csv",
+   "rows": 45
+  },
+  {
+   "name": "coworking-spaces-Boston-NY-Contacts.csv",
+   "rows": 54
+  },
+  {
+   "name": "coworking-spaces-California-[State]-Contacts.csv",
+   "rows": 268
+  },
+  {
+   "name": "coworking-spaces-Chicago-IL-Contacts.csv",
+   "rows": 70
+  },
+  {
+   "name": "coworking-spaces-Los-Angeles-CA-Contacts.csv",
+   "rows": 71
+  },
+  {
+   "name": "coworking-spaces-New-York-NY-Contacts.csv",
+   "rows": 79
+  },
+  {
+   "name": "coworking-spaces-San-Francisco-CA-Contacts.csv",
+   "rows": 46
+  }
+ ],
+ "drive_rows_total": 2656,
+ "phones_enriched_from_drive": 14,
+ "outreach_contacts": 905,
+ "outreach_rows_processed": 1918,
+ "unmatched_contacts": 1375,
+ "stats": {
+  "totalSpaces": 1000,
+  "totalCities": 482,
+  "topStates": {
+   "FL": 147,
+   "CO": 98,
+   "PA": 65,
+   "GA": 59,
+   "MA": 58,
+   "IL": 56,
+   "OH": 40,
+   "CA": 39,
+   "AZ": 38,
+   "MO": 34,
+   "MN": 32,
+   "MI": 30,
+   "NV": 29,
+   "CT": 28,
+   "NY": 20,
+   "OR": 20,
+   "LA": 18,
+   "TX": 15,
+   "WA": 14,
+   "OK": 12,
+   "NC": 11,
+   "ME": 10,
+   "SC": 10,
+   "KY": 10,
+   "AL": 10,
+   "HI": 9,
+   "NJ": 9,
+   "IA": 8,
+   "WI": 8,
+   "MT": 8,
+   "NM": 7,
+   "KS": 7,
+   "MD": 6,
+   "ID": 6,
+   "IN": 5,
+   "UT": 5,
+   "TN": 5,
+   "VA": 5,
+   "NE": 4,
+   "VT": 2,
+   "NH": 1,
+   "DC": 1,
+   "AR": 1
+  },
+  "topCities": [
+   {
+    "city": "Denver",
+    "count": 36
+   },
+   {
+    "city": "Chicago",
+    "count": 24
+   },
+   {
+    "city": "Atlanta",
+    "count": 21
+   },
+   {
+    "city": "Boston",
+    "count": 19
+   },
+   {
+    "city": "Las Vegas",
+    "count": 15
+   },
+   {
+    "city": "Los Angeles",
+    "count": 14
+   },
+   {
+    "city": "Portland",
+    "count": 12
+   },
+   {
+    "city": "Miami",
+    "count": 12
+   },
+   {
+    "city": "Tampa",
+    "count": 12
+   },
+   {
+    "city": "Saint Louis",
+    "count": 11
+   },
+   {
+    "city": "Columbus",
+    "count": 11
+   },
+   {
+    "city": "Naples",
+    "count": 11
+   },
+   {
+    "city": "Orlando",
+    "count": 9
+   },
+   {
+    "city": "New York",
+    "count": 9
+   },
+   {
+    "city": "Oakland",
+    "count": 9
+   },
+   {
+    "city": "Phoenix",
+    "count": 9
+   },
+   {
+    "city": "Philadelphia",
+    "count": 8
+   },
+   {
+    "city": "Tucson",
+    "count": 8
+   },
+   {
+    "city": "Kansas City",
+    "count": 8
+   },
+   {
+    "city": "Saint Paul",
+    "count": 8
+   }
+  ]
+ }
+}

@@ -24,8 +24,8 @@ export async function POST(request: Request) {
     }
 
     return response
-  } catch (err: any) {
-    const msg = err?.message || "Login failed"
+  } catch (err: unknown) {
+    const msg = (err as Error)?.message || "Login failed"
     // Translate Cognito error codes to user-friendly messages
     if (msg.includes("NotAuthorizedException") || msg.includes("Incorrect username or password")) {
       return NextResponse.json({ error: "Incorrect email or password." }, { status: 401 })

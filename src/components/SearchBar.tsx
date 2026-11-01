@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react"
 import { useRouter } from "next/navigation"
-import { Search, MapPin, SlidersHorizontal, X } from "lucide-react"
+import { Search, MapPin, SlidersHorizontal } from "lucide-react"
 import { cn } from "@/lib/cn"
 
 interface SearchBarProps {

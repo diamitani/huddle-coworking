@@ -2,18 +2,24 @@ import type { Metadata } from "next"
 import "./globals.css"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
-import SpaceGate from "@/components/SpaceGate"
+import Analytics from "@/components/Analytics"
+import { getStats, SITE_URL } from "@/lib/directory-server"
 
-export const metadata: Metadata = {
-  title: "Huddle — The #1 Coworking Space Directory",
-  description:
-    "Find, compare, and book the perfect coworking space near you. 1,200+ spaces across 50+ US cities. Real reviews, transparent pricing, instant booking.",
-  keywords: ["coworking", "coworking space", "shared office", "workspace", "remote work", "office rental"],
-  openGraph: {
-    title: "Huddle — Find Your Perfect Coworking Space",
-    description: "The world's #1 coworking space directory. Discover 1,200+ spaces across 50+ US cities.",
-    type: "website",
-  },
+export async function generateMetadata(): Promise<Metadata> {
+  const stats = getStats()
+  const count = stats.totalSpaces.toLocaleString()
+  return {
+    title: "Huddle — Find Coworking Spaces Near You",
+    description: `Browse ${count} coworking spaces across ${stats.totalCities} US cities. Request tours, compare amenities, and contact spaces directly — no account needed.`,
+    keywords: ["coworking", "coworking space", "shared office", "workspace", "remote work", "office rental"],
+    metadataBase: new URL(SITE_URL),
+    openGraph: {
+      title: "Huddle — Find Coworking Spaces Near You",
+      description: `Browse ${count} coworking spaces across ${stats.totalCities} US cities. Request tours and contact spaces directly.`,
+      type: "website",
+      url: SITE_URL,
+    },
+  }
 }
 
 export default function RootLayout({
@@ -25,10 +31,9 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className="min-h-screen flex flex-col antialiased">
         <Navbar />
-        <SpaceGate>
-          <main className="flex-1">{children}</main>
-        </SpaceGate>
+        <main className="flex-1">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   )

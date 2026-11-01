@@ -1,1 +1,131 @@
-{"totalSpaces": 1073, "totalCities": 476, "topStates": {"FL": 166, "CO": 98, "IL": 74, "PA": 71, "GA": 63, "MA": 61, "OH": 41, "AZ": 41, "CT": 37, "CA": 35}, "topCities": [{"city": "Denver", "count": 35}, {"city": "Chicago", "count": 21}, {"city": "Atlanta", "count": 20}, {"city": "Boston", "count": 19}, {"city": "Los Angeles", "count": 14}, {"city": "Las Vegas", "count": 13}, {"city": "Portland", "count": 11}, {"city": "Saint Louis", "count": 11}, {"city": "Columbus", "count": 11}, {"city": "Tampa", "count": 11}, {"city": "Phoenix", "count": 11}, {"city": "Miami", "count": 10}, {"city": "Oakland", "count": 10}, {"city": "Naples", "count": 10}, {"city": "New York", "count": 9}, {"city": "Kansas City", "count": 9}, {"city": "Orlando", "count": 8}, {"city": "Saint Paul", "count": 8}, {"city": "Tucson", "count": 8}, {"city": "Philadelphia", "count": 7}]}
+{
+ "totalSpaces": 1000,
+ "totalCities": 482,
+ "topStates": {
+  "FL": 147,
+  "CO": 98,
+  "PA": 65,
+  "GA": 59,
+  "MA": 58,
+  "IL": 56,
+  "OH": 40,
+  "CA": 39,
+  "AZ": 38,
+  "MO": 34,
+  "MN": 32,
+  "MI": 30,
+  "NV": 29,
+  "CT": 28,
+  "NY": 20,
+  "OR": 20,
+  "LA": 18,
+  "TX": 15,
+  "WA": 14,
+  "OK": 12,
+  "NC": 11,
+  "ME": 10,
+  "SC": 10,
+  "KY": 10,
+  "AL": 10,
+  "HI": 9,
+  "NJ": 9,
+  "IA": 8,
+  "WI": 8,
+  "MT": 8,
+  "NM": 7,
+  "KS": 7,
+  "MD": 6,
+  "ID": 6,
+  "IN": 5,
+  "UT": 5,
+  "TN": 5,
+  "VA": 5,
+  "NE": 4,
+  "VT": 2,
+  "NH": 1,
+  "DC": 1,
+  "AR": 1
+ },
+ "topCities": [
+  {
+   "city": "Denver",
+   "count": 36
+  },
+  {
+   "city": "Chicago",
+   "count": 24
+  },
+  {
+   "city": "Atlanta",
+   "count": 21
+  },
+  {
+   "city": "Boston",
+   "count": 19
+  },
+  {
+   "city": "Las Vegas",
+   "count": 15
+  },
+  {
+   "city": "Los Angeles",
+   "count": 14
+  },
+  {
+   "city": "Portland",
+   "count": 12
+  },
+  {
+   "city": "Miami",
+   "count": 12
+  },
+  {
+   "city": "Tampa",
+   "count": 12
+  },
+  {
+   "city": "Saint Louis",
+   "count": 11
+  },
+  {
+   "city": "Columbus",
+   "count": 11
+  },
+  {
+   "city": "Naples",
+   "count": 11
+  },
+  {
+   "city": "Orlando",
+   "count": 9
+  },
+  {
+   "city": "New York",
+   "count": 9
+  },
+  {
+   "city": "Oakland",
+   "count": 9
+  },
+  {
+   "city": "Phoenix",
+   "count": 9
+  },
+  {
+   "city": "Philadelphia",
+   "count": 8
+  },
+  {
+   "city": "Tucson",
+   "count": 8
+  },
+  {
+   "city": "Kansas City",
+   "count": 8
+  },
+  {
+   "city": "Saint Paul",
+   "count": 8
+  }
+ ]
+}

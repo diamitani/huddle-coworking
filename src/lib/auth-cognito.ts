@@ -13,8 +13,14 @@ const REGION = process.env.AWS_REGION || "us-east-2"
 const CLIENT_ID = process.env.COGNITO_CLIENT_ID
 const USER_POOL_ID = process.env.COGNITO_USER_POOL_ID
 
-if (!CLIENT_ID || !USER_POOL_ID) {
-  throw new Error(`Missing Cognito env vars. CLIENT_ID=${!!CLIENT_ID}, POOL_ID=${!!USER_POOL_ID}`)
+// Auth was never wired to a real Cognito pool (no env vars on Vercel).
+// Fail at request time with a clear message instead of at import time,
+// so the rest of the site builds and serves.
+function requireCognito(): { clientId: string; userPoolId: string } {
+  if (!CLIENT_ID || !USER_POOL_ID) {
+    throw new Error("Cognito is not configured (COGNITO_CLIENT_ID / COGNITO_USER_POOL_ID missing)")
+  }
+  return { clientId: CLIENT_ID, userPoolId: USER_POOL_ID }
 }
 
 export { USER_POOL_ID }
@@ -22,8 +28,9 @@ export { USER_POOL_ID }
 export const cognitoClient = new CognitoIdentityProviderClient({ region: REGION })
 
 export async function signUp(email: string, password: string, name: string) {
+  const { clientId } = requireCognito()
   const params: SignUpCommandInput = {
-    ClientId: CLIENT_ID,
+    ClientId: clientId,
     Username: email,
     Password: password,
     UserAttributes: [
@@ -36,15 +43,17 @@ export async function signUp(email: string, password: string, name: string) {
 }
 
 export async function confirmSignUp(email: string, code: string) {
+  const { clientId } = requireCognito()
   await cognitoClient.send(
-    new ConfirmSignUpCommand({ ClientId: CLIENT_ID, Username: email, ConfirmationCode: code })
+    new ConfirmSignUpCommand({ ClientId: clientId, Username: email, ConfirmationCode: code })
   )
 }
 
 export async function signIn(email: string, password: string) {
+  const { clientId } = requireCognito()
   const params: InitiateAuthCommandInput = {
     AuthFlow: "USER_PASSWORD_AUTH",
-    ClientId: CLIENT_ID,
+    ClientId: clientId,
     AuthParameters: { USERNAME: email, PASSWORD: password },
   }
   const res = await cognitoClient.send(new InitiateAuthCommand(params))
@@ -57,9 +66,10 @@ export async function signIn(email: string, password: string) {
 }
 
 export async function refreshTokens(refreshToken: string) {
+  const { clientId } = requireCognito()
   const params: InitiateAuthCommandInput = {
     AuthFlow: "REFRESH_TOKEN_AUTH",
-    ClientId: CLIENT_ID,
+    ClientId: clientId,
     AuthParameters: { REFRESH_TOKEN: refreshToken },
   }
   const res = await cognitoClient.send(new InitiateAuthCommand(params))

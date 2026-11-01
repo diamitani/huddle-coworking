@@ -28,25 +28,25 @@ export default function HeroSection() {
     {
       label: "Coworking Spaces",
       value: stats.totalSpaces
-        ? `${(stats.totalSpaces / 1000).toFixed(1)}K+`
-        : "7.4K+",
+        ? `${(stats.totalSpaces / 1000).toFixed(1)}K`
+        : "—",
       icon: Building2,
     },
     {
       label: "Cities Covered",
-      value: stats.totalCities ? `${stats.totalCities}+` : "1,100+",
+      value: stats.totalCities ? `${stats.totalCities}` : "—",
       icon: MapPin,
     },
     {
       label: "States",
       value: Object.keys(stats.topStates).length
-        ? `${Object.keys(stats.topStates).length}+`
-        : "50",
+        ? `${Object.keys(stats.topStates).length}`
+        : "—",
       icon: Globe,
     },
     {
-      label: "Top State",
-      value: stats.topStates.CA ? "California" : "CA",
+      label: "Browse Free",
+      value: "100%",
       icon: TrendingUp,
     },
   ]
@@ -67,7 +67,7 @@ export default function HeroSection() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 mb-6">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            <span className="text-sm text-white/80 font-medium">The #1 Coworking Directory</span>
+            <span className="text-sm text-white/80 font-medium">The Coworking Directory</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-[1.1] tracking-tight mb-5">
@@ -79,7 +79,11 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-lg sm:text-xl text-white/70 max-w-xl leading-relaxed mb-8">
-            Discover {stats.totalSpaces || "7,000+"} coworking spaces across {stats.totalCities || "1,100+"} US cities. Compare amenities, locations, and contact spaces directly.
+            {stats.totalSpaces ? (
+              <>Discover {stats.totalSpaces.toLocaleString()} coworking spaces across {stats.totalCities} US cities. Compare amenities, locations, and contact spaces directly.</>
+            ) : (
+              <>Discover coworking spaces across the US. Compare amenities, locations, and contact spaces directly.</>
+            )}
           </p>
 
           <SearchBar variant="hero" />

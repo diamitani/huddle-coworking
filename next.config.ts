@@ -9,6 +9,12 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: process.cwd(),
   },
+  async redirects() {
+    return [
+      { source: "/membership", destination: "/pricing", permanent: true },
+      { source: "/membership/:path*", destination: "/pricing", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

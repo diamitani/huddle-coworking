@@ -1,3 +1,6 @@
+"use client"
+
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { MapPin, Heart, Mail } from "lucide-react"
 
@@ -7,7 +10,7 @@ const footerLinks = {
     links: [
       { href: "/spaces", label: "All Spaces" },
       { href: "/cities", label: "Browse by City" },
-      { href: "/membership", label: "Membership Plans" },
+      { href: "/pricing", label: "Pricing" },
     ],
   },
   resources: {
@@ -30,6 +33,18 @@ const footerLinks = {
 }
 
 export default function Footer() {
+  const [spaceCount, setSpaceCount] = useState("")
+
+  useEffect(() => {
+    fetch("/data/stats.json")
+      .then((r) => r.json())
+      .then((d) => {
+        if (typeof d.totalSpaces === "number") {
+          setSpaceCount(d.totalSpaces.toLocaleString())
+        }
+      })
+      .catch(() => {})
+  }, [])
   return (
     <footer className="bg-navy-500 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -42,12 +57,12 @@ export default function Footer() {
               <span className="text-xl font-heading font-bold">Huddle</span>
             </Link>
             <p className="text-warm-300 text-sm leading-relaxed max-w-sm mb-6">
-              The world&#39;s #1 coworking space directory. Find, compare, and book the perfect workspace near you.
+              Find and compare real coworking spaces across the US. Request tours and contact spaces directly — no account needed.
             </p>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2 text-sm text-warm-300">
                 <Heart className="w-4 h-4 text-brand-400" fill="currentColor" />
-                <span>1,200+ spaces listed</span>
+                <span>{spaceCount ? `${spaceCount} spaces listed` : "Coworking directory"}</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-warm-300">
                 <Mail className="w-4 h-4" />

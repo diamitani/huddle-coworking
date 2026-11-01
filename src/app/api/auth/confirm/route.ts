@@ -9,8 +9,8 @@ export async function POST(request: Request) {
     }
     await confirmSignUp(email, code)
     return NextResponse.json({ confirmed: true })
-  } catch (err: any) {
-    const msg = err?.message || "Confirmation failed"
+  } catch (err: unknown) {
+    const msg = (err as Error)?.message || "Confirmation failed"
     if (msg.includes("CodeMismatchException")) {
       return NextResponse.json({ error: "Invalid confirmation code." }, { status: 400 })
     }

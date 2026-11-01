@@ -29,13 +29,13 @@ function createFallbackClient() {
       select: () => ({
         eq: () => ({
           single: () => Promise.resolve({ data: null, error: null }),
-          order: () => ({ then: (cb: any) => Promise.resolve({ data: [], error: null }).then(cb) }),
-          limit: () => ({ then: (cb: any) => Promise.resolve({ data: [], error: null }).then(cb) }),
+          order: () => ({ then: (cb: (v: unknown) => unknown) => Promise.resolve({ data: [], error: null }).then(cb) }),
+          limit: () => ({ then: (cb: (v: unknown) => unknown) => Promise.resolve({ data: [], error: null }).then(cb) }),
         }),
-        order: () => ({ then: (cb: any) => Promise.resolve({ data: [], error: null }).then(cb) }),
+        order: () => ({ then: (cb: (v: unknown) => unknown) => Promise.resolve({ data: [], error: null }).then(cb) }),
       }),
       insert: () => ({ select: () => ({ single: () => Promise.resolve({ data: null, error: null }) }) }),
-      delete: () => ({ eq: () => ({ then: (cb: any) => Promise.resolve({ data: null, error: null }).then(cb) }) }),
+      delete: () => ({ eq: () => ({ then: (cb: (v: unknown) => unknown) => Promise.resolve({ data: null, error: null }).then(cb) }) }),
     }),
   }
 }

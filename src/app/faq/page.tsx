@@ -3,37 +3,43 @@
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
 import { cn } from "@/lib/cn"
-import Footer from "@/components/Footer"
-import Navbar from "@/components/Navbar"
 
 const faqs = [
   {
     q: "Is Huddle free to use?",
-    a: "Yes — browsing and searching spaces is completely free. We also offer a Pro plan for unlimited saves, day pass bookings, and more.",
+    a: "Yes — browsing, searching, saving spaces, and requesting tours are completely free. No account needed.",
   },
   {
-    q: "How do I book a coworking space?",
-    a: "Find a space you like, click 'Contact This Space', and submit an inquiry directly to the operator. Pro members can book day passes and meeting rooms instantly.",
+    q: "How do I request a tour or ask about pricing?",
+    a: "Open any space and click 'Request a Tour'. Pick what you want to ask about — tours, membership, pricing, or events — and your inquiry goes directly to the space. They'll reply to your email.",
+  },
+  {
+    q: "Do I need an account?",
+    a: "No. Everything a workspace seeker needs works without signing up. Saved spaces are kept in your browser on your device.",
+  },
+  {
+    q: "Where does Huddle's pricing data come from?",
+    a: "Published rates come from the brands themselves (labeled 'brand-published starting rates') or from the space operators (labeled 'provided by the space'). Where pricing isn't published, we say so honestly instead of guessing — and route your question straight to the space.",
   },
   {
     q: "How do I list my coworking space on Huddle?",
-    a: "Visit our 'List Your Space' page and submit your details. Our team reviews and publishes verified listings within 2–3 business days.",
+    a: "Visit 'List Your Space' and submit your details — it's free. Our team reviews every submission for accuracy before it goes live, usually within 2 business days.",
   },
   {
-    q: "Are all listings verified?",
-    a: "We verify listings before publishing. Look for the 'Verified listing' badge on space profiles — it means we've confirmed the space is active and the contact info is accurate.",
+    q: "I own a space that's already listed. How do I update it?",
+    a: "Use 'Claim Listing' on your space's page. Once we verify you're affiliated with the space, you can correct details, publish your rates and events, and explore Featured placement.",
   },
   {
-    q: "Can I save spaces to come back to later?",
-    a: "Free users can save up to 5 spaces. Pro users get unlimited saves, plus booking history and personalized recommendations.",
+    q: "What does Featured mean?",
+    a: "Featured listings are paid placements from space operators ($49/mo) that get top placement in search, a homepage spotlight, and a featured badge. They're clearly labeled — never disguised as organic results.",
   },
   {
     q: "How is Huddle different from other coworking directories?",
-    a: "Huddle focuses on quality over quantity — every listing is verified, amenity data is accurate, and you can contact spaces directly without going through a middleman.",
+    a: "We focus on accuracy over scale: every listing is checked against real sources, pricing is transparent about where it comes from, and you contact spaces directly with no middleman and no account walls.",
   },
   {
     q: "How do I report an incorrect listing?",
-    a: "Email us at hello@huddle.work with the space name and what needs correcting. We'll update it within 48 hours.",
+    a: "Email us at hello@huddle.work with the space name and what needs correcting. We'll fix it.",
   },
 ]
 
@@ -59,31 +65,27 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export default function FAQPage() {
   return (
-    <>
-      <Navbar />
-      <main className="min-h-screen bg-warm-50">
-        <section className="bg-navy-500 text-white py-20">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl font-heading font-bold mb-4">Frequently Asked Questions</h1>
-            <p className="text-warm-200 text-lg">Everything you need to know about Huddle.</p>
-          </div>
-        </section>
+    <main className="min-h-screen bg-warm-50">
+      <section className="bg-navy-500 text-white py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl font-heading font-bold mb-4">Frequently Asked Questions</h1>
+          <p className="text-warm-200 text-lg">Everything you need to know about Huddle.</p>
+        </div>
+      </section>
 
-        <section className="py-16">
-          <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="space-y-3">
-              {faqs.map((faq) => (
-                <FAQItem key={faq.q} q={faq.q} a={faq.a} />
-              ))}
-            </div>
-            <div className="mt-12 text-center">
-              <p className="text-warm-600 text-sm">Still have questions?</p>
-              <a href="mailto:hello@huddle.work" className="text-brand-500 font-semibold hover:underline text-sm">hello@huddle.work</a>
-            </div>
+      <section className="py-16">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-3">
+            {faqs.map((faq) => (
+              <FAQItem key={faq.q} q={faq.q} a={faq.a} />
+            ))}
           </div>
-        </section>
-      </main>
-      <Footer />
-    </>
+          <div className="mt-12 text-center">
+            <p className="text-warm-600 text-sm">Still have questions?</p>
+            <a href="mailto:hello@huddle.work" className="text-brand-500 font-semibold hover:underline text-sm">hello@huddle.work</a>
+          </div>
+        </div>
+      </section>
+    </main>
   )
 }

@@ -1,9 +1,9 @@
 "use client"
 
-import { Suspense, useState } from "react"
+import { Suspense, useState, useEffect } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import Link from "next/link"
-import { MapPin, Mail, Lock, ArrowRight } from "lucide-react"
+import { MapPin, Mail, Lock, ArrowRight, AlertCircle } from "lucide-react"
 
 function LoginForm() {
   const router = useRouter()
@@ -13,6 +13,14 @@ function LoginForm() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [loading, setLoading] = useState(false)
+  const [configured, setConfigured] = useState<boolean | null>(null)
+
+  useEffect(() => {
+    fetch("/api/auth/status")
+      .then((r) => r.json())
+      .then((d) => setConfigured(Boolean(d.configured)))
+      .catch(() => setConfigured(false))
+  }, [])
   const [error, setError] = useState("")
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -49,6 +57,13 @@ function LoginForm() {
         <div className="bg-white rounded-2xl border border-warm-200 p-6 sm:p-8 shadow-sm">
           <h1 className="text-2xl font-heading font-bold text-navy-500 mb-2">Welcome back</h1>
           <p className="text-warm-600 text-sm mb-6">Sign in to manage your workspace inquiries and saved spaces.</p>
+
+          {configured === false && (
+            <div className="flex gap-3 p-4 rounded-xl bg-warm-100 border border-warm-200 text-sm text-warm-700 mb-4">
+              <AlertCircle className="w-5 h-5 shrink-0 text-warm-500" />
+              <p>Accounts are being set up right now — check back soon. Everything else on Huddle works without an account.</p>
+            </div>
+          )}
 
           {error && (
             <div className="p-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-sm mb-4">
@@ -87,7 +102,7 @@ function LoginForm() {
             </div>
             <button
               type="submit"
-              disabled={loading}
+              disabled={loading || configured === false}
               className="w-full bg-brand-500 text-white rounded-xl py-3 font-semibold hover:bg-brand-600 transition-all disabled:opacity-50 flex items-center justify-center gap-2"
             >
               {loading ? "Signing in..." : "Sign In"}

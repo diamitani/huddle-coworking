@@ -6,12 +6,11 @@ import "leaflet/dist/leaflet.css"
 
 interface MapViewProps {
   spaces: Array<{
-    n: string
-    c: string
-    st: string
-    lat?: number
-    lng?: number
-    ct: number
+    name: string
+    city: string
+    state: string
+    latitude?: number | null
+    longitude?: number | null
   }>
   height?: string
   onCitySelect?: (city: string, state: string) => void
@@ -55,12 +54,12 @@ export default function MapView({ spaces, height = "400px", onCitySelect }: MapV
     })
 
     // Group by city to reduce marker count
-    const cityGroups = new Map<string, { lat: number; lng: number; count: number; city: string; state: string }>()
+    const cityGroups = new Map<string, { latitude: number; longitude: number; count: number; city: string; state: string }>()
     for (const s of spaces) {
-      if (!s.lat || !s.lng) continue
-      const key = `${s.c},${s.st}`
+      if (!s.latitude || !s.longitude) continue
+      const key = `${s.city},${s.state}`
       if (!cityGroups.has(key)) {
-        cityGroups.set(key, { lat: s.lat, lng: s.lng, count: 0, city: s.c, state: s.st })
+        cityGroups.set(key, { latitude: s.latitude, longitude: s.longitude, count: 0, city: s.city, state: s.state })
       }
       cityGroups.get(key)!.count++
     }
@@ -70,7 +69,7 @@ export default function MapView({ spaces, height = "400px", onCitySelect }: MapV
       const size = Math.min(Math.max(group.count, 3), 30)
       const color = group.count > 100 ? "#E8614D" : group.count > 30 ? "#F4A261" : "#1B1B2F"
 
-      const marker = L.circleMarker([group.lat, group.lng], {
+      const marker = L.circleMarker([group.latitude, group.longitude], {
         radius: Math.sqrt(size) * 2.5,
         fillColor: color,
         color: "#fff",

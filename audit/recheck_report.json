@@ -1,0 +1,6363 @@
+{
+ "websites_checked": 902,
+ "websites_alive": 196,
+ "websites_fixed": 0,
+ "websites_blanked": 0,
+ "websites_empty": 98,
+ "dead": [
+  {
+   "id": 4,
+   "slug": "office-evolution-atlanta",
+   "name": "Office Evolution",
+   "city": "Atlanta",
+   "state": "GA",
+   "url": "https://www.officeevolution.com/locations/alpharetta",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 5,
+   "slug": "quest-workspaces-777-brickell-ave-doral",
+   "name": "Quest Workspaces - 777 Brickell Ave",
+   "city": "Doral",
+   "state": "FL",
+   "url": "https://questworkspaces.com/miami-777-brickell2",
+   "status": "404"
+  },
+  {
+   "id": 34,
+   "slug": "kismet-cowork-manayunk-manayunk",
+   "name": "Kismet Cowork - Manayunk",
+   "city": "Manayunk",
+   "state": "PA",
+   "url": "https://kismetcowork.com",
+   "status": "ProxyError"
+  },
+  {
+   "id": 35,
+   "slug": "premier-workspaces-coworking-office-space-mount-laurel",
+   "name": "Premier Workspaces - Coworking & Office Space",
+   "city": "Mount Laurel",
+   "state": "PA",
+   "url": "https://premierworkspaces.com/new-jersey/mt-laurel",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 38,
+   "slug": "shift-workspaces-bannock-denver",
+   "name": "Shift Workspaces - Bannock",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://findworkspaces.com/workspaces/shift-workspaces-bannock-shared-workspaces-denver-colorado-80204",
+   "status": "404"
+  },
+  {
+   "id": 46,
+   "slug": "pacific-workplaces-sacramento-watt-ave-office-space-las-vegas",
+   "name": "Pacific Workplaces - Sacramento Watt Ave Office Space",
+   "city": "Las Vegas",
+   "state": "NV",
+   "url": "https://pacificworkplaces.com/locations/las-vegas-office-space",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 48,
+   "slug": "carr-workplaces-las-olas-coworking-office-space-fort-lauderdale",
+   "name": "Carr Workplaces Las Olas - Coworking & Office Space",
+   "city": "Fort Lauderdale",
+   "state": "FL",
+   "url": "https://carrworkplaces.com/locations/fort-lauderdale/las-olas",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 50,
+   "slug": "minds-cowork-wynwood-miami",
+   "name": "Minds Cowork - Wynwood",
+   "city": "Miami",
+   "state": "FL",
+   "url": "https://mindscowork.com/home",
+   "status": "ProxyError"
+  },
+  {
+   "id": 57,
+   "slug": "roam-buckhead-atlanta",
+   "name": "Roam Buckhead",
+   "city": "Atlanta",
+   "state": "GA",
+   "url": "https://meetatroam.com/locations/buckhead",
+   "status": "404"
+  },
+  {
+   "id": 58,
+   "slug": "serendipity-labs-private-offices-coworking-atlanta",
+   "name": "Serendipity Labs Private Offices & Coworking",
+   "city": "Atlanta",
+   "state": "GA",
+   "url": "https://serendipitylabs.com/us/ga/atlanta-buckhead",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 62,
+   "slug": "wework-coworking-office-space-atlanta",
+   "name": "Wework Coworking & Office Space",
+   "city": "Atlanta",
+   "state": "GA",
+   "url": "https://www.wework.com/buildings/tower-place-100--atlanta--ga",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 65,
+   "slug": "centrl-office-downtown-los-angeles-los-angeles",
+   "name": "Centrl Office Downtown Los Angeles",
+   "city": "Los Angeles",
+   "state": "CA",
+   "url": "https://centrloffice.com/locations/california-los-angeles-downtown",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 66,
+   "slug": "neuehouse-hollywood-los-angeles",
+   "name": "Neuehouse Hollywood",
+   "city": "Los Angeles",
+   "state": "CA",
+   "url": "https://www.neuehouse.com/houses/hollywood",
+   "status": "ProxyError"
+  },
+  {
+   "id": 67,
+   "slug": "bizhaus-locations-marina-del-rey-map-los-angeles",
+   "name": "Bizhaus Locations Marina Del Rey Map",
+   "city": "Los Angeles",
+   "state": "CA",
+   "url": "https://www.bizhaus.com/marina-del-rey-office-space",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 74,
+   "slug": "village-workspaces-los-angeles",
+   "name": "Village Workspaces",
+   "city": "Los Angeles",
+   "state": "CA",
+   "url": "https://www.villageworkspaces.com",
+   "status": "ProxyError"
+  },
+  {
+   "id": 116,
+   "slug": "the-yard-flatiron-south-new-york",
+   "name": "The Yard: Flatiron South",
+   "city": "New York",
+   "state": "NY",
+   "url": "https://theyard.com/new-york-city-coworking-office-space/flatiron-south",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 118,
+   "slug": "bat-haus-coworking-space-new-york",
+   "name": "Bat Haus Coworking Space",
+   "city": "New York",
+   "state": "NY",
+   "url": "https://bathaus.com/cowork.html",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 119,
+   "slug": "the-yard-flatiron-south-coworking-office-space-nyc-new-york",
+   "name": "The Yard: Flatiron South Coworking Office Space Nyc",
+   "city": "New York",
+   "state": "NY",
+   "url": "https://theyard.com/new-york-city-coworking-office-space/flatiron-south",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 821,
+   "slug": "the-yard-brooklyn",
+   "name": "The Yard",
+   "city": "Brooklyn",
+   "state": "NY",
+   "url": "https://theyard.com/locations/new-york/coworking-office-space-greenpoint/",
+   "status": "404"
+  },
+  {
+   "id": 822,
+   "slug": "coterie-worklounge-seattle",
+   "name": "Coterie Worklounge",
+   "city": "Seattle",
+   "state": "WA",
+   "url": "https://www.coterieworklounge.com",
+   "status": "500"
+  },
+  {
+   "id": 823,
+   "slug": "ideas-and-coffee-coworking-albuquerque",
+   "name": "Ideas and Coffee CoWorking",
+   "city": "Albuquerque",
+   "state": "NM",
+   "url": "http://www.ideasandcoffee.net",
+   "status": "ProxyError"
+  },
+  {
+   "id": 832,
+   "slug": "werqwise-san-francisco",
+   "name": "Werqwise",
+   "city": "San Francisco",
+   "state": "CA",
+   "url": "https://werqwise.com/",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 834,
+   "slug": "boxjelly-honolulu",
+   "name": "BoxJelly",
+   "city": "Honolulu",
+   "state": "HI",
+   "url": "https://theboxjelly.com/",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 837,
+   "slug": "switchyards-greenville",
+   "name": "Switchyards",
+   "city": "Greenville",
+   "state": "SC",
+   "url": "https://switchyards.com/greenville",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 848,
+   "slug": "coworking-aurora-aurora",
+   "name": "Coworking Aurora",
+   "city": "Aurora",
+   "state": "CO",
+   "url": "https://coworkingaurora.com/",
+   "status": "ProxyError"
+  },
+  {
+   "id": 852,
+   "slug": "comradery-greenville",
+   "name": "Comradery",
+   "city": "Greenville",
+   "state": "SC",
+   "url": "https://www.comraderycowork.com/",
+   "status": "ProxyError"
+  },
+  {
+   "id": 855,
+   "slug": "trellis-san-francisco",
+   "name": "Trellis",
+   "city": "San Francisco",
+   "state": "CA",
+   "url": "https://trellis.social/",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 862,
+   "slug": "work-and-play-south-orange",
+   "name": "Work and Play",
+   "city": "South Orange",
+   "state": "NJ",
+   "url": "https://workandplaynj.com/",
+   "status": "403"
+  },
+  {
+   "id": 865,
+   "slug": "connect-coworking-tucson",
+   "name": "Connect Coworking",
+   "city": "Tucson",
+   "state": "AZ",
+   "url": "https://connectcoworking.com/",
+   "status": "ProxyError"
+  },
+  {
+   "id": 866,
+   "slug": "synergy-mill-greenville",
+   "name": "Synergy Mill",
+   "city": "Greenville",
+   "state": "SC",
+   "url": "http://synergymill.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 874,
+   "slug": "open-san-jose-san-jose",
+   "name": "Open San José",
+   "city": "San Jose",
+   "state": "CA",
+   "url": "https://www.creatvsj.org/open-san-jose",
+   "status": "404"
+  },
+  {
+   "id": 883,
+   "slug": "t-rex-downtown-stl-saint-louis",
+   "name": "T-REX Downtown STL",
+   "city": "Saint Louis",
+   "state": "MO",
+   "url": "https://downtowntrex.org/",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 893,
+   "slug": "palm-beach-tech-space-west-palm-beach",
+   "name": "Palm Beach Tech Space",
+   "city": "West Palm Beach",
+   "state": "FL",
+   "url": "https://palmbeachtech.org/",
+   "status": "ProxyError"
+  },
+  {
+   "id": 897,
+   "slug": "the-port-workspaces-oakland",
+   "name": "The Port Workspaces",
+   "city": "Oakland",
+   "state": "CA",
+   "url": "https://www.portworkspaces.com/",
+   "status": "404"
+  },
+  {
+   "id": 908,
+   "slug": "warp-zone-louisville-louisville",
+   "name": "Warp Zone Louisville",
+   "city": "Louisville",
+   "state": "KY",
+   "url": "http://lousivillemakesgames.org",
+   "status": "ProxyError"
+  },
+  {
+   "id": 912,
+   "slug": "santa-cruz-coworking-digital-media-studios-santa-cruz",
+   "name": "Santa Cruz Coworking & Digital Media Studios",
+   "city": "Santa Cruz",
+   "state": "CA",
+   "url": "https://satellite.communitytv.org/",
+   "status": "ProxyError"
+  },
+  {
+   "id": 915,
+   "slug": "lakes-plains-llc-saint-paul",
+   "name": "Lakes & Plains, LLC",
+   "city": "Saint Paul",
+   "state": "MN",
+   "url": "https://www.lakesplains.weebly.com",
+   "status": "ProxyError"
+  },
+  {
+   "id": 918,
+   "slug": "kollektiv-columbus",
+   "name": "Kollektiv",
+   "city": "Columbus",
+   "state": "OH",
+   "url": "https://kollektivco.com",
+   "status": "ProxyError"
+  },
+  {
+   "id": 922,
+   "slug": "hive-coworking-kansas-city",
+   "name": "Hive Coworking",
+   "city": "Kansas City",
+   "state": "MO",
+   "url": "https://www.coworkingkc.com/",
+   "status": "ProxyError"
+  },
+  {
+   "id": 953,
+   "slug": "work-it-coworking-saint-paul",
+   "name": "Work It Coworking",
+   "city": "Saint Paul",
+   "state": "MN",
+   "url": "https://co-workit.com/",
+   "status": "ProxyError"
+  },
+  {
+   "id": 959,
+   "slug": "the-honeycomb-network-chicago",
+   "name": "The Honeycomb Network",
+   "city": "Chicago",
+   "state": "IL",
+   "url": "https://www.thehoneycombnetwork.com",
+   "status": "404"
+  },
+  {
+   "id": 965,
+   "slug": "oficio-boston",
+   "name": "Oficio",
+   "city": "Boston",
+   "state": "MA",
+   "url": "https://www.myoficio.com/boston129newbury",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 967,
+   "slug": "i-o-spaces-silver-spring",
+   "name": "I/O Spaces",
+   "city": "Silver Spring",
+   "state": "MD",
+   "url": "https://iospaces.com/",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 968,
+   "slug": "cooperate-belton",
+   "name": "CoOperate",
+   "city": "Belton",
+   "state": "SC",
+   "url": "http://cooperatesc.com/",
+   "status": "ProxyError"
+  },
+  {
+   "id": 970,
+   "slug": "hpfy-business-center-brookfield",
+   "name": "HPFY Business Center",
+   "city": "Brookfield",
+   "state": "CT",
+   "url": "https://hpfycenter.com/",
+   "status": "ProxyError"
+  },
+  {
+   "id": 972,
+   "slug": "reserve-my-cube-winooski",
+   "name": "Reserve My Cube",
+   "city": "Winooski",
+   "state": "VT",
+   "url": "https://reservemycube.com/",
+   "status": "ProxyError"
+  },
+  {
+   "id": 975,
+   "slug": "foundry-66-norwich",
+   "name": "Foundry 66",
+   "city": "Norwich",
+   "state": "CT",
+   "url": "https://www.foundry66.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 986,
+   "slug": "advent-coworking-charlotte",
+   "name": "Advent Coworking",
+   "city": "Charlotte",
+   "state": "NC",
+   "url": "https://adventcoworking.com/",
+   "status": "525"
+  },
+  {
+   "id": 993,
+   "slug": "4343-ascending-house-matteson",
+   "name": "4343 Ascending House",
+   "city": "Matteson",
+   "state": "IL",
+   "url": "http://gsu.ecommercemgmt.com/why-join-4343-ascending-house/",
+   "status": "ProxyError"
+  },
+  {
+   "id": 998,
+   "slug": "colaunch-at-the-hub-muskegon",
+   "name": "CoLaunch at the Hub",
+   "city": "Muskegon",
+   "state": "MI",
+   "url": "https://colaunch.works",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 1000,
+   "slug": "co-w-salem",
+   "name": "Co.w",
+   "city": "Salem",
+   "state": "OR",
+   "url": "https://www.iamcow.com/",
+   "status": "ProxyError"
+  },
+  {
+   "id": 1011,
+   "slug": "the-stables-kck-kansas-city",
+   "name": "The Stables KCK",
+   "city": "Kansas City",
+   "state": "KS",
+   "url": "https://www.thestableskck.com",
+   "status": "404"
+  },
+  {
+   "id": 1035,
+   "slug": "mke-cowork-west-allis",
+   "name": "MKE Cowork",
+   "city": "West Allis",
+   "state": "WI",
+   "url": "https://mkecowork.com/",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 1101,
+   "slug": "the-cannon-memorial-houston",
+   "name": "The Cannon Memorial",
+   "city": "Houston",
+   "state": "TX",
+   "url": "https://www.thecannon.com/memorial/",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 1103,
+   "slug": "the-collective-watertown",
+   "name": "The Collective",
+   "city": "Watertown",
+   "state": "WI",
+   "url": "920.390.4686",
+   "status": "MissingSchema"
+  },
+  {
+   "id": 1106,
+   "slug": "5-star-mke-business-center-milwaukee",
+   "name": "5 Star MKE Business Center",
+   "city": "Milwaukee",
+   "state": "WI",
+   "url": "https://fivestarmke.com/business_center/",
+   "status": "ProxyError"
+  },
+  {
+   "id": 1116,
+   "slug": "hub44-minneapolis",
+   "name": "HUB44",
+   "city": "Minneapolis",
+   "state": "MN",
+   "url": "https://www.hub44lindenhills.com/",
+   "status": "401"
+  },
+  {
+   "id": 1142,
+   "slug": "city-house-charleston-charleston",
+   "name": "City House Charleston",
+   "city": "Charleston",
+   "state": "SC",
+   "url": "https://www.cityhousebrands.com/charleston",
+   "status": "404"
+  },
+  {
+   "id": 1150,
+   "slug": "versa-coworking-columbus",
+   "name": "Versa Coworking",
+   "city": "Columbus",
+   "state": "OH",
+   "url": "https://versa.works/",
+   "status": "403"
+  },
+  {
+   "id": 1159,
+   "slug": "port-kitchens-oakland",
+   "name": "Port Kitchens",
+   "city": "Oakland",
+   "state": "CA",
+   "url": "https://www.portworkspaces.com/port-kitchens",
+   "status": "404"
+  },
+  {
+   "id": 1160,
+   "slug": "port-workspaces-jack-london-square-oakland",
+   "name": "Port Workspaces - Jack London Square",
+   "city": "Oakland",
+   "state": "CA",
+   "url": "https://www.portworkspaces.com/jack-london-square",
+   "status": "404"
+  },
+  {
+   "id": 1165,
+   "slug": "switchyards-oakhurst-charlotte",
+   "name": "Switchyards Oakhurst",
+   "city": "Charlotte",
+   "state": "NC",
+   "url": "https://switchyards.com/oakhurst",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 1168,
+   "slug": "the-colab-port-townsend",
+   "name": "The CoLab",
+   "city": "Port Townsend",
+   "state": "WA",
+   "url": "https://www.colabnw.com/",
+   "status": "ProxyError"
+  },
+  {
+   "id": 1187,
+   "slug": "edwin-jarvis-clarkston",
+   "name": "Edwin Jarvis",
+   "city": "Clarkston",
+   "state": "GA",
+   "url": "https://edwinjarvis.com/",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 1195,
+   "slug": "lucid-private-offices-cumberland-the-battery-atlanta",
+   "name": "Lucid Private Offices - Cumberland / The Battery",
+   "city": "Atlanta",
+   "state": "GA",
+   "url": "https://www.lucidprivateoffices.com/georgia/atlanta/3100-interstate-north-circle/?utm_source=google&utm_medium=local&utm_campaign=gmb",
+   "status": "404"
+  },
+  {
+   "id": 5981,
+   "slug": "the-enclave-535-glen-ellyn",
+   "name": "The Enclave 535",
+   "city": "Glen Ellyn",
+   "state": "IL",
+   "url": "https://www.enclavecoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 5983,
+   "slug": "perryville-business-center-rockford",
+   "name": "Perryville Business Center",
+   "city": "Rockford",
+   "state": "IL",
+   "url": "http://www.rockfordbc.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 5999,
+   "slug": "creve-coeur-workspace-saint-louis",
+   "name": "Creve Coeur Workspace",
+   "city": "Saint Louis",
+   "state": "MO",
+   "url": "https://www.crevecoeurworkspace.com",
+   "status": "404"
+  },
+  {
+   "id": 6004,
+   "slug": "zoseco-coworking-valparaiso",
+   "name": "Zoseco Coworking",
+   "city": "Valparaiso",
+   "state": "IL",
+   "url": "https://zoseco.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6006,
+   "slug": "teamup-coworking-o-hare-des-plaines",
+   "name": "Teamup Coworking - O'hare",
+   "city": "Des Plaines",
+   "state": "IL",
+   "url": "https://ohare.teamupcoworking.com",
+   "status": "ProxyError"
+  },
+  {
+   "id": 6013,
+   "slug": "stl-fusion-saint-louis",
+   "name": "Stl Fusion",
+   "city": "Saint Louis",
+   "state": "MO",
+   "url": "http://www.industriousoffice.com/locations/stlouis",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6015,
+   "slug": "ethos-small-business-incubator-coworking-spaces-marion",
+   "name": "Ethos Small Business Incubator & Coworking Spaces",
+   "city": "Marion",
+   "state": "IL",
+   "url": "https://members.ethosmarion.org",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6016,
+   "slug": "coop-coworking-huntley",
+   "name": "Coop Coworking",
+   "city": "Huntley",
+   "state": "IL",
+   "url": "https://www.coopcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6017,
+   "slug": "northbrook-executive-suites-northbrook",
+   "name": "Northbrook Executive Suites",
+   "city": "Northbrook",
+   "state": "IL",
+   "url": "http://northbrooksuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6019,
+   "slug": "welsh-center-executive-suites-barrington",
+   "name": "Welsh Center Executive Suites",
+   "city": "Barrington",
+   "state": "IL",
+   "url": "http://www.welshcenter.com",
+   "status": "ProxyError"
+  },
+  {
+   "id": 6021,
+   "slug": "thriveco-clayton",
+   "name": "Thriveco",
+   "city": "Clayton",
+   "state": "IL",
+   "url": "https://www.thrive-coworking.com/thrivecoclayton",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6022,
+   "slug": "blue-mango-coworking-arlington-heights",
+   "name": "Blue Mango Coworking",
+   "city": "Arlington Heights",
+   "state": "IL",
+   "url": "https://bluemangocoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6025,
+   "slug": "wework-bridgeview-bank-coworking-office-space-chicago",
+   "name": "Wework - Bridgeview Bank Coworking & Office Space",
+   "city": "Chicago",
+   "state": "IL",
+   "url": "https://wework.com/buildings/bridgeview-bank-uptown--chicago--il",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6032,
+   "slug": "union-cowork-los-angeles-los-angeles",
+   "name": "Union Cowork - Los Angeles",
+   "city": "Los Angeles",
+   "state": "CA",
+   "url": "https://unioncowork.com/locations/arts-district-los-angeles-ca",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6033,
+   "slug": "catalyst-co-working-flex-space-mt-pleasant",
+   "name": "Catalyst Co-Working & Flex Space",
+   "city": "Mt Pleasant",
+   "state": "PA",
+   "url": "https://www.officespace.com/pa/mt-pleasant",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6036,
+   "slug": "cowork-frederick-frederick",
+   "name": "Cowork Frederick",
+   "city": "Frederick",
+   "state": "MD",
+   "url": "https://www.coworkfrederick.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6039,
+   "slug": "hana-coworking-and-office-space-at-1818-market-street-philadelphia",
+   "name": "Hana Coworking And Office Space At 1818 Market Street",
+   "city": "Philadelphia",
+   "state": "PA",
+   "url": "https://www.industriousoffice.com/blog/industrious/cbre-transfers-its-flexible-workspace-brand-hana-to-industrious",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6040,
+   "slug": "wework-1100-ludlow-st-philadelphia",
+   "name": "Wework 1100 Ludlow St",
+   "city": "Philadelphia",
+   "state": "PA",
+   "url": "http://www.wework.com/buildings/1100-ludlow-st--philadelphia--pa",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6041,
+   "slug": "philadelphia-holistic-coworking-bala-cynwyd",
+   "name": "Philadelphia Holistic Coworking",
+   "city": "Bala Cynwyd",
+   "state": "PA",
+   "url": "https://www.philadelphiaholisticcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6045,
+   "slug": "cowork-street-inc-camden",
+   "name": "Cowork Street Inc",
+   "city": "Camden",
+   "state": "PA",
+   "url": "http://coworkstreet.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6047,
+   "slug": "40-west-evergreen-philadelphia",
+   "name": "40 West Evergreen",
+   "city": "Philadelphia",
+   "state": "PA",
+   "url": "https://www.40westworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6050,
+   "slug": "hub-868-shared-workspace-collingswood",
+   "name": "Hub:868 Shared Workspace",
+   "city": "Collingswood",
+   "state": "PA",
+   "url": "https://www.hub868.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6052,
+   "slug": "business-casual-coworking-bristol",
+   "name": "Business Casual Coworking",
+   "city": "Bristol",
+   "state": "PA",
+   "url": "https://businesscasual.co",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6064,
+   "slug": "loft-office-coworking-and-suites-canonsburg",
+   "name": "Loft Office Coworking And Suites",
+   "city": "Canonsburg",
+   "state": "PA",
+   "url": "https://www.loftofficesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6066,
+   "slug": "perryworks-co-working-west-view",
+   "name": "Perryworks Co-Working",
+   "city": "West View",
+   "state": "PA",
+   "url": "https://www.perryworks.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6067,
+   "slug": "workspace-factory-llc-pittsburgh",
+   "name": "Workspace Factory Llc.",
+   "city": "Pittsburgh",
+   "state": "PA",
+   "url": "https://workspacefactory.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6071,
+   "slug": "hbv-coworking-and-shared-office-space-new-kensington",
+   "name": "Hbv - Coworking And Shared Office Space",
+   "city": "New Kensington",
+   "state": "PA",
+   "url": "http://hbvllc.weebly.com/index.html",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6074,
+   "slug": "penn-center-executive-suites-pittsburgh",
+   "name": "Penn Center Executive Suites",
+   "city": "Pittsburgh",
+   "state": "PA",
+   "url": "http://www.penncentereast.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6077,
+   "slug": "cowork-414-bethlehem",
+   "name": "Cowork 414",
+   "city": "Bethlehem",
+   "state": "PA",
+   "url": "https://cowork414.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6079,
+   "slug": "the-office-mill-a-coworking-space-clinton",
+   "name": "The Office Mill , A Coworking Space",
+   "city": "Clinton",
+   "state": "PA",
+   "url": "http://www.theofficemill.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6080,
+   "slug": "sovereign-executive-offices-allentown",
+   "name": "Sovereign Executive Offices",
+   "city": "Allentown",
+   "state": "PA",
+   "url": "https://paexecutiveoffices.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6081,
+   "slug": "village-center-office-suites-perkasie",
+   "name": "Village Center Office Suites",
+   "city": "Perkasie",
+   "state": "PA",
+   "url": "https://www.vcprops.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6093,
+   "slug": "sobecoworks-bethlehem",
+   "name": "Sobecoworks",
+   "city": "Bethlehem",
+   "state": "PA",
+   "url": "https://sobecoworks.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6094,
+   "slug": "lancaster-coworking-lancaster",
+   "name": "Lancaster Coworking",
+   "city": "Lancaster",
+   "state": "PA",
+   "url": "https://lancastercoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6098,
+   "slug": "gateway-executive-suites-york",
+   "name": "Gateway Executive Suites",
+   "city": "York",
+   "state": "PA",
+   "url": "https://gatewayexecutivesuites.us",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6099,
+   "slug": "desk-office-space-coworking-new-brunswick",
+   "name": "Desk - Office Space & Coworking",
+   "city": "New Brunswick",
+   "state": "PA",
+   "url": "https://deskoffices.com/new-brunswick",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6107,
+   "slug": "coworking-at-the-park-harrisburg",
+   "name": "Coworking At The Park",
+   "city": "Harrisburg",
+   "state": "PA",
+   "url": "https://www.theparkcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6109,
+   "slug": "harrisburgstartup-harrisburg",
+   "name": "Harrisburgstartup",
+   "city": "Harrisburg",
+   "state": "PA",
+   "url": "https://pursuitcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6110,
+   "slug": "the-workplace-hub-harrisburg",
+   "name": "The Workplace Hub",
+   "city": "Harrisburg",
+   "state": "PA",
+   "url": "https://theworkplacehub.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6119,
+   "slug": "executive-offices-rossmoyne-mechanicsburg",
+   "name": "Executive Offices Rossmoyne",
+   "city": "Mechanicsburg",
+   "state": "PA",
+   "url": "https://www.rossmoynebusinesscenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6120,
+   "slug": "flourish-coworking-space-west-chester",
+   "name": "Flourish Coworking Space",
+   "city": "West Chester",
+   "state": "PA",
+   "url": "https://www.flourishcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6122,
+   "slug": "c3workplace-montclair-montclair",
+   "name": "C3workplace - Montclair",
+   "city": "Montclair",
+   "state": "PA",
+   "url": "https://c3workplace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6123,
+   "slug": "victoria-business-center-springfield",
+   "name": "Victoria Business Center",
+   "city": "Springfield",
+   "state": "PA",
+   "url": "http://millsofvictoria.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6127,
+   "slug": "dots-offices-indoor-outdoor-coworking-meeting-rooms-events-culver-city",
+   "name": "Dots Offices - Indoor & Outdoor Coworking, Meeting Rooms & Events",
+   "city": "Culver City",
+   "state": "PA",
+   "url": "https://www.dotsspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6128,
+   "slug": "beach-house-cowork-santa-monica",
+   "name": "Beach House Cowork",
+   "city": "Santa Monica",
+   "state": "PA",
+   "url": "https://www.beachhousecowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6131,
+   "slug": "1001wilshire-coworking-los-angeles",
+   "name": "1001Wilshire Coworking",
+   "city": "Los Angeles",
+   "state": "CA",
+   "url": "https://www.wilshire1001.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6132,
+   "slug": "q-work-topanga-coworking-office-space-woodland-hills",
+   "name": "Q Work Topanga - Coworking & Office Space",
+   "city": "Woodland Hills",
+   "state": "PA",
+   "url": "https://www.premierworkspaces.com/california/woodland-hills-q-work-topanga",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6133,
+   "slug": "cowork-south-bay-torrance",
+   "name": "Cowork South Bay",
+   "city": "Torrance",
+   "state": "PA",
+   "url": "http://www.coworksouthbay.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6134,
+   "slug": "tailoredspace-coworking-office-space-brea",
+   "name": "Tailoredspace Coworking & Office Space",
+   "city": "Brea",
+   "state": "PA",
+   "url": "https://tailoredspace.com/locations/brea-coworking",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6135,
+   "slug": "ctrl-collective-coworking-office-space-pasadena-pasadena",
+   "name": "Ctrl Collective Coworking & Office Space Pasadena",
+   "city": "Pasadena",
+   "state": "PA",
+   "url": "https://www.ctrlcollective.com/locations/pasadena",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6136,
+   "slug": "q-work-variel-coworking-office-space-woodland-hills",
+   "name": "Q Work Variel - Coworking & Office Space",
+   "city": "Woodland Hills",
+   "state": "PA",
+   "url": "https://www.premierworkspaces.com/california/woodland-hills-the-q",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6137,
+   "slug": "onboard-coworking-el-monte",
+   "name": "Onboard Coworking",
+   "city": "El Monte",
+   "state": "PA",
+   "url": "https://www.onboardcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6140,
+   "slug": "executive-suites-inc-blue-bell",
+   "name": "Executive Suites Inc",
+   "city": "Blue Bell",
+   "state": "PA",
+   "url": "http://www.esuitesbluebell.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6145,
+   "slug": "pipeline-philly-philadelphia",
+   "name": "Pipeline Philly",
+   "city": "Philadelphia",
+   "state": "PA",
+   "url": "http://www.pipelineworkspaces.com/location/philly",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6146,
+   "slug": "squared-coworking-york",
+   "name": "Squared Coworking",
+   "city": "York",
+   "state": "PA",
+   "url": "https://www.grottoyork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6155,
+   "slug": "per-diem-workspace-perkasie",
+   "name": "Per Diem Workspace",
+   "city": "Perkasie",
+   "state": "PA",
+   "url": "https://perdiemworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6159,
+   "slug": "richland-executive-office-suites-johnstown",
+   "name": "Richland Executive Office Suites",
+   "city": "Johnstown",
+   "state": "PA",
+   "url": "https://www.richlandsuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6162,
+   "slug": "executive-office-link-malvern",
+   "name": "Executive Office Link",
+   "city": "Malvern",
+   "state": "PA",
+   "url": "http://www.execofficelink.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6163,
+   "slug": "workspace-on-bridge-phoenixville",
+   "name": "Workspace On Bridge",
+   "city": "Phoenixville",
+   "state": "PA",
+   "url": "https://workspaceonmain.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6165,
+   "slug": "ktown-hall-coworking-kutztown",
+   "name": "Ktown Hall Coworking",
+   "city": "Kutztown",
+   "state": "PA",
+   "url": "https://ktownhall.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6173,
+   "slug": "rock-candy-coworking-lititz",
+   "name": "Rock Candy Coworking",
+   "city": "Lititz",
+   "state": "PA",
+   "url": "https://www.rockcandycoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6176,
+   "slug": "wework-625-massachusetts-ave-cambridge",
+   "name": "Wework 625 Massachusetts Ave",
+   "city": "Cambridge",
+   "state": "MA",
+   "url": "https://www.wework.com/buildings/625-massachusetts-ave--boston--ma",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6177,
+   "slug": "wework-711-atlantic-avenue-boston",
+   "name": "Wework 711 Atlantic Avenue",
+   "city": "Boston",
+   "state": "MA",
+   "url": "https://www.wework.com/buildings/711-atlantic-avenue--boston--ma",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6180,
+   "slug": "wework-1-milk-boston",
+   "name": "Wework 1 Milk",
+   "city": "Boston",
+   "state": "MA",
+   "url": "https://www.wework.com/l/boston--ma",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6181,
+   "slug": "microsoft-building-boston-101-federal-regus-boston",
+   "name": "Microsoft Building Boston-101 Federal (Regus)",
+   "city": "Boston",
+   "state": "MA",
+   "url": "https://www.regus.com/en-us/united-states/massachusetts/boston/101-federal-street-1196",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6184,
+   "slug": "workbar-back-bay-boston",
+   "name": "Workbar Back Bay",
+   "city": "Boston",
+   "state": "MA",
+   "url": "https://www.workbar.com/contact",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6185,
+   "slug": "wework-33-arch-st-boston",
+   "name": "Wework 33 Arch St",
+   "city": "Boston",
+   "state": "MA",
+   "url": "https://www.wework.com/buildings/33-arch-st--boston--ma",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6186,
+   "slug": "business-district-boston",
+   "name": "Business District",
+   "city": "Boston",
+   "state": "MA",
+   "url": "https://www.regus.com/en-us",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6187,
+   "slug": "wework-one-beacon-street-boston",
+   "name": "Wework One Beacon Street",
+   "city": "Boston",
+   "state": "MA",
+   "url": "https://www.wework.com/buildings/one-beacon-street--boston--ma",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6190,
+   "slug": "the-pop-center-coworking-space-playgroups-newton",
+   "name": "The Pop Center: Coworking Space + Playgroups",
+   "city": "Newton",
+   "state": "MA",
+   "url": "https://www.thepopcenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6191,
+   "slug": "wework-100-summer-st-boston",
+   "name": "Wework 100 Summer St",
+   "city": "Boston",
+   "state": "MA",
+   "url": "http://www.wework.com/buildings/100-summer-st--boston--ma",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6192,
+   "slug": "workbar-arlington-arlington",
+   "name": "Workbar Arlington",
+   "city": "Arlington",
+   "state": "MA",
+   "url": "https://www.workbar.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6194,
+   "slug": "launch-co-working-spaces-salem",
+   "name": "Launch Co-Working Spaces",
+   "city": "Salem",
+   "state": "MA",
+   "url": "https://localworks.us",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6195,
+   "slug": "rivolve-coworking-inc-virtual-office-space-conference-room-google-my-business-services-haverhill",
+   "name": "Rivolve Coworking, Inc-Virtual Office Space, Conference Room, Google My Business Services",
+   "city": "Haverhill",
+   "state": "MA",
+   "url": "https://www.rivolvecowo.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6198,
+   "slug": "provision-work-spaces-salem",
+   "name": "Provision Work Spaces",
+   "city": "Salem",
+   "state": "MA",
+   "url": "https://provisionworkspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6200,
+   "slug": "wework-200-berkeley-boston",
+   "name": "Wework 200 Berkeley",
+   "city": "Boston",
+   "state": "MA",
+   "url": "http://www.wework.com/buildings/200-berkeley--boston--ma",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6201,
+   "slug": "wework-one-lincoln-street-boston",
+   "name": "Wework One Lincoln Street",
+   "city": "Boston",
+   "state": "MA",
+   "url": "https://www.wework.com/buildings/one-lincoln-street--boston--ma",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6204,
+   "slug": "worclab-incubator-coworking-space-worcester",
+   "name": "Worclab Incubator & Coworking Space",
+   "city": "Worcester",
+   "state": "MA",
+   "url": "https://worclab.org",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6205,
+   "slug": "coworking-station-of-walpole-walpole",
+   "name": "Coworking Station Of Walpole",
+   "city": "Walpole",
+   "state": "MA",
+   "url": "https://coworkingstationwalpole.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6212,
+   "slug": "strategic-workspaces-burlington",
+   "name": "Strategic Workspaces",
+   "city": "Burlington",
+   "state": "MA",
+   "url": "https://www.strategicspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6213,
+   "slug": "hayden-rowe-business-center-hopkinton",
+   "name": "Hayden Rowe Business Center",
+   "city": "Hopkinton",
+   "state": "MA",
+   "url": "https://www.hrbchopkinton.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6214,
+   "slug": "cubit-coworks-holyoke",
+   "name": "Cubit Coworks",
+   "city": "Holyoke",
+   "state": "MA",
+   "url": "https://www.cubitcoworks.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6215,
+   "slug": "click-workspace-northampton",
+   "name": "Click Workspace",
+   "city": "Northampton",
+   "state": "MA",
+   "url": "http://clickworkspace.org",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6220,
+   "slug": "hartford-stark-office-suites-hartford",
+   "name": "Hartford Stark Office Suites",
+   "city": "Hartford",
+   "state": "MA",
+   "url": "https://starkofficesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6228,
+   "slug": "workbar-cambridge-cambridge",
+   "name": "Workbar Cambridge",
+   "city": "Cambridge",
+   "state": "MA",
+   "url": "http://www.workbar.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6230,
+   "slug": "sprout-coworking-providence",
+   "name": "Sprout Coworking",
+   "city": "Providence",
+   "state": "MA",
+   "url": "https://sproutcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6238,
+   "slug": "highland-march-workspaces-braintree",
+   "name": "Highland March Workspaces",
+   "city": "Braintree",
+   "state": "MA",
+   "url": "https://highland-march.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6241,
+   "slug": "opus-virtual-offices-randolph",
+   "name": "Opus Virtual Offices",
+   "city": "Randolph",
+   "state": "MA",
+   "url": "https://www.opusvirtualoffices.com/virtual-office/massachusetts/randolph/location-471",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6242,
+   "slug": "inc-ubate-coworking-winthrop",
+   "name": "Inc.Ubate Coworking",
+   "city": "Winthrop",
+   "state": "MA",
+   "url": "https://incubatecoworking.com/contact-us",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6256,
+   "slug": "new-england-office-suites-portsmouth",
+   "name": "New England Office Suites",
+   "city": "Portsmouth",
+   "state": "MA",
+   "url": "https://www.newenglandofficesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6257,
+   "slug": "wework-51-melcher-st-boston",
+   "name": "Wework 51 Melcher St",
+   "city": "Boston",
+   "state": "MA",
+   "url": "https://www.fortpointdesign.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6258,
+   "slug": "wework-745-atlantic-ave-boston",
+   "name": "Wework 745 Atlantic Ave",
+   "city": "Boston",
+   "state": "MA",
+   "url": "https://www.wework.com/buildings/745-atlantic-ave--boston--ma",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6259,
+   "slug": "wework-200-portland-st-boston",
+   "name": "Wework 200 Portland St",
+   "city": "Boston",
+   "state": "MA",
+   "url": "https://www.wework.com/buildings/200-portland-st--boston--ma",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6260,
+   "slug": "greenspace-cowork-greenfield",
+   "name": "Greenspace Cowork",
+   "city": "Greenfield",
+   "state": "MA",
+   "url": "https://greenspacecowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6261,
+   "slug": "workspace-shipyard-hingham",
+   "name": "Workspace@Shipyard",
+   "city": "Hingham",
+   "state": "MA",
+   "url": "https://workspacema.com/locations/shipyard",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6271,
+   "slug": "east-point-executive-centers-nashua",
+   "name": "East Point Executive Centers",
+   "city": "Nashua",
+   "state": "MA",
+   "url": "https://newenglandexec.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6272,
+   "slug": "tradecenter-executive-suites-woburn",
+   "name": "Tradecenter Executive Suites",
+   "city": "Woburn",
+   "state": "MA",
+   "url": "https://www.tradecenter128.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6273,
+   "slug": "beverly-executive-suites-beverly",
+   "name": "Beverly Executive Suites",
+   "city": "Beverly",
+   "state": "MA",
+   "url": "https://www.executivesuitesbycummings.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6275,
+   "slug": "workbar-burlington-burlington",
+   "name": "Workbar Burlington",
+   "city": "Burlington",
+   "state": "MA",
+   "url": "http://www.workbar.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6278,
+   "slug": "workbar-needham-needham",
+   "name": "Workbar Needham",
+   "city": "Needham",
+   "state": "MA",
+   "url": "https://workbar.com/location/needham",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6279,
+   "slug": "red-oak-coworking-offices-manchester",
+   "name": "Red Oak Coworking Offices",
+   "city": "Manchester",
+   "state": "MA",
+   "url": "https://redoakcoworking.com/blog/downtown-manchester-nh-coworking-offices-parking",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6285,
+   "slug": "workspace-45-canton",
+   "name": "Workspace@45",
+   "city": "Canton",
+   "state": "MA",
+   "url": "https://workspacema.com/locations/45",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6288,
+   "slug": "office-evolution-burlington-burlington",
+   "name": "Office Evolution Burlington",
+   "city": "Burlington",
+   "state": "MA",
+   "url": "http://www.officeevolution.com/burlington",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6289,
+   "slug": "z-park-innovation-center-boston-cambridge",
+   "name": "Z Park Innovation Center Boston",
+   "city": "Cambridge",
+   "state": "MA",
+   "url": "https://www.zpark.space",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6291,
+   "slug": "ios-business-center-portsmouth",
+   "name": "Ios Business Center",
+   "city": "Portsmouth",
+   "state": "MA",
+   "url": "https://ohive.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6292,
+   "slug": "resurge-coworking-newburyport",
+   "name": "Resurge Coworking",
+   "city": "Newburyport",
+   "state": "MA",
+   "url": "https://www.resurgecoworkingnbpt.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6299,
+   "slug": "wework-one-seaport-square-boston",
+   "name": "Wework One Seaport Square",
+   "city": "Boston",
+   "state": "MA",
+   "url": "https://www.wework.com/buildings/one-seaport-square--boston--ma",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6300,
+   "slug": "readyspaces-braintree",
+   "name": "Readyspaces",
+   "city": "Braintree",
+   "state": "MA",
+   "url": "https://readyspaces.com/location/boston/braintree",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6301,
+   "slug": "industrious-legacy-place-dedham",
+   "name": "Industrious Legacy Place",
+   "city": "Dedham",
+   "state": "MA",
+   "url": "https://www.industriousoffice.com/l/boston/dedham/770-legacy-place",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6302,
+   "slug": "wework-501-boylston-st-boston",
+   "name": "Wework 501 Boylston St",
+   "city": "Boston",
+   "state": "MA",
+   "url": "https://www.wework.com/buildings/501-boylston-st--boston--ma",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6304,
+   "slug": "progress-coworking-aurora",
+   "name": "Progress Coworking",
+   "city": "Aurora",
+   "state": "CO",
+   "url": "https://progresscoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6305,
+   "slug": "mile-high-coworking-denver",
+   "name": "Mile High Coworking",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://milehighcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6306,
+   "slug": "furniture-creative-coworking-denver",
+   "name": "Furniture Creative Coworking",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.furniturecoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6309,
+   "slug": "therapy-coworking-space-denver",
+   "name": "Therapy Coworking Space",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://ipseitycounselingclinic.com/therapy-office-space-denver",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6310,
+   "slug": "park-coworking-denver",
+   "name": "Park Coworking",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.parkcowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6311,
+   "slug": "handshakin-headquarters-co-working-space-denver",
+   "name": "Handshakin Headquarters Co-Working Space",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.handshaking.com/hq.html",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6312,
+   "slug": "wework-triangle-building-denver",
+   "name": "Wework Triangle Building",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.wework.com/buildings/triangle-building--denver--co",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6313,
+   "slug": "wework-civic-center-plaza-denver",
+   "name": "Wework Civic Center Plaza",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.civiccenterdenver.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6314,
+   "slug": "craft-coworking-golden-golden",
+   "name": "Craft Coworking Golden",
+   "city": "Golden",
+   "state": "CO",
+   "url": "https://workatcraft.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6315,
+   "slug": "kore-6500-centennial",
+   "name": "Kore 6500",
+   "city": "Centennial",
+   "state": "CO",
+   "url": "https://korecoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6316,
+   "slug": "kore-co-working-greenwood-village",
+   "name": "Kore Co-Working",
+   "city": "Greenwood Village",
+   "state": "CO",
+   "url": "https://korecoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6317,
+   "slug": "genesee-labs-coworking-golden",
+   "name": "Genesee Labs Coworking",
+   "city": "Golden",
+   "state": "CO",
+   "url": "https://www.geneseelabs.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6318,
+   "slug": "enterprise-coworking-greenwood-village-greenwood-village",
+   "name": "Enterprise Coworking Greenwood Village",
+   "city": "Greenwood Village",
+   "state": "CO",
+   "url": "https://enterprisecoworking.com/coworking-dtc-greenwood-village",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6320,
+   "slug": "wework-170-boulevard-de-la-villette-denver",
+   "name": "Wework 170 Boulevard De La Villette",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://wework.com/buildings/wells-fargo-center--denver--co",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6322,
+   "slug": "shift-workspaces-littleton-littleton",
+   "name": "Shift Workspaces Littleton",
+   "city": "Littleton",
+   "state": "CO",
+   "url": "https://findworkspaces.com/workspaces/shift-workspaces-littleton",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6323,
+   "slug": "creative-density-sunnyside-denver",
+   "name": "Creative Density Sunnyside",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.forty45coworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6325,
+   "slug": "basecamp-coworking-lafayette",
+   "name": "Basecamp Coworking",
+   "city": "Lafayette",
+   "state": "CO",
+   "url": "https://basecamplafayette.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6326,
+   "slug": "enterprise-cowroking-rino-denver",
+   "name": "Enterprise Cowroking Rino",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://enterprisecoworking.com/rino-coworking-space",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6330,
+   "slug": "thrive-workplace-denver",
+   "name": "Thrive Workplace",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.thriveworkplace.com/cherry-creek",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6334,
+   "slug": "wework-tabor-center-denver",
+   "name": "Wework Tabor Center",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.wework.com/buildings/tabor-center--denver--co",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6335,
+   "slug": "wework-the-lab-denver",
+   "name": "Wework The Lab",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.wework.com/buildings/the-lab--denver--co",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6336,
+   "slug": "modworks-coworking-denver",
+   "name": "Modworks Coworking",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.modworks.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6337,
+   "slug": "novel-coworking-15th-canyon-boulder",
+   "name": "Novel Coworking 15Th & Canyon",
+   "city": "Boulder",
+   "state": "CO",
+   "url": "https://expansive.com/locations/colorado/boulder/15th-and-canyon",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6339,
+   "slug": "smartspace-denver",
+   "name": "Smartspace",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.runwayworkspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6343,
+   "slug": "epicentral-coworking-colorado-springs",
+   "name": "Epicentral Coworking",
+   "city": "Colorado Springs",
+   "state": "CO",
+   "url": "https://epicentral.org",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6347,
+   "slug": "the9thfloor-colorado-springs",
+   "name": "The9thfloor",
+   "city": "Colorado Springs",
+   "state": "CO",
+   "url": "https://inspired-workspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6349,
+   "slug": "executive-cowork-space-oc-central-colorado-springs",
+   "name": "Executive Cowork Space @ Oc Central",
+   "city": "Colorado Springs",
+   "state": "CO",
+   "url": "https://oc-central.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6355,
+   "slug": "green-spaces-denver",
+   "name": "Green Spaces",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.greenspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6358,
+   "slug": "tt-properties-llc-littleton",
+   "name": "Tt Properties Llc",
+   "city": "Littleton",
+   "state": "CO",
+   "url": "https://littletonofficespace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6361,
+   "slug": "dwc-old-town-office-space-fort-collins",
+   "name": "Dwc Old Town Office Space",
+   "city": "Fort Collins",
+   "state": "CO",
+   "url": "https://digitalworkshopcenter.com/fort-collins-coworking-membership",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6363,
+   "slug": "front-range-business-centers-fort-collins",
+   "name": "Front Range Business Centers",
+   "city": "Fort Collins",
+   "state": "CO",
+   "url": "https://frontrangebusinesscenters.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6364,
+   "slug": "drake-professional-park-fort-collins",
+   "name": "Drake Professional Park",
+   "city": "Fort Collins",
+   "state": "CO",
+   "url": "https://fortcollinsofficespace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6365,
+   "slug": "old-town-executive-suites-fort-collins",
+   "name": "Old Town Executive Suites",
+   "city": "Fort Collins",
+   "state": "CO",
+   "url": "https://www.oldtownsq.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6367,
+   "slug": "co-work-n-denver-lakewood",
+   "name": "Co Work'n Denver",
+   "city": "Lakewood",
+   "state": "CO",
+   "url": "https://coworkndenver.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6368,
+   "slug": "office-suites-thornton-thornton",
+   "name": "Office Suites Thornton",
+   "city": "Thornton",
+   "state": "CO",
+   "url": "http://www.selfstorage-northglenn.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6369,
+   "slug": "office-evolution-cherry-creek-denver",
+   "name": "Office Evolution Cherry Creek",
+   "city": "Denver",
+   "state": "CO",
+   "url": "http://www.officeevolution.com/cherry-creek-co",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6372,
+   "slug": "connects-workspace-mercantile-offices-golden",
+   "name": "Connects Workspace Mercantile Offices",
+   "city": "Golden",
+   "state": "CO",
+   "url": "https://www.connectsworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6373,
+   "slug": "connects-workspace-golden-golden",
+   "name": "Connects Workspace Golden",
+   "city": "Golden",
+   "state": "CO",
+   "url": "https://connectsworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6379,
+   "slug": "sheridan-nine-executive-suites-westminster",
+   "name": "Sheridan Nine Executive Suites",
+   "city": "Westminster",
+   "state": "CO",
+   "url": "http://offices.org",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6381,
+   "slug": "the-village-workspace-centennial",
+   "name": "The Village Workspace",
+   "city": "Centennial",
+   "state": "CO",
+   "url": "https://thevillageworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6386,
+   "slug": "mmm-hq-coworking-longmont",
+   "name": "Mmm Hq Coworking",
+   "city": "Longmont",
+   "state": "CO",
+   "url": "https://mrmoneymustache.com/hq",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6387,
+   "slug": "campworks-coworking-boulder",
+   "name": "Campworks Coworking",
+   "city": "Boulder",
+   "state": "CO",
+   "url": "https://www.campworks.co/contact-campworks",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6388,
+   "slug": "skiwork-coworking-space-winter-park",
+   "name": "Skiwork Coworking Space",
+   "city": "Winter Park",
+   "state": "CO",
+   "url": "https://www.skiwork.co",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6389,
+   "slug": "galvanize-boulder-boulder",
+   "name": "Galvanize Boulder",
+   "city": "Boulder",
+   "state": "CO",
+   "url": "https://www.galvanize.com/coworking",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6398,
+   "slug": "the-virtual-workplace-lone-tree",
+   "name": "The Virtual Workplace",
+   "city": "Lone Tree",
+   "state": "CO",
+   "url": "http://www.officeevolution.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6399,
+   "slug": "experience-coworking-longmont",
+   "name": "Experience Coworking",
+   "city": "Longmont",
+   "state": "CO",
+   "url": "https://experiencecowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6401,
+   "slug": "desk-chair-workspace-loveland",
+   "name": "Desk Chair Workspace",
+   "city": "Loveland",
+   "state": "CO",
+   "url": "https://deskchairworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6403,
+   "slug": "broomfield-office-suites-broomfield",
+   "name": "Broomfield Office Suites",
+   "city": "Broomfield",
+   "state": "CO",
+   "url": "https://www.80garden.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6404,
+   "slug": "alt-space-coworking-grand-junction-grand-junction",
+   "name": "Alt Space Coworking: Grand Junction",
+   "city": "Grand Junction",
+   "state": "CO",
+   "url": "https://en.parkopedia.com/parking/lot/alt_space_coworking:_grand_junction/81501/grand_junction",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6405,
+   "slug": "alt-space-coworking-cmu-innovation-center-grand-junction",
+   "name": "Alt Space Coworking: Cmu Innovation Center",
+   "city": "Grand Junction",
+   "state": "CO",
+   "url": "https://altspacecowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6406,
+   "slug": "craft-coworking-castle-rock-castle-rock",
+   "name": "Craft Coworking Castle Rock",
+   "city": "Castle Rock",
+   "state": "CO",
+   "url": "https://workatcraft.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6412,
+   "slug": "spaces-real-estate-boulder",
+   "name": "Spaces Real Estate",
+   "city": "Boulder",
+   "state": "CO",
+   "url": "https://dan.com/buy-domain/yourspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6415,
+   "slug": "connects-workspace-red-rocks-golden",
+   "name": "Connects Workspace Red Rocks",
+   "city": "Golden",
+   "state": "CO",
+   "url": "https://www.connectsworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6417,
+   "slug": "spruce-front-spaces-louisville",
+   "name": "Spruce Front Spaces",
+   "city": "Louisville",
+   "state": "CO",
+   "url": "https://sprucefrontspaces.com/sample-page-2/offices",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6418,
+   "slug": "connects-workspace-golden",
+   "name": "Connects Workspace",
+   "city": "Golden",
+   "state": "CO",
+   "url": "http://www.connectsworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6420,
+   "slug": "alt-space-coworking-ridgway-ridgway",
+   "name": "Alt Space Coworking: Ridgway",
+   "city": "Ridgway",
+   "state": "CO",
+   "url": "https://altspacecowork.com/contact-us",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6423,
+   "slug": "durango-office-suites-durango",
+   "name": "Durango Office Suites",
+   "city": "Durango",
+   "state": "CO",
+   "url": "https://www.durangoofficesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6427,
+   "slug": "fworks-fruita",
+   "name": "Fworks",
+   "city": "Fruita",
+   "state": "CO",
+   "url": "https://gjincubator.org/fworks-coworking-space",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6428,
+   "slug": "nextspace-coworking-berkeley-berkeley",
+   "name": "Nextspace Coworking Berkeley",
+   "city": "Berkeley",
+   "state": "CO",
+   "url": "https://pacificworkplaces.com/locations/berkeley-coworking-space",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6429,
+   "slug": "vortex-work-space-leadville",
+   "name": "Vortex Work Space",
+   "city": "Leadville",
+   "state": "CO",
+   "url": "http://vortexworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6431,
+   "slug": "evo-3-workspace-frisco",
+   "name": "Evo 3 Workspace",
+   "city": "Frisco",
+   "state": "CO",
+   "url": "https://www.evo3workspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6432,
+   "slug": "peak-cowork-evergreen",
+   "name": "Peak Cowork",
+   "city": "Evergreen",
+   "state": "CO",
+   "url": "https://peakcowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6433,
+   "slug": "elevations-coworking-conifer",
+   "name": "Elevations Coworking",
+   "city": "Conifer",
+   "state": "CO",
+   "url": "https://www.elevationsworkspace.com/contact-us",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6434,
+   "slug": "flow-theory-coworks-evergreen",
+   "name": "Flow Theory Coworks",
+   "city": "Evergreen",
+   "state": "CO",
+   "url": "https://www.flowtheorycoworks.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6435,
+   "slug": "stone-house-business-center-evergreen",
+   "name": "Stone House Business Center",
+   "city": "Evergreen",
+   "state": "CO",
+   "url": "https://www.slb.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6437,
+   "slug": "the-collective-mine-a-proximity-co-working-space-naturita",
+   "name": "The Collective Mine, A Proximity Co-Working Space",
+   "city": "Naturita",
+   "state": "CO",
+   "url": "https://collectivemine.app.proximity.space",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6438,
+   "slug": "the-orange-space-redlands",
+   "name": "The Orange Space",
+   "city": "Redlands",
+   "state": "CO",
+   "url": "https://www.theorange.space/rentals",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6441,
+   "slug": "wework-the-hub-denver",
+   "name": "Wework The Hub",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.wework.com/buildings/the-hub--denver--co",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6442,
+   "slug": "engage-coworking-snowmass-village",
+   "name": "Engage Coworking",
+   "city": "Snowmass Village",
+   "state": "CO",
+   "url": "https://engagecoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6444,
+   "slug": "executive-business-ctr-englewood",
+   "name": "Executive Business Ctr",
+   "city": "Englewood",
+   "state": "CO",
+   "url": "https://www.denver-executive-suites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6445,
+   "slug": "alt-space-coworking-montrose-montrose",
+   "name": "Alt Space Coworking: Montrose",
+   "city": "Montrose",
+   "state": "CO",
+   "url": "https://montrose.altspacecowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6446,
+   "slug": "alt-space-coworking-telluride",
+   "name": "Alt Space Coworking",
+   "city": "Telluride",
+   "state": "CO",
+   "url": "https://ridgway.altspacecowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6448,
+   "slug": "cowork-salida-salida",
+   "name": "Cowork Salida",
+   "city": "Salida",
+   "state": "CO",
+   "url": "http://www.coworksalida.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6450,
+   "slug": "front-range-co-working-colorado-springs",
+   "name": "Front Range Co-Working",
+   "city": "Colorado Springs",
+   "state": "CO",
+   "url": "https://frontrange.work",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6451,
+   "slug": "thrive-workplace-ballpark-denver",
+   "name": "Thrive Workplace Ballpark",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.thriveworkplace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6452,
+   "slug": "wework-the-circa-building-denver",
+   "name": "Wework The Circa Building",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.wework.com/buildings/the-circa-building--denver--co",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6455,
+   "slug": "wework-financial-house-denver",
+   "name": "Wework Financial House",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.wework.com/buildings/financial-house--denver--co",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6456,
+   "slug": "novel-coworking-16th-street-denver",
+   "name": "Novel Coworking 16Th Street",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://expansive.com/locations/colorado/denver/16th-street",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6457,
+   "slug": "novel-coworking-trinity-place-denver",
+   "name": "Novel Coworking Trinity Place",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://expansive.com/locations/colorado/denver/trinity-place",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6458,
+   "slug": "green-spaces-colorado-denver",
+   "name": "Green Spaces Colorado",
+   "city": "Denver",
+   "state": "CO",
+   "url": "https://www.greenspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6462,
+   "slug": "amherst-executive-center-boston",
+   "name": "Amherst Executive Center",
+   "city": "Boston",
+   "state": "NY",
+   "url": "https://firstamherst.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6466,
+   "slug": "wework-6001-cass-ave-detroit",
+   "name": "Wework 6001 Cass Ave",
+   "city": "Detroit",
+   "state": "MI",
+   "url": "https://www.wework.com/l/office-space/detroit--mi",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6473,
+   "slug": "grand-river-workplace-detroit",
+   "name": "Grand River Workplace",
+   "city": "Detroit",
+   "state": "MI",
+   "url": "https://www.grandriverworkplace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6488,
+   "slug": "epidesk-coworking-troy",
+   "name": "Epidesk Coworking",
+   "city": "Troy",
+   "state": "MI",
+   "url": "https://www.brandbucket.com/names/epidesk",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6493,
+   "slug": "sheffield-office-park-troy",
+   "name": "Sheffield Office Park",
+   "city": "Troy",
+   "state": "MI",
+   "url": "https://www.farbman.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6498,
+   "slug": "mihq-ann-arbor",
+   "name": "Mihq",
+   "city": "Ann Arbor",
+   "state": "MI",
+   "url": "https://www.mi-hq.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6499,
+   "slug": "professional-business-centers-livonia",
+   "name": "Professional Business Centers",
+   "city": "Livonia",
+   "state": "MI",
+   "url": "http://dcdgroup.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6502,
+   "slug": "sos-shared-office-space-lansing",
+   "name": "Sos: Shared Office Space",
+   "city": "Lansing",
+   "state": "MI",
+   "url": "https://soslansing.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6503,
+   "slug": "the-space-next-door-coworking-space-st-johns",
+   "name": "The Space Next Door - Coworking Space",
+   "city": "St Johns",
+   "state": "MI",
+   "url": "https://www.waypointcoffee.com/the-space-next-door",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6504,
+   "slug": "clarkston-coworking-clarkston",
+   "name": "Clarkston Coworking",
+   "city": "Clarkston",
+   "state": "MI",
+   "url": "https://www.clarkstonbn.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6520,
+   "slug": "we-work-hobart",
+   "name": "We Work",
+   "city": "Hobart",
+   "state": "MI",
+   "url": "https://www.wework.com/buildings/448-north-lasalle-st--chicago--il",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6523,
+   "slug": "amity-coworking-northville",
+   "name": "Amity Coworking",
+   "city": "Northville",
+   "state": "MI",
+   "url": "https://amitycoworking.com/faq",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6532,
+   "slug": "campfire-coworks-marquette",
+   "name": "Campfire Coworks",
+   "city": "Marquette",
+   "state": "MI",
+   "url": "https://campfirecoworks.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6534,
+   "slug": "warrior-workspace-waterford",
+   "name": "Warrior Workspace",
+   "city": "Waterford",
+   "state": "MI",
+   "url": "https://www.warriorworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6536,
+   "slug": "workco-flexible-workspace-furniture-gallery-birmingham",
+   "name": "Workco Flexible Workspace & Furniture Gallery",
+   "city": "Birmingham",
+   "state": "MI",
+   "url": "https://workco.com/contact",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6538,
+   "slug": "southwyck-business-center-llc-toledo",
+   "name": "Southwyck Business Center Llc.",
+   "city": "Toledo",
+   "state": "OH",
+   "url": "https://www.sbcoffices.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6543,
+   "slug": "space-traverse-city",
+   "name": "Space",
+   "city": "Traverse City",
+   "state": "MI",
+   "url": "https://www.spacecoworking.org",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6550,
+   "slug": "eddy-street-executive-suites-south-bend",
+   "name": "Eddy Street Executive Suites",
+   "city": "South Bend",
+   "state": "MI",
+   "url": "https://www.eddycommons.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6561,
+   "slug": "oak-business-center-flint",
+   "name": "Oak Business Center",
+   "city": "Flint",
+   "state": "MI",
+   "url": "https://www.cityofflint.com/location/oak-business-center",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6565,
+   "slug": "101-quincy-coworking-hancock",
+   "name": "101 Quincy Coworking",
+   "city": "Hancock",
+   "state": "MI",
+   "url": "https://101quincy.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6567,
+   "slug": "cowork-brighton-brighton",
+   "name": "Cowork Brighton",
+   "city": "Brighton",
+   "state": "MI",
+   "url": "https://coworkbrighton.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6568,
+   "slug": "frontal-lobe-coworking-howell",
+   "name": "Frontal Lobe Coworking",
+   "city": "Howell",
+   "state": "MI",
+   "url": "http://www.workfrontallobe.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6570,
+   "slug": "the-hub-coworking-birmingham",
+   "name": "The Hub Coworking",
+   "city": "Birmingham",
+   "state": "AL",
+   "url": "https://hubbham.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6578,
+   "slug": "zelda-executive-suites-montgomery",
+   "name": "Zelda Executive Suites",
+   "city": "Montgomery",
+   "state": "AL",
+   "url": "https://southernhandling.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6592,
+   "slug": "201-office-park-mountain-brk",
+   "name": "201 Office Park",
+   "city": "Mountain Brk",
+   "state": "AL",
+   "url": "https://www.strongautomotive.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6603,
+   "slug": "cowork-columbus-columbus",
+   "name": "Cowork Columbus",
+   "city": "Columbus",
+   "state": "GA",
+   "url": "https://cowork-columbus.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6607,
+   "slug": "daphne-cowork-daphne",
+   "name": "Daphne Cowork",
+   "city": "Daphne",
+   "state": "AL",
+   "url": "https://daphnecowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6608,
+   "slug": "59-north-coworking-space-robertsdale",
+   "name": "59 North Coworking Space",
+   "city": "Robertsdale",
+   "state": "AL",
+   "url": "https://59-north-coworking-space.business.site",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6609,
+   "slug": "workbase-the-coworking-space-pensacola",
+   "name": "Workbase The Coworking Space",
+   "city": "Pensacola",
+   "state": "AL",
+   "url": "https://www.workbase.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6612,
+   "slug": "hq-global-park-south-birmingham",
+   "name": "Hq Global Park South",
+   "city": "Birmingham",
+   "state": "AL",
+   "url": "https://www.hq.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6616,
+   "slug": "peachtree-offices-atlanta",
+   "name": "Peachtree Offices",
+   "city": "Atlanta",
+   "state": "GA",
+   "url": "https://www.peachtreeoffices.com/locations/3355-lenox",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6620,
+   "slug": "gainesville-executive-center-gainesville",
+   "name": "Gainesville Executive Center",
+   "city": "Gainesville",
+   "state": "GA",
+   "url": "https://www.officespace.com/fl/spring-hill",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6636,
+   "slug": "wework-1155-perimeter-center-west-atlanta",
+   "name": "Wework 1155 Perimeter Center West",
+   "city": "Atlanta",
+   "state": "GA",
+   "url": "http://www.wework.com/buildings/1155-perimeter-center-west--atlanta--ga",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6637,
+   "slug": "novel-coworking-johnson-square-savannah",
+   "name": "Novel Coworking Johnson Square",
+   "city": "Savannah",
+   "state": "GA",
+   "url": "https://expansive.com/locations/georgia/savannah/johnson-square",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6643,
+   "slug": "capcity-coworks-albany",
+   "name": "Capcity Coworks",
+   "city": "Albany",
+   "state": "GA",
+   "url": "https://capcitycoworks.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6646,
+   "slug": "harmony-coworks-cohoes",
+   "name": "Harmony Coworks",
+   "city": "Cohoes",
+   "state": "GA",
+   "url": "https://www.harmonycoworks.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6649,
+   "slug": "hangr-coworks-clifton-park",
+   "name": "Hangr Coworks",
+   "city": "Clifton Park",
+   "state": "GA",
+   "url": "https://hangrcoworks.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6651,
+   "slug": "the-innovation-spot-coworking-meeting-conference-and-office-space-woodstock",
+   "name": "The Innovation Spot, Coworking Meeting Conference And Office Space",
+   "city": "Woodstock",
+   "state": "GA",
+   "url": "https://www.theinnovationspot.com/privacy-policy",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6653,
+   "slug": "valdosta-shared-office-suites-valdosta",
+   "name": "Valdosta Shared Office Suites",
+   "city": "Valdosta",
+   "state": "GA",
+   "url": "https://www.valdostasharedofficespace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6657,
+   "slug": "regus-regus-centre-corp-alpharetta",
+   "name": "Regus Regus Centre Corp",
+   "city": "Alpharetta",
+   "state": "GA",
+   "url": "https://www.regus.com/locations/united-states/georgia/alpharetta/georgia-alpharetta-north-point",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6658,
+   "slug": "parkway-office-suites-ltd-peachtree-corners",
+   "name": "Parkway Office Suites Ltd",
+   "city": "Peachtree Corners",
+   "state": "GA",
+   "url": "http://www.suburbanexecutivesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6659,
+   "slug": "roam-innovative-workplace-alpharetta",
+   "name": "Roam Innovative Workplace",
+   "city": "Alpharetta",
+   "state": "GA",
+   "url": "http://meetatroam.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6664,
+   "slug": "fayette-executive-center-fayetteville",
+   "name": "Fayette Executive Center",
+   "city": "Fayetteville",
+   "state": "GA",
+   "url": "https://www.fayetteexecutivecenter.net",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6668,
+   "slug": "executive-suites-at-millbrook-tyrone",
+   "name": "Executive Suites At Millbrook",
+   "city": "Tyrone",
+   "state": "GA",
+   "url": "https://www.esmoffices.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6669,
+   "slug": "peachtree-executive-suites-peachtree-city",
+   "name": "Peachtree Executive Suites",
+   "city": "Peachtree City",
+   "state": "GA",
+   "url": "https://peachtreeexecutivesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6670,
+   "slug": "mcs-executive-suites-business-center-fayetteville",
+   "name": "Mcs Executive Suites & Business Center",
+   "city": "Fayetteville",
+   "state": "GA",
+   "url": "https://mcsexecctr.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6671,
+   "slug": "executive-suites-at-aberden-cr-peachtree-city",
+   "name": "Executive Suites At Aberden Cr",
+   "city": "Peachtree City",
+   "state": "GA",
+   "url": "https://www.aberdeensuitesllc.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6673,
+   "slug": "launch-and-go-workspace-peachtree-city",
+   "name": "Launch And Go Workspace",
+   "city": "Peachtree City",
+   "state": "GA",
+   "url": "https://www.launchandgoworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6678,
+   "slug": "chattanooga-executive-center-chattanooga",
+   "name": "Chattanooga Executive Center",
+   "city": "Chattanooga",
+   "state": "GA",
+   "url": "https://www.chattanoogaexecutivecenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6682,
+   "slug": "desktop-coworking-community-kennesaw",
+   "name": "Desktop Coworking Community",
+   "city": "Kennesaw",
+   "state": "GA",
+   "url": "https://www.workatdesktop.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6684,
+   "slug": "premier-executive-suites-woodstock",
+   "name": "Premier Executive Suites",
+   "city": "Woodstock",
+   "state": "GA",
+   "url": "http://woodstockofficespace.com/meeting-rooms",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6686,
+   "slug": "capitol-executive-suites-douglasville",
+   "name": "Capitol Executive Suites",
+   "city": "Douglasville",
+   "state": "GA",
+   "url": "http://www.meritagecentre.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6688,
+   "slug": "eastside-pavilion-office-suites-conyers",
+   "name": "Eastside Pavilion Office Suites",
+   "city": "Conyers",
+   "state": "GA",
+   "url": "http://www.eastsidepavilionofficesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6690,
+   "slug": "lakeside-executive-suites-acworth",
+   "name": "Lakeside Executive Suites",
+   "city": "Acworth",
+   "state": "GA",
+   "url": "https://www.acworthsuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6693,
+   "slug": "shared-workspace-by-technique-forest-park",
+   "name": "Shared Workspace By Technique",
+   "city": "Forest Park",
+   "state": "GA",
+   "url": "https://www.sharedworkspace.tech",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6694,
+   "slug": "baker-office-suites-tallahassee",
+   "name": "Baker Office Suites",
+   "city": "Tallahassee",
+   "state": "GA",
+   "url": "http://www.bakerofficesuites.com/virtual-office",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6696,
+   "slug": "ceo-business-center-duluth",
+   "name": "Ceo Business Center",
+   "city": "Duluth",
+   "state": "GA",
+   "url": "http://ceocenters.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6697,
+   "slug": "lionshare-cowork-jacksonville-beach",
+   "name": "Lionshare Cowork",
+   "city": "Jacksonville Beach",
+   "state": "GA",
+   "url": "https://www.lionsharecowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6698,
+   "slug": "clocktower-office-suites-at-the-lakes-kingsland",
+   "name": "Clocktower Office Suites At The Lakes",
+   "city": "Kingsland",
+   "state": "GA",
+   "url": "https://jbaileycompany.net",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6699,
+   "slug": "spring-glen-office-park-jacksonville",
+   "name": "Spring Glen Office Park",
+   "city": "Jacksonville",
+   "state": "FL",
+   "url": "https://www.springglenofficepark.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6700,
+   "slug": "executive-suite-professionals-jacksonville",
+   "name": "Executive Suite Professionals",
+   "city": "Jacksonville",
+   "state": "FL",
+   "url": "https://executivesuiteprofessionals.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6701,
+   "slug": "amelia-office-suites-fernandina-beach",
+   "name": "Amelia Office Suites",
+   "city": "Fernandina Beach",
+   "state": "GA",
+   "url": "https://ameliaofficesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6702,
+   "slug": "scenic-office-suites-snellville",
+   "name": "Scenic Office Suites",
+   "city": "Snellville",
+   "state": "GA",
+   "url": "https://www.scenicofficesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6710,
+   "slug": "carlson-cowork-rochester",
+   "name": "Carlson Cowork",
+   "city": "Rochester",
+   "state": "NY",
+   "url": "https://carlsoncowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6713,
+   "slug": "the-concierge-office-suites-chattanooga",
+   "name": "The Concierge Office Suites",
+   "city": "Chattanooga",
+   "state": "GA",
+   "url": "https://theconciergeofficesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6717,
+   "slug": "office-space-atlanta-atlanta",
+   "name": "Office Space Atlanta",
+   "city": "Atlanta",
+   "state": "GA",
+   "url": "https://www.officespaceatlanta.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6719,
+   "slug": "c3-village-coworking-stone-mountain",
+   "name": "C3 Village Coworking",
+   "city": "Stone Mountain",
+   "state": "GA",
+   "url": "https://c3village.com/en",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6720,
+   "slug": "coworking-at-our-place-oklahoma-city",
+   "name": "Coworking At Our Place",
+   "city": "Oklahoma City",
+   "state": "OK",
+   "url": "https://coworkingatourplace.com/home",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6725,
+   "slug": "rise-coworking-moore",
+   "name": "Rise Coworking",
+   "city": "Moore",
+   "state": "OK",
+   "url": "https://riseok.co/about",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6734,
+   "slug": "park-on-main-executive-suites-norman",
+   "name": "Park On Main Executive Suites",
+   "city": "Norman",
+   "state": "OK",
+   "url": "https://www.barkonmain.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6735,
+   "slug": "sonoma-lake-executive-suites-edmond",
+   "name": "Sonoma Lake Executive Suites",
+   "city": "Edmond",
+   "state": "OK",
+   "url": "http://www.stevebridewell.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6736,
+   "slug": "the-root-coworking-tulsa",
+   "name": "The Root Coworking",
+   "city": "Tulsa",
+   "state": "OK",
+   "url": "https://therootcoworking.com/contact",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6738,
+   "slug": "brookside-collective-coworking-tulsa",
+   "name": "Brookside Collective Coworking",
+   "city": "Tulsa",
+   "state": "OK",
+   "url": "https://www.brooksidecollective.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6740,
+   "slug": "tag-coworking-bixby",
+   "name": "Tag Coworking",
+   "city": "Bixby",
+   "state": "OK",
+   "url": "https://tagcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6742,
+   "slug": "coworking-bravely-broken-arrow",
+   "name": "Coworking Bravely",
+   "city": "Broken Arrow",
+   "state": "OK",
+   "url": "https://www.coworkingbravely.com/memberships",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6746,
+   "slug": "select-executive-suites-broken-arrow",
+   "name": "Select Executive Suites",
+   "city": "Broken Arrow",
+   "state": "OK",
+   "url": "https://bankruptcyokla.com/contact-bankruptcy-attorney-broken-arrow",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6747,
+   "slug": "broken-arrow-business-center-broken-arrow",
+   "name": "Broken Arrow Business Center",
+   "city": "Broken Arrow",
+   "state": "OK",
+   "url": "https://brokenarrowbusinesscenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6754,
+   "slug": "workit-coworking-center-stillwater",
+   "name": "Workit Coworking Center",
+   "city": "Stillwater",
+   "state": "OK",
+   "url": "https://coworkit.net",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6779,
+   "slug": "gspace-private-offices-fairfield",
+   "name": "Gspace Private Offices",
+   "city": "Fairfield",
+   "state": "CT",
+   "url": "https://gspace.us",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6782,
+   "slug": "stark-office-suites-mount-kisco",
+   "name": "Stark Office Suites",
+   "city": "Mount Kisco",
+   "state": "CT",
+   "url": "https://starkofficesuites.com/contact-us",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6783,
+   "slug": "westchester-business-center-white-plains",
+   "name": "Westchester Business Center",
+   "city": "White Plains",
+   "state": "CT",
+   "url": "https://www.westchesterbusinesscenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6788,
+   "slug": "launchpad-huntington",
+   "name": "Launchpad",
+   "city": "Huntington",
+   "state": "CT",
+   "url": "https://launchpadli.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6789,
+   "slug": "known-coworking-new-haven",
+   "name": "Known Coworking",
+   "city": "New Haven",
+   "state": "CT",
+   "url": "https://nhvknown.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6790,
+   "slug": "yardwork-co-working-litchfield",
+   "name": "Yardwork Co-Working",
+   "city": "Litchfield",
+   "state": "CT",
+   "url": "https://www.yardworkct.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6792,
+   "slug": "executive-suite-of-madison-guilford",
+   "name": "Executive Suite Of Madison",
+   "city": "Guilford",
+   "state": "CT",
+   "url": "http://kingassociates.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6793,
+   "slug": "wework-135-west-41st-st-new-york",
+   "name": "Wework 135 West 41St St.",
+   "city": "New York",
+   "state": "NY",
+   "url": "https://www.wework.com/buildings/135-w-41st-st--new-york-city--ny",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6795,
+   "slug": "west-hartford-coworking-west-hartford",
+   "name": "West Hartford Coworking",
+   "city": "West Hartford",
+   "state": "CT",
+   "url": "https://www.westhartfordcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6798,
+   "slug": "office-suites-one-stamford",
+   "name": "Office Suites One",
+   "city": "Stamford",
+   "state": "CT",
+   "url": "https://officesuitesone.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6799,
+   "slug": "blt-business-centers-stamford",
+   "name": "Blt Business Centers",
+   "city": "Stamford",
+   "state": "CT",
+   "url": "https://bltliveworkplay.com/apartments/stamford/harbor-point",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6800,
+   "slug": "office-evolution-stamford-stamford",
+   "name": "Office Evolution Stamford",
+   "city": "Stamford",
+   "state": "CT",
+   "url": "https://www.officeevolution.com/locations/stamford",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6801,
+   "slug": "office-suites-of-darien-darien",
+   "name": "Office Suites Of Darien",
+   "city": "Darien",
+   "state": "CT",
+   "url": "https://officesuitesofdarien.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6804,
+   "slug": "sono-spaces-norwalk",
+   "name": "Sono Spaces",
+   "city": "Norwalk",
+   "state": "CT",
+   "url": "https://sonospaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6806,
+   "slug": "nyack-business-center-nyack",
+   "name": "Nyack Business Center",
+   "city": "Nyack",
+   "state": "CT",
+   "url": "https://nyackbusinesscenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6809,
+   "slug": "ny-workspaces-lagrangeville",
+   "name": "Ny Workspaces",
+   "city": "Lagrangeville",
+   "state": "CT",
+   "url": "https://www.nyworkspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6811,
+   "slug": "carr-workplaces-westchester-coworking-office-space-harrison",
+   "name": "Carr Workplaces Westchester - Coworking & Office Space",
+   "city": "Harrison",
+   "state": "CT",
+   "url": "https://carrworkplaces.com/locations/new-york/westchester",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6816,
+   "slug": "430-new-park-avenue-west-hartford",
+   "name": "430 New Park Avenue",
+   "city": "West Hartford",
+   "state": "CT",
+   "url": "https://www.westhartfordcoworking.com/west-hartford-coworking-expands-with-move-to-430-new-park",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6817,
+   "slug": "avon-center-office-park-avon",
+   "name": "Avon Center Office Park",
+   "city": "Avon",
+   "state": "CT",
+   "url": "https://www.avon.com:443",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6821,
+   "slug": "work-space-manchester",
+   "name": "Work_Space",
+   "city": "Manchester",
+   "state": "CT",
+   "url": "https://workspacemanchester.com/art-culture",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6824,
+   "slug": "hamptons-virtual-office-southampton",
+   "name": "Hamptons Virtual Office",
+   "city": "Southampton",
+   "state": "CT",
+   "url": "https://hamptonsvirtual.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6825,
+   "slug": "hayvn-coworking-darien",
+   "name": "Hayvn Coworking",
+   "city": "Darien",
+   "state": "CT",
+   "url": "https://hayvn.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6831,
+   "slug": "shelter-rock-business-center-danbury",
+   "name": "Shelter Rock Business Center",
+   "city": "Danbury",
+   "state": "CT",
+   "url": "https://shelterrockwinery.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6832,
+   "slug": "cold-spring-office-park-cold-spring",
+   "name": "Cold Spring Office Park",
+   "city": "Cold Spring",
+   "state": "CT",
+   "url": "https://coldspringbeverages.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6842,
+   "slug": "blue-ash-office-suites-blue-ash",
+   "name": "Blue Ash Office Suites",
+   "city": "Blue Ash",
+   "state": "OH",
+   "url": "http://www.blueashofficesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6847,
+   "slug": "office-space-coworking-fairlawn",
+   "name": "Office Space Coworking",
+   "city": "Fairlawn",
+   "state": "OH",
+   "url": "https://www.officespace.com/oh/fairlawn",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6854,
+   "slug": "qwirk-coworking-qwirkcolumbus-com-columbus",
+   "name": "Qwirk Coworking (Qwirkcolumbus.Com)",
+   "city": "Columbus",
+   "state": "OH",
+   "url": "https://qwirkcolumbus.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6855,
+   "slug": "ion-coworking-columbus",
+   "name": "Ion Coworking",
+   "city": "Columbus",
+   "state": "OH",
+   "url": "http://ioncoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6858,
+   "slug": "workspace-office-suites-columbus",
+   "name": "Workspace Office Suites",
+   "city": "Columbus",
+   "state": "OH",
+   "url": "https://workspaceofficesuites.com/request-a-tour",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6860,
+   "slug": "wework-800-n-high-st-columbus",
+   "name": "Wework 800 N High St",
+   "city": "Columbus",
+   "state": "OH",
+   "url": "https://wework.com/buildings/800-n-high-st--columbus",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6863,
+   "slug": "p-s-executive-centers-inc-columbus",
+   "name": "P S Executive Centers Inc",
+   "city": "Columbus",
+   "state": "OH",
+   "url": "https://www.psoffices.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6866,
+   "slug": "office-evolution-columbus-downtown-columbus",
+   "name": "Office Evolution Columbus Downtown",
+   "city": "Columbus",
+   "state": "OH",
+   "url": "https://www.officeevolution.com/locations/columbus-downtown",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6869,
+   "slug": "p-s-executive-center-inc-columbus",
+   "name": "P S Executive Center Inc",
+   "city": "Columbus",
+   "state": "OH",
+   "url": "https://www.psoffices.com/locations/ps-columbus-north-polaris",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6870,
+   "slug": "executive-office-place-columbus",
+   "name": "Executive Office Place",
+   "city": "Columbus",
+   "state": "OH",
+   "url": "https://www.domainmarket.com:443/buynow/www.executiveofficeplace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6873,
+   "slug": "spaces-co-cleveland",
+   "name": "Spaces & Co.",
+   "city": "Cleveland",
+   "state": "OH",
+   "url": "https://spacesandco.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6876,
+   "slug": "quarry-coworking-space-berea",
+   "name": "Quarry Coworking Space",
+   "city": "Berea",
+   "state": "OH",
+   "url": "https://www.quarry.work",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6880,
+   "slug": "distinctive-spaces-llc-hudson",
+   "name": "Distinctive Spaces Llc",
+   "city": "Hudson",
+   "state": "OH",
+   "url": "http://www.officesatstoneyhill.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6882,
+   "slug": "virtual-offices-of-cleveland-cleveland",
+   "name": "Virtual Offices Of Cleveland",
+   "city": "Cleveland",
+   "state": "OH",
+   "url": "https://www.virtualofficesofcleveland.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6885,
+   "slug": "odd-fellows-llc-covington",
+   "name": "Odd Fellows Llc",
+   "city": "Covington",
+   "state": "OH",
+   "url": "https://oddfellowscowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6886,
+   "slug": "1628-ltd-coworking-meets-hospitality-cincinnati",
+   "name": "1628 Ltd. | Coworking Meets Hospitality",
+   "city": "Cincinnati",
+   "state": "OH",
+   "url": "https://1628ltd.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6887,
+   "slug": "pioneer-co-working-space-and-office-rentals-cincinnati",
+   "name": "Pioneer Co-Working Space And Office Rentals",
+   "city": "Cincinnati",
+   "state": "OH",
+   "url": "http://www.pbc4212.com/pioneer",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6888,
+   "slug": "impact-cowork-newport",
+   "name": "Impact Cowork",
+   "city": "Newport",
+   "state": "OH",
+   "url": "https://members.impactcowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6893,
+   "slug": "odd-fellows-coworking-space-covington",
+   "name": "Odd Fellows Coworking Space",
+   "city": "Covington",
+   "state": "OH",
+   "url": "http://oddfellowscowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6905,
+   "slug": "orca-coworking-lebanon-lebanon",
+   "name": "Orca Coworking Lebanon",
+   "city": "Lebanon",
+   "state": "OH",
+   "url": "https://www.orcacoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6907,
+   "slug": "beavercreek-office-suites-beavercreek-township",
+   "name": "Beavercreek Office Suites",
+   "city": "Beavercreek Township",
+   "state": "OH",
+   "url": "https://www.beavercreekofficesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6909,
+   "slug": "launch-workplaces-woodmere",
+   "name": "Launch Workplaces",
+   "city": "Woodmere",
+   "state": "OH",
+   "url": "https://launchworkplaces.com/locations/eton-chagrin",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6916,
+   "slug": "cornercowork-cincinnati",
+   "name": "Cornercowork",
+   "city": "Cincinnati",
+   "state": "OH",
+   "url": "https://cornercowork.business.site",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6923,
+   "slug": "kemper-pond-office-park-cincinnati",
+   "name": "Kemper Pond Office Park",
+   "city": "Cincinnati",
+   "state": "OH",
+   "url": "https://kemperpondofficepark.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6933,
+   "slug": "northern-ohio-business-center-sheffield",
+   "name": "Northern Ohio Business Center",
+   "city": "Sheffield",
+   "state": "OH",
+   "url": "https://www.nobc.info",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6936,
+   "slug": "womens-business-center-of-ohio-cincinnati",
+   "name": "Womens Business Center Of Ohio",
+   "city": "Cincinnati",
+   "state": "OH",
+   "url": "https://www.wbcohio.org",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6937,
+   "slug": "orca-coworking-mason",
+   "name": "Orca Coworking",
+   "city": "Mason",
+   "state": "OH",
+   "url": "https://orcacoworking.com/contact-orca-coworking",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6938,
+   "slug": "ps-executive-centers-westlake",
+   "name": "Ps Executive Centers",
+   "city": "Westlake",
+   "state": "OH",
+   "url": "https://www.psoffices.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6939,
+   "slug": "coffyspace-coworking-the-port-ashland",
+   "name": "Coffyspace Coworking - The Port",
+   "city": "Ashland",
+   "state": "OH",
+   "url": "https://coffyspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6941,
+   "slug": "novel-coworking-hooper-building-cincinnati",
+   "name": "Novel Coworking Hooper Building",
+   "city": "Cincinnati",
+   "state": "OH",
+   "url": "https://expansive.com/locations/ohio/cincinnati/hooper-building",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6946,
+   "slug": "orion-coworking-aecom-cleveland",
+   "name": "Orion Coworking - Aecom",
+   "city": "Cleveland",
+   "state": "OH",
+   "url": "http://www.orionofficespace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6947,
+   "slug": "orion-executive-suites-cleveland",
+   "name": "Orion Executive Suites",
+   "city": "Cleveland",
+   "state": "OH",
+   "url": "https://orionofficespace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6952,
+   "slug": "coworkingkc-kansas-city",
+   "name": "Coworkingkc",
+   "city": "Kansas City",
+   "state": "MO",
+   "url": "http://hivecoworking.com/contact",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6957,
+   "slug": "spark-coworking-st-louis-st-louis",
+   "name": "Spark Coworking - St. Louis",
+   "city": "St. Louis",
+   "state": "MO",
+   "url": "https://sparkcoworking.com/st-louis",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6958,
+   "slug": "garrett-coworking-center-hazelwood",
+   "name": "Garrett Coworking Center",
+   "city": "Hazelwood",
+   "state": "MO",
+   "url": "https://garrettcoworkingcenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6959,
+   "slug": "aos-alternative-office-space-east-alton",
+   "name": "Aos Alternative Office Space",
+   "city": "East Alton",
+   "state": "MO",
+   "url": "https://alternativeofficespace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6960,
+   "slug": "working-spaces-inc-saint-louis",
+   "name": "Working Spaces Inc",
+   "city": "Saint Louis",
+   "state": "MO",
+   "url": "https://wspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6969,
+   "slug": "industrious-st-louis-saint-louis",
+   "name": "Industrious St. Louis",
+   "city": "Saint Louis",
+   "state": "MO",
+   "url": "http://www.industriousoffice.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6971,
+   "slug": "cast-workspace-co-op-springfield",
+   "name": "Cast Workspace Co-Op",
+   "city": "Springfield",
+   "state": "MO",
+   "url": "https://www.castcoworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6973,
+   "slug": "hometown-ventures-shared-office-space-nixa",
+   "name": "Hometown Ventures Shared Office Space",
+   "city": "Nixa",
+   "state": "MO",
+   "url": "https://myhometownventures.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6974,
+   "slug": "cast-workspace-springfield",
+   "name": "Cast Workspace",
+   "city": "Springfield",
+   "state": "MO",
+   "url": "https://castcoworkspace.com/location/cast-workspace",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6986,
+   "slug": "executive-suites-services-overland-park",
+   "name": "Executive Suites & Services",
+   "city": "Overland Park",
+   "state": "MO",
+   "url": "https://suitesandservices.org",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6989,
+   "slug": "triad-crossing-executive-suites-weldon-spring",
+   "name": "Triad Crossing Executive Suites",
+   "city": "Weldon Spring",
+   "state": "MO",
+   "url": "https://www.domainmarket.com:443/buynow/www.triaddevelopment.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6990,
+   "slug": "bridgeton-executive-suites-bridgeton",
+   "name": "Bridgeton Executive Suites",
+   "city": "Bridgeton",
+   "state": "MO",
+   "url": "http://www.bridgetonexecutivesuites.com/index.php",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6991,
+   "slug": "wework-one-metropolitan-square-saint-louis",
+   "name": "Wework One Metropolitan Square",
+   "city": "Saint Louis",
+   "state": "MO",
+   "url": "https://www.wework.com/buildings/one-metropolitan-square--st-louis",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6993,
+   "slug": "buttonwood-business-center-columbia",
+   "name": "Buttonwood Business Center",
+   "city": "Columbia",
+   "state": "MO",
+   "url": "https://buttonwoodbusinesscenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 6997,
+   "slug": "corporate-woods-office-park-overland-park",
+   "name": "Corporate Woods Office Park",
+   "city": "Overland Park",
+   "state": "MO",
+   "url": "https://www.corporatewoods.com/toc.cfm",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7002,
+   "slug": "aviary-coworking-saint-louis",
+   "name": "Aviary Coworking",
+   "city": "Saint Louis",
+   "state": "MO",
+   "url": "https://aviarycoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7004,
+   "slug": "edison-spaces-overland-park",
+   "name": "Edison Spaces",
+   "city": "Overland Park",
+   "state": "MO",
+   "url": "https://www.edisonspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7010,
+   "slug": "novel-coworking-kessler-building-kansas-city",
+   "name": "Novel Coworking Kessler Building",
+   "city": "Kansas City",
+   "state": "MO",
+   "url": "https://expansive.com/locations/missouri/kansas-city/kessler-building",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7016,
+   "slug": "west-towers-executive-offices-west-des-moines",
+   "name": "West Towers Executive Offices",
+   "city": "West Des Moines",
+   "state": "IA",
+   "url": "http://www.valleyofficeparkwdm.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7020,
+   "slug": "springboard-coworking-sioux-city",
+   "name": "Springboard Coworking",
+   "city": "Sioux City",
+   "state": "IA",
+   "url": "https://www.springboardcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7024,
+   "slug": "intandem-workspace-webster-city",
+   "name": "Intandem Workspace",
+   "city": "Webster City",
+   "state": "IA",
+   "url": "http://www.intandemworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7025,
+   "slug": "avant-spaces-elkhorn",
+   "name": "Avant Spaces",
+   "city": "Elkhorn",
+   "state": "IA",
+   "url": "https://www.avantspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7027,
+   "slug": "cloudport-coworking-multispace-portland",
+   "name": "Cloudport Coworking Multispace",
+   "city": "Portland",
+   "state": "ME",
+   "url": "https://cloudportme.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7028,
+   "slug": "the-public-works-coworking-space-portland",
+   "name": "The Public Works - Coworking Space",
+   "city": "Portland",
+   "state": "ME",
+   "url": "https://www.thepublicworks.me/studios",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7029,
+   "slug": "sopoco-works-south-portland",
+   "name": "Sopoco.Works",
+   "city": "South Portland",
+   "state": "ME",
+   "url": "https://sopoco.works",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7032,
+   "slug": "6-city-center-executive-suites-portland",
+   "name": "6 City Center Executive Suites",
+   "city": "Portland",
+   "state": "ME",
+   "url": "https://sixcitycenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7035,
+   "slug": "brunswick-business-center-brunswick",
+   "name": "Brunswick Business Center",
+   "city": "Brunswick",
+   "state": "ME",
+   "url": "https://brunswickbusinesscenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7039,
+   "slug": "rize-coworking-collaboration-space-bangor",
+   "name": "Rize - Coworking & Collaboration Space",
+   "city": "Bangor",
+   "state": "ME",
+   "url": "https://www.rizemaine.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7042,
+   "slug": "attache-business-center-biddeford",
+   "name": "Attaché Business Center",
+   "city": "Biddeford",
+   "state": "ME",
+   "url": "https://www.attachebusinesscenter.com/contact-us",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7050,
+   "slug": "centrl-office-portland-west-end-portland",
+   "name": "Centrl Office Portland West End",
+   "city": "Portland",
+   "state": "OR",
+   "url": "https://centrloffice.com/locations/oregon-portland-downtown",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7053,
+   "slug": "vida-coworking-portland",
+   "name": "Vida Coworking",
+   "city": "Portland",
+   "state": "OR",
+   "url": "https://vidacoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7054,
+   "slug": "brightside-space-co-working-portland",
+   "name": "Brightside Space Co-Working",
+   "city": "Portland",
+   "state": "OR",
+   "url": "https://www.brightsidespace.com/contact",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7057,
+   "slug": "genesis-workspace-tigard",
+   "name": "Genesis Workspace",
+   "city": "Tigard",
+   "state": "OR",
+   "url": "https://genesisworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7058,
+   "slug": "centrl-office-lake-oswego-lake-oswego",
+   "name": "Centrl Office Lake Oswego",
+   "city": "Lake Oswego",
+   "state": "OR",
+   "url": "https://centrloffice.com/locations/lake-oswego",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7062,
+   "slug": "centrl-office-eastside-portland",
+   "name": "Centrl Office Eastside",
+   "city": "Portland",
+   "state": "OR",
+   "url": "https://centrloffice.com/locations/oregon-portland-eastside",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7067,
+   "slug": "wework-830-ne-holladay-st-portland",
+   "name": "Wework 830 Ne Holladay St",
+   "city": "Portland",
+   "state": "OR",
+   "url": "https://www.wework.com/buildings/830-ne-holladay-st--portland--or",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7073,
+   "slug": "centrl-office-portland",
+   "name": "Centrl Office",
+   "city": "Portland",
+   "state": "OR",
+   "url": "http://centrloffice.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7076,
+   "slug": "the-district-coworking-and-flex-office-eugene",
+   "name": "The District Coworking And Flex Office",
+   "city": "Eugene",
+   "state": "OR",
+   "url": "https://thedistrictcowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7078,
+   "slug": "5th-floor-co-working-eugene",
+   "name": "5Th Floor Co-Working",
+   "city": "Eugene",
+   "state": "OR",
+   "url": "https://www.5thfloorcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7089,
+   "slug": "5200-meadows-executive-office-suites-lake-oswego",
+   "name": "5200 Meadows Executive Office Suites",
+   "city": "Lake Oswego",
+   "state": "OR",
+   "url": "https://www.5200meadows.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7090,
+   "slug": "the-haven-coworking-bend",
+   "name": "The Haven Coworking",
+   "city": "Bend",
+   "state": "OR",
+   "url": "https://worklifehaven.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7092,
+   "slug": "bendtech-coworking-bend",
+   "name": "Bendtech Coworking",
+   "city": "Bend",
+   "state": "OR",
+   "url": "https://bendtech.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7095,
+   "slug": "centrl-office-downtown-portland-portland",
+   "name": "Centrl Office Downtown Portland",
+   "city": "Portland",
+   "state": "OR",
+   "url": "https://centrloffice.com/locations/oregon-portland-downtown",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7097,
+   "slug": "river-park-ctr-executive-suite-portland",
+   "name": "River Park Ctr Executive Suite",
+   "city": "Portland",
+   "state": "OR",
+   "url": "http://www.regus.com/locations/business-centre/oregon-portland-river-park-center",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7101,
+   "slug": "hygge-coworking-charlotte",
+   "name": "Hygge Coworking",
+   "city": "Charlotte",
+   "state": "NC",
+   "url": "https://wearehygge.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7103,
+   "slug": "wework-515-n-state-chicago",
+   "name": "Wework 515 N State",
+   "city": "Chicago",
+   "state": "IL",
+   "url": "https://www.wework.com/buildings/515-n-state--chicago--il",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7107,
+   "slug": "strategic-workspace-and-event-center-wichita",
+   "name": "Strategic Workspace And Event Center",
+   "city": "Wichita",
+   "state": "KS",
+   "url": "https://strategicworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7108,
+   "slug": "colo-work-space-wichita",
+   "name": "Colo Work Space",
+   "city": "Wichita",
+   "state": "KS",
+   "url": "https://www.coloworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7110,
+   "slug": "omni-business-center-wichita",
+   "name": "Omni Business Center",
+   "city": "Wichita",
+   "state": "KS",
+   "url": "https://www.omnibizcenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7114,
+   "slug": "grid-collaborative-workspaces-overland-park",
+   "name": "Grid Collaborative Workspaces",
+   "city": "Overland Park",
+   "state": "KS",
+   "url": "https://connectatgrid.com/overland-park",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7118,
+   "slug": "topeka-office-suites-topeka",
+   "name": "Topeka Office Suites",
+   "city": "Topeka",
+   "state": "KS",
+   "url": "http://www.topekaofficesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7125,
+   "slug": "cowork-waldo-kansas-city",
+   "name": "Cowork Waldo",
+   "city": "Kansas City",
+   "state": "MO",
+   "url": "http://www.coworkwaldo.com/#eoweq0",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7127,
+   "slug": "modus-coworking-omaha",
+   "name": "Modus Coworking",
+   "city": "Omaha",
+   "state": "NE",
+   "url": "https://moduscoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7129,
+   "slug": "executiveworkspace-dallas-office-space-preston-center-dallas",
+   "name": "Executiveworkspace Dallas Office Space - Preston Center",
+   "city": "Dallas",
+   "state": "TX",
+   "url": "https://executiveworkspace.com/tx/dallas/8300-douglas-ave",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7130,
+   "slug": "fuse-coworking-lincoln",
+   "name": "Fuse Coworking",
+   "city": "Lincoln",
+   "state": "NE",
+   "url": "https://www.fusecoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7131,
+   "slug": "arrive-coworking-space-lincoln",
+   "name": "Arrive Coworking Space",
+   "city": "Lincoln",
+   "state": "NE",
+   "url": "https://www.arrivecoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7134,
+   "slug": "the-boxjelly-coworking-honolulu",
+   "name": "The Boxjelly Coworking",
+   "city": "Honolulu",
+   "state": "HI",
+   "url": "https://www.theboxjelly.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7137,
+   "slug": "treehouse-coworking-kailua",
+   "name": "Treehouse Coworking",
+   "city": "Kailua",
+   "state": "HI",
+   "url": "https://www.treehousecoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7138,
+   "slug": "hawaii-executive-suites-honolulu",
+   "name": "Hawaii Executive Suites",
+   "city": "Honolulu",
+   "state": "HI",
+   "url": "https://stayconnected.hawaii.gov",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7143,
+   "slug": "workshop-coworking-waialua",
+   "name": "Workshop Coworking",
+   "city": "Waialua",
+   "state": "HI",
+   "url": "https://hawaiiwork.shop",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7145,
+   "slug": "cohana-coworking-kihei",
+   "name": "Cohana Coworking",
+   "city": "Kihei",
+   "state": "HI",
+   "url": "http://cohana.co",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7147,
+   "slug": "the-808-workplace-lihue",
+   "name": "The 808 Workplace",
+   "city": "Lihue",
+   "state": "HI",
+   "url": "https://the808.work",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7160,
+   "slug": "the-shop-workspace-new-orleans",
+   "name": "The Shop Workspace",
+   "city": "New Orleans",
+   "state": "LA",
+   "url": "https://shopworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7163,
+   "slug": "b-r-office-space-baton-rouge",
+   "name": "B R Office Space",
+   "city": "Baton Rouge",
+   "state": "LA",
+   "url": "http://brofficespace.com/tenant-portal",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7167,
+   "slug": "executive-office-suites-baton-rouge",
+   "name": "Executive Office Suites",
+   "city": "Baton Rouge",
+   "state": "LA",
+   "url": "http://eosuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7169,
+   "slug": "madison-park-business-center-shreveport",
+   "name": "Madison Park Business Center",
+   "city": "Shreveport",
+   "state": "LA",
+   "url": "http://www.lareservices.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7171,
+   "slug": "centenary-business-center-shreveport",
+   "name": "Centenary Business Center",
+   "city": "Shreveport",
+   "state": "LA",
+   "url": "https://www.centenary.edu",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7173,
+   "slug": "pierremont-office-park-shreveport",
+   "name": "Pierremont Office Park",
+   "city": "Shreveport",
+   "state": "LA",
+   "url": "http://www.vintagerealty.com/pop",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7175,
+   "slug": "carr-workplaces-convergence-west-lafayette",
+   "name": "Carr Workplaces Convergence",
+   "city": "West Lafayette",
+   "state": "LA",
+   "url": "https://findworkspaces.com/workspaces/convergence",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7176,
+   "slug": "matchbox-coworking-studio-lafayette",
+   "name": "Matchbox Coworking Studio",
+   "city": "Lafayette",
+   "state": "LA",
+   "url": "https://mbx.studio",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7181,
+   "slug": "legacy-business-center-houma",
+   "name": "Legacy Business Center",
+   "city": "Houma",
+   "state": "LA",
+   "url": "https://www.legacybusinesscenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7182,
+   "slug": "village-executive-office-suite-mandeville",
+   "name": "Village Executive Office Suite",
+   "city": "Mandeville",
+   "state": "LA",
+   "url": "https://www.thevillagemandeville.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7183,
+   "slug": "the-park-200-covington",
+   "name": "The Park 200",
+   "city": "Covington",
+   "state": "LA",
+   "url": "https://www.thepark200.com/contact",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7184,
+   "slug": "the-park-executive-office-suites-covington",
+   "name": "The Park - Executive Office Suites",
+   "city": "Covington",
+   "state": "LA",
+   "url": "http://www.thepark200.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7187,
+   "slug": "brownstone-office-park-executive-suites-mandeville",
+   "name": "Brownstone Office Park & Executive Suites",
+   "city": "Mandeville",
+   "state": "LA",
+   "url": "https://www.brownstoneoffice.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7189,
+   "slug": "clallam-coworking-the-cow-sequim",
+   "name": "Clallam Coworking (\"The Cow",
+   "city": "Sequim",
+   "state": "LA",
+   "url": "http://clallamcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7190,
+   "slug": "nextspace-coworking-los-angeles-culver-city",
+   "name": "Nextspace Coworking Los Angeles",
+   "city": "Culver City",
+   "state": "LA",
+   "url": "https://pacificworkplaces.com/nextspace-coworking",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7192,
+   "slug": "viewpointe-executive-suites-and-las-vegas-office-space-las-vegas",
+   "name": "Viewpointe Executive Suites And Las Vegas Office Space",
+   "city": "Las Vegas",
+   "state": "NV",
+   "url": "https://viewpointecenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7195,
+   "slug": "wework-two-summerlin-las-vegas",
+   "name": "Wework Two Summerlin",
+   "city": "Las Vegas",
+   "state": "NV",
+   "url": "https://www.wework.com/buildings/two-summerlin--las-vegas",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7198,
+   "slug": "comuna-coworking-space-las-vegas",
+   "name": "Comuna Coworking Space",
+   "city": "Las Vegas",
+   "state": "NV",
+   "url": "https://www.comunacowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7199,
+   "slug": "harmon-business-center-las-vegas",
+   "name": "Harmon Business Center",
+   "city": "Las Vegas",
+   "state": "NV",
+   "url": "https://harmonbusinesscenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7200,
+   "slug": "corporate-coworking-las-vegas",
+   "name": "Corporate Coworking",
+   "city": "Las Vegas",
+   "state": "NV",
+   "url": "https://corporatecowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7202,
+   "slug": "marbeya-executive-suites-las-vegas",
+   "name": "Marbeya Executive Suites",
+   "city": "Las Vegas",
+   "state": "NV",
+   "url": "https://www.marbeyaexecutivesuites.net",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7203,
+   "slug": "ametrine-executive-suites-las-vegas",
+   "name": "Ametrine Executive Suites",
+   "city": "Las Vegas",
+   "state": "NV",
+   "url": "http://www.ametrinesuites.com/index.php",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7205,
+   "slug": "executive-suites-virtual-services-las-vegas",
+   "name": "Executive Suites & Virtual Services",
+   "city": "Las Vegas",
+   "state": "NV",
+   "url": "https://strosesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7206,
+   "slug": "summerhill-executive-suites-las-vegas",
+   "name": "Summerhill Executive Suites",
+   "city": "Las Vegas",
+   "state": "NV",
+   "url": "https://www.summerhillexecutivesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7208,
+   "slug": "st-rose-executive-suites-and-virtual-offices-henderson",
+   "name": "St Rose Executive Suites And Virtual Offices",
+   "city": "Henderson",
+   "state": "NV",
+   "url": "https://strosesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7209,
+   "slug": "alliance-virtual-offices-henderson",
+   "name": "Alliance Virtual Offices",
+   "city": "Henderson",
+   "state": "NV",
+   "url": "https://www.alliancevirtualoffices.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7210,
+   "slug": "the-virgil-reno-wedding-venue-parties-events-coworking-space-reno",
+   "name": "The Virgil - Reno Wedding Venue | Parties & Events | Coworking Space",
+   "city": "Reno",
+   "state": "NV",
+   "url": "https://thevirgil.co",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7212,
+   "slug": "aevos-office-suites-reno",
+   "name": "Aevos Office Suites",
+   "city": "Reno",
+   "state": "NV",
+   "url": "https://www.aevosoffices.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7213,
+   "slug": "the-ant-space-coworking-in-sparks-nevada-sparks",
+   "name": "The Ant Space Coworking In Sparks Nevada",
+   "city": "Sparks",
+   "state": "NV",
+   "url": "https://theantspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7216,
+   "slug": "south-meadows-executive-suites-llc-reno",
+   "name": "South Meadows Executive Suites Llc",
+   "city": "Reno",
+   "state": "NV",
+   "url": "https://smexsuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7217,
+   "slug": "midtown-executive-suites-reno",
+   "name": "Midtown Executive Suites",
+   "city": "Reno",
+   "state": "NV",
+   "url": "https://downtownexecutivesuites.ca",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7218,
+   "slug": "bosma-business-center-reno",
+   "name": "Bosma Business Center",
+   "city": "Reno",
+   "state": "NV",
+   "url": "http://www.bosmabusinesscenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7220,
+   "slug": "concourse-executive-suites-las-vegas",
+   "name": "Concourse Executive Suites",
+   "city": "Las Vegas",
+   "state": "NV",
+   "url": "https://concoursesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7221,
+   "slug": "the-coop-las-vegas",
+   "name": "The Coop",
+   "city": "Las Vegas",
+   "state": "NV",
+   "url": "https://www.thecoopcowork.com/the-coop-summerlin",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7222,
+   "slug": "warm-springs-office-suites-las-vegas",
+   "name": "Warm Springs Office Suites",
+   "city": "Las Vegas",
+   "state": "NV",
+   "url": "https://warmspringsofficesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7224,
+   "slug": "eastern-executive-suites-las-vegas",
+   "name": "Eastern Executive Suites",
+   "city": "Las Vegas",
+   "state": "NV",
+   "url": "https://easternexecutivesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7226,
+   "slug": "family-business-centers-reno",
+   "name": "Family Business Centers",
+   "city": "Reno",
+   "state": "NV",
+   "url": "https://familybusinesscentersllc.com/contact-us",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7229,
+   "slug": "kingsbury-executive-suites-stateline",
+   "name": "Kingsbury Executive Suites",
+   "city": "Stateline",
+   "state": "NV",
+   "url": "http://www.kingsburyexecutivesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7231,
+   "slug": "tahoe-mountain-lab-south-lake-tahoe",
+   "name": "Tahoe Mountain Lab",
+   "city": "South Lake Tahoe",
+   "state": "NV",
+   "url": "https://coworktahoe.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7233,
+   "slug": "st-george-executive-suites-st-george",
+   "name": "St George Executive Suites",
+   "city": "St George",
+   "state": "NV",
+   "url": "https://sgesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7234,
+   "slug": "the-coop-cowork-las-vegas",
+   "name": "The Coop Cowork",
+   "city": "Las Vegas",
+   "state": "NV",
+   "url": "https://www.thecoopcowork.com/the-coop-south",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7235,
+   "slug": "status-workspace-henderson",
+   "name": "Status Workspace",
+   "city": "Henderson",
+   "state": "NV",
+   "url": "https://www.statusworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7236,
+   "slug": "pinnacle-executive-suites-serving-thedayton-area",
+   "name": "Pinnacle Executive Suites",
+   "city": "Serving theDayton Area",
+   "state": "NV",
+   "url": "https://pinnacleexecutivesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7240,
+   "slug": "pipeline-workspaces-miami",
+   "name": "Pipeline Workspaces",
+   "city": "Miami",
+   "state": "FL",
+   "url": "https://pipelineworkspaces.com/locations/brickell",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7246,
+   "slug": "360-spaces-miami",
+   "name": "360 Spaces",
+   "city": "Miami",
+   "state": "FL",
+   "url": "https://www.coworker.com/united-states/florida/miami/360spaces-lr",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7253,
+   "slug": "tampa-bay-innovation-center-tampa",
+   "name": "Tampa Bay Innovation Center",
+   "city": "Tampa",
+   "state": "FL",
+   "url": "https://tbinnovates.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7265,
+   "slug": "executive-suites-of-brandon-brandon",
+   "name": "Executive Suites Of Brandon",
+   "city": "Brandon",
+   "state": "FL",
+   "url": "http://apecgas.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7283,
+   "slug": "west-boca-executive-suites-boca-raton",
+   "name": "West Boca Executive Suites",
+   "city": "Boca Raton",
+   "state": "FL",
+   "url": "https://www.westbocaexecutivesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7287,
+   "slug": "lakeside-executive-suites-at-weston-weston",
+   "name": "Lakeside Executive Suites At Weston",
+   "city": "Weston",
+   "state": "FL",
+   "url": "https://lesweston.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7291,
+   "slug": "miami-innovation-center-miami",
+   "name": "Miami Innovation Center",
+   "city": "Miami",
+   "state": "FL",
+   "url": "https://wexfordscitech.com/community/converge-miami",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7295,
+   "slug": "power-plant-business-incubator-ocala",
+   "name": "Power Plant Business Incubator",
+   "city": "Ocala",
+   "state": "FL",
+   "url": "https://ocalacep.com/growing-jobs/business-creation/power-plant-business-incubator",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7300,
+   "slug": "winter-park-executive-center-winter-park",
+   "name": "Winter Park Executive Center",
+   "city": "Winter Park",
+   "state": "FL",
+   "url": "https://cityofwinterpark.org",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7301,
+   "slug": "e-spaces-orlando-orlando",
+   "name": "E|Spaces Orlando",
+   "city": "Orlando",
+   "state": "FL",
+   "url": "https://espaces.com/locations/orlando-office-space",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7304,
+   "slug": "convergence-jax-coworking-jacksonville",
+   "name": "Convergence Jax Coworking",
+   "city": "Jacksonville",
+   "state": "FL",
+   "url": "https://jaxcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7305,
+   "slug": "the-nest-coworking-llc-orange-park",
+   "name": "The Nest Coworking Llc",
+   "city": "Orange Park",
+   "state": "FL",
+   "url": "https://workthenest.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7306,
+   "slug": "224-a-cowork-space-walhalla",
+   "name": "224 A Cowork Space",
+   "city": "Walhalla",
+   "state": "FL",
+   "url": "http://224cowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7308,
+   "slug": "nimbler-spaces-coworking-private-offices-miami-downtown-miami",
+   "name": "Nimbler Spaces Coworking & Private Offices Miami Downtown",
+   "city": "Miami",
+   "state": "FL",
+   "url": "https://www.nimbler-spaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7310,
+   "slug": "pipeline-doral-coworking-and-shared-offices-doral",
+   "name": "Pipeline Doral Coworking And Shared Offices",
+   "city": "Doral",
+   "state": "FL",
+   "url": "https://pipelineworkspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7311,
+   "slug": "endeavour-co-working-spaces-aventura",
+   "name": "Endeavour Co-Working Spaces",
+   "city": "Aventura",
+   "state": "FL",
+   "url": "https://www.myendeavour.net",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7313,
+   "slug": "iconic-workspaces-aventura",
+   "name": "Iconic Workspaces",
+   "city": "Aventura",
+   "state": "FL",
+   "url": "https://iconicworkspaces.com/en",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7314,
+   "slug": "skyspaces-flexible-coworking-office-space-fort-lauderdale-fort-lauderdale",
+   "name": "Skyspaces – Flexible Coworking Office Space Fort Lauderdale",
+   "city": "Fort Lauderdale",
+   "state": "FL",
+   "url": "https://skyspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7316,
+   "slug": "her-power-space-coworking-business-events-lauderhill",
+   "name": "Her Power Space - Coworking & Business Events",
+   "city": "Lauderhill",
+   "state": "FL",
+   "url": "https://www.herpowerspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7318,
+   "slug": "quest-workspaces-2525-ponce-coral-gables-coral-gables",
+   "name": "Quest Workspaces 2525 Ponce Coral Gables",
+   "city": "Coral Gables",
+   "state": "FL",
+   "url": "https://questworkspaces.com/team",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7321,
+   "slug": "offix-solutions-virtual-offices-downtown-miami-design-district-miami",
+   "name": "Offix Solutions Virtual Offices Downtown Miami & Design District",
+   "city": "Miami",
+   "state": "FL",
+   "url": "https://web.offixsolutions.com/contact-us",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7324,
+   "slug": "sandhouse-coworking-space-miami-miami-beach",
+   "name": "Sandhouse Coworking Space Miami",
+   "city": "Miami Beach",
+   "state": "FL",
+   "url": "https://www.sandhouse.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7325,
+   "slug": "pipeline-coral-gables-coworking-and-shared-offices-coral-gables",
+   "name": "Pipeline Coral Gables Coworking And Shared Offices",
+   "city": "Coral Gables",
+   "state": "FL",
+   "url": "http://www.pipelineworkspaces.com/location/coral-gables",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7330,
+   "slug": "pipeline-tampa-coworking-and-shared-offices-tampa",
+   "name": "Pipeline Tampa Coworking And Shared Offices",
+   "city": "Tampa",
+   "state": "FL",
+   "url": "https://pipelineworkspaces.com/locations/tampa",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7331,
+   "slug": "soar-co-working-inc-tampa",
+   "name": "Soar Co-Working Inc.",
+   "city": "Tampa",
+   "state": "FL",
+   "url": "https://www.soarco-working.com/contact-soar",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7333,
+   "slug": "parc-8-executive-suites-tampa",
+   "name": "Parc 8 Executive Suites",
+   "city": "Tampa",
+   "state": "FL",
+   "url": "https://parc8suites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7334,
+   "slug": "4-company-coworking-spaces-land-o-lakes",
+   "name": "4 & Company Coworking Spaces",
+   "city": "Land O  Lakes",
+   "state": "FL",
+   "url": "https://fournco.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7335,
+   "slug": "coworktampa-tampa",
+   "name": "Coworktampa",
+   "city": "Tampa",
+   "state": "FL",
+   "url": "https://coworktampa.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7340,
+   "slug": "rising-tide-innovation-center-saint-petersburg",
+   "name": "Rising Tide Innovation Center",
+   "city": "Saint Petersburg",
+   "state": "FL",
+   "url": "https://www.risingtidecowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7341,
+   "slug": "demisar-workspace-tampa",
+   "name": "Demisar Workspace",
+   "city": "Tampa",
+   "state": "FL",
+   "url": "https://demisarworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7344,
+   "slug": "solutions-office-suites-tampa",
+   "name": "Solutions Office Suites",
+   "city": "Tampa",
+   "state": "FL",
+   "url": "https://www.solutionsofficesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7346,
+   "slug": "signature-workspace-dale-mabry-tampa",
+   "name": "Signature Workspace Dale Mabry",
+   "city": "Tampa",
+   "state": "FL",
+   "url": "http://www.signatureworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7347,
+   "slug": "pipeline-orlando-coworking-and-shared-offices-orlando",
+   "name": "Pipeline Orlando Coworking And Shared Offices",
+   "city": "Orlando",
+   "state": "FL",
+   "url": "https://pipelineworkspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7350,
+   "slug": "workspace-260-altamonte-springs",
+   "name": "Workspace 260",
+   "city": "Altamonte Springs",
+   "state": "FL",
+   "url": "https://offices.workspace260.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7352,
+   "slug": "headquarters-coworking-kissimmee",
+   "name": "Headquarters Coworking",
+   "city": "Kissimmee",
+   "state": "FL",
+   "url": "https://coworkingatheadquarters.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7356,
+   "slug": "forsyth-business-center-orlando",
+   "name": "Forsyth Business Center",
+   "city": "Orlando",
+   "state": "FL",
+   "url": "https://forsythbusinesscenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7358,
+   "slug": "courthouse-executive-center-lhl-orlando",
+   "name": "Courthouse Executive Center Lhl",
+   "city": "Orlando",
+   "state": "FL",
+   "url": "https://www.orlandocourthouseexecutivecenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7366,
+   "slug": "executive-center-suites-saint-petersburg",
+   "name": "Executive Center Suites",
+   "city": "Saint Petersburg",
+   "state": "FL",
+   "url": "https://www.executivecentersuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7371,
+   "slug": "signature-workspace-northwood-clearwater",
+   "name": "Signature Workspace Northwood",
+   "city": "Clearwater",
+   "state": "FL",
+   "url": "https://www.signatureworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7372,
+   "slug": "pipeline-coral-gables",
+   "name": "Pipeline",
+   "city": "Coral Gables",
+   "state": "FL",
+   "url": "https://pipelineworkspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7373,
+   "slug": "pro-executive-office-suites-miami-beach",
+   "name": "Pro Executive Office Suites",
+   "city": "Miami Beach",
+   "state": "FL",
+   "url": "http://www.regus.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7375,
+   "slug": "delawork-coworking-space-milton",
+   "name": "Delawork Coworking Space",
+   "city": "Milton",
+   "state": "FL",
+   "url": "https://www.delawork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7376,
+   "slug": "hana-coworking-and-office-space-at-national-landing-arlington",
+   "name": "Hana Coworking And Office Space At National Landing",
+   "city": "Arlington",
+   "state": "VA",
+   "url": "https://www.industriousoffice.com/blog/industrious/cbre-transfers-its-flexible-workspace-brand-hana-to-industrious",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7378,
+   "slug": "axis-space-fort-lauderdale",
+   "name": "Axis Space",
+   "city": "Fort Lauderdale",
+   "state": "FL",
+   "url": "https://findworkspaces.com/workspaces/axis-space-coworking-space-fort-lauderdale-florida-33301",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7380,
+   "slug": "find-workspaces-fort-lauderdale",
+   "name": "Find Workspaces",
+   "city": "Fort Lauderdale",
+   "state": "FL",
+   "url": "https://findworkspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7381,
+   "slug": "pembroke-pines-coworking-and-shared-offices-pembroke-pines",
+   "name": "Pembroke Pines Coworking And Shared Offices",
+   "city": "Pembroke Pines",
+   "state": "FL",
+   "url": "https://pembrokepinesoffices.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7382,
+   "slug": "elite-office-suites-coconut-creek",
+   "name": "Elite Office Suites",
+   "city": "Coconut Creek",
+   "state": "FL",
+   "url": "https://www.eliteofficesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7383,
+   "slug": "global-presence-workspace-pembroke-pines",
+   "name": "Global Presence Workspace",
+   "city": "Pembroke Pines",
+   "state": "FL",
+   "url": "https://gpworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7385,
+   "slug": "sawgrass-executive-offices-sunrise",
+   "name": "Sawgrass Executive Offices",
+   "city": "Sunrise",
+   "state": "FL",
+   "url": "https://www.sawgrassoffices.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7386,
+   "slug": "office-55-office-suites-and-coworking-club-delray-beach",
+   "name": "Office 55 Office Suites And Coworking Club",
+   "city": "Delray Beach",
+   "state": "FL",
+   "url": "https://www.office55delray.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7389,
+   "slug": "executive-suites-of-cape-coral-cape-coral",
+   "name": "Executive Suites Of Cape Coral",
+   "city": "Cape Coral",
+   "state": "FL",
+   "url": "http://www.executivesuitesofcapecoral.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7391,
+   "slug": "heroffice-fort-myers",
+   "name": "Heroffice",
+   "city": "Fort Myers",
+   "state": "FL",
+   "url": "https://desksnear.me/locations/heroffice-co-work-space-fort-myers/her-office",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7396,
+   "slug": "naples-executive-suites-naples",
+   "name": "Naples Executive Suites",
+   "city": "Naples",
+   "state": "FL",
+   "url": "https://ceonaples.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7397,
+   "slug": "newgate-executive-suites-naples",
+   "name": "Newgate Executive Suites",
+   "city": "Naples",
+   "state": "FL",
+   "url": "https://ceonaples.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7398,
+   "slug": "crexent-business-center-bonita-springs",
+   "name": "Crexent Business Center",
+   "city": "Bonita Springs",
+   "state": "FL",
+   "url": "http://www.thecrexent.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7399,
+   "slug": "arceo-executive-suite-center-naples",
+   "name": "Arceo Executive Suite Center",
+   "city": "Naples",
+   "state": "FL",
+   "url": "https://arceo.us",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7401,
+   "slug": "naples-office-suites-naples",
+   "name": "Naples Office Suites",
+   "city": "Naples",
+   "state": "FL",
+   "url": "https://colliercapitalclub.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7403,
+   "slug": "enclave-office-suites-business-center-pembroke-pines",
+   "name": "Enclave Office Suites & Business Center",
+   "city": "Pembroke Pines",
+   "state": "FL",
+   "url": "https://enclavecenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7404,
+   "slug": "hampton-business-center-pembroke-pines",
+   "name": "Hampton Business Center",
+   "city": "Pembroke Pines",
+   "state": "FL",
+   "url": "https://hamptonoffices.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7405,
+   "slug": "caxa-group-inc-hollywood",
+   "name": "Caxa Group Inc",
+   "city": "Hollywood",
+   "state": "FL",
+   "url": "https://alexasworkspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7413,
+   "slug": "hollywood-workspace-hollywood",
+   "name": "Hollywood Workspace",
+   "city": "Hollywood",
+   "state": "FL",
+   "url": "https://hollywood-workspace.business.site",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7414,
+   "slug": "apt-cowork-at-cottonwood-west-palm-west-palm-beach",
+   "name": "Apt Cowork At Cottonwood West Palm",
+   "city": "West Palm Beach",
+   "state": "FL",
+   "url": "https://www.aptcowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7419,
+   "slug": "momentum-business-center-miami-beach",
+   "name": "Momentum Business Center",
+   "city": "Miami Beach",
+   "state": "FL",
+   "url": "https://momentumbusinesscenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7422,
+   "slug": "executive-center-office-park-clearwater",
+   "name": "Executive Center Office Park",
+   "city": "Clearwater",
+   "state": "FL",
+   "url": "https://www.executivecenterofficepark.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7427,
+   "slug": "merritt-island-office-space-merritt-island",
+   "name": "Merritt Island Office Space",
+   "city": "Merritt Island",
+   "state": "FL",
+   "url": "https://www.rubberchickenforthesoul.com/officespace.html",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7433,
+   "slug": "980-spaces-boca-raton",
+   "name": "980 Spaces",
+   "city": "Boca Raton",
+   "state": "FL",
+   "url": "https://980spaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7435,
+   "slug": "serendipity-labs-aventura-miami",
+   "name": "Serendipity Labs Aventura",
+   "city": "Miami",
+   "state": "FL",
+   "url": "http://serendipitylabs.com/locations/aventura-coworking",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7437,
+   "slug": "the-coworking-company-north-palm-beach",
+   "name": "The Coworking Company",
+   "city": "North Palm Beach",
+   "state": "FL",
+   "url": "https://www.coworkingat.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7438,
+   "slug": "mosaic-cowork-west-palm-beach",
+   "name": "Mosaic Cowork",
+   "city": "West Palm Beach",
+   "state": "FL",
+   "url": "https://mosaiccowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7439,
+   "slug": "the-studio-1016-private-offices-coworking-in-west-palm-beach-west-palm-beach",
+   "name": "The Studio 1016 - Private Offices & Coworking In West Palm Beach",
+   "city": "West Palm Beach",
+   "state": "FL",
+   "url": "https://www.thestudio1016.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7443,
+   "slug": "palm-beach-gardens-executive-suites-palm-beach-gardens",
+   "name": "Palm Beach Gardens Executive Suites",
+   "city": "Palm Beach Gardens",
+   "state": "FL",
+   "url": "https://pbges.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7444,
+   "slug": "emerge-lw-executive-suites-lake-worth",
+   "name": "Emerge Lw Executive Suites",
+   "city": "Lake Worth",
+   "state": "FL",
+   "url": "https://emergelw.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7445,
+   "slug": "symphony-workplaces-palm-beach",
+   "name": "Symphony Workplaces",
+   "city": "Palm Beach",
+   "state": "FL",
+   "url": "https://www.flworkplaces.com/pbcontact",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7448,
+   "slug": "easton-professional-suites-lakeland",
+   "name": "Easton Professional Suites",
+   "city": "Lakeland",
+   "state": "FL",
+   "url": "https://eastonprofessionalsuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7453,
+   "slug": "celebration-corporate-center-kissimmee",
+   "name": "Celebration Corporate Center",
+   "city": "Kissimmee",
+   "state": "FL",
+   "url": "http://www.celebrationcorporatecenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7454,
+   "slug": "signature-workspace-wiregrass-wesley-chapel",
+   "name": "Signature Workspace Wiregrass",
+   "city": "Wesley Chapel",
+   "state": "FL",
+   "url": "https://signatureworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7456,
+   "slug": "weston-town-center-executive-suites-weston",
+   "name": "Weston Town Center Executive Suites",
+   "city": "Weston",
+   "state": "FL",
+   "url": "http://www.ccesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7457,
+   "slug": "masonic-business-center-inverness",
+   "name": "Masonic Business Center",
+   "city": "Inverness",
+   "state": "FL",
+   "url": "https://www.drywellgroup.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7459,
+   "slug": "signature-workspace-northdale-tampa",
+   "name": "Signature Workspace Northdale",
+   "city": "Tampa",
+   "state": "FL",
+   "url": "http://www.signatureworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7460,
+   "slug": "cypress-point-office-park-tampa",
+   "name": "Cypress Point Office Park",
+   "city": "Tampa",
+   "state": "FL",
+   "url": "http://files.inspyred.com/webfiles/72354/cpop-flyer-july-2012.pdf",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7462,
+   "slug": "the-one-cowork-llc-boca-raton",
+   "name": "The One Cowork Llc",
+   "city": "Boca Raton",
+   "state": "FL",
+   "url": "https://www.theonecowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7463,
+   "slug": "nexus-workspaces-boca-raton",
+   "name": "Nexus Workspaces",
+   "city": "Boca Raton",
+   "state": "FL",
+   "url": "https://nexusworkspaces.com/location/boca-raton",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7464,
+   "slug": "symphony-workplaces-of-palm-beach-palm-beach",
+   "name": "Symphony Workplaces Of Palm Beach",
+   "city": "Palm Beach",
+   "state": "FL",
+   "url": "https://www.flworkplaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7468,
+   "slug": "town-center-executive-suites-boca-raton",
+   "name": "Town Center Executive Suites",
+   "city": "Boca Raton",
+   "state": "FL",
+   "url": "https://theworkplace500.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7469,
+   "slug": "one-park-place-executive-suites-boca-raton",
+   "name": "One Park Place Executive Suites",
+   "city": "Boca Raton",
+   "state": "FL",
+   "url": "https://one-park-place.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7471,
+   "slug": "crexent-business-centers-boca-raton",
+   "name": "Crexent Business Centers",
+   "city": "Boca Raton",
+   "state": "FL",
+   "url": "https://thecrexent.com/contact-us",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7472,
+   "slug": "360-connect-little-river-miami-co-working-offices-miami",
+   "name": "360 Connect - Little River Miami - Co-Working & Offices",
+   "city": "Miami",
+   "state": "FL",
+   "url": "https://www.360connect.co/en",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7473,
+   "slug": "wework-i-inc-miami-beach",
+   "name": "Wework I Inc.",
+   "city": "Miami Beach",
+   "state": "FL",
+   "url": "https://www.wework.com/buildings/lincoln-road--miami--fl",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7474,
+   "slug": "executive-suites-virtual-office-solutions-miami-beach",
+   "name": "Executive Suites & Virtual Office Solutions",
+   "city": "Miami Beach",
+   "state": "FL",
+   "url": "http://www.pelicanstayamerica.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7480,
+   "slug": "corner-suites-coworking-palm-coast",
+   "name": "Corner Suites Coworking",
+   "city": "Palm Coast",
+   "state": "FL",
+   "url": "https://www.cornersuitescoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7482,
+   "slug": "ripple-coworking-flagler-beach",
+   "name": "Ripple Coworking",
+   "city": "Flagler Beach",
+   "state": "FL",
+   "url": "https://ripplecoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7486,
+   "slug": "individual-office-suites-winter-park",
+   "name": "Individual Office Suites",
+   "city": "Winter Park",
+   "state": "FL",
+   "url": "https://winterparkofficecenters.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7487,
+   "slug": "officentos-virtual-office-centers-coral-gables",
+   "name": "Officentos, Virtual Office Centers",
+   "city": "Coral Gables",
+   "state": "FL",
+   "url": "https://officentos.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7488,
+   "slug": "quantum-executive-offices-miami",
+   "name": "Quantum Executive Offices",
+   "city": "Miami",
+   "state": "FL",
+   "url": "https://quantumoffices.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7489,
+   "slug": "cowork-boynton-boynton-beach",
+   "name": "Cowork Boynton",
+   "city": "Boynton Beach",
+   "state": "FL",
+   "url": "https://coworkboynton.cobot.me",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7491,
+   "slug": "delray-beach-executive-suites-inc-delray-beach",
+   "name": "Delray Beach Executive Suites Inc",
+   "city": "Delray Beach",
+   "state": "FL",
+   "url": "https://delrayoffices.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7492,
+   "slug": "wework-place-tampa",
+   "name": "Wework Place",
+   "city": "Tampa",
+   "state": "FL",
+   "url": "https://www.wework.com/buildings/wework-place--tampa--fl",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7494,
+   "slug": "foundry-coworking-daytona-beach",
+   "name": "Foundry Coworking",
+   "city": "Daytona Beach",
+   "state": "FL",
+   "url": "https://foundrydaytona.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7496,
+   "slug": "beachside-workplace-solutions-daytona-beach",
+   "name": "Beachside Workplace Solutions",
+   "city": "Daytona Beach",
+   "state": "FL",
+   "url": "https://www.beachsideworkplace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7497,
+   "slug": "west-broward-executive-suites-tamarac",
+   "name": "West Broward Executive Suites",
+   "city": "Tamarac",
+   "state": "FL",
+   "url": "http://www.woffices.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7499,
+   "slug": "workspace-collective-ocala-ocala",
+   "name": "Workspace Collective Ocala",
+   "city": "Ocala",
+   "state": "FL",
+   "url": "https://www.workspace-collective.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7500,
+   "slug": "workspace-collective-1st-ave-ocala",
+   "name": "Workspace Collective 1St Ave",
+   "city": "Ocala",
+   "state": "FL",
+   "url": "https://workspace-collective.com/post/announcing-our-new-location",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7505,
+   "slug": "bold-cowork-sarasota-sarasota",
+   "name": "Bold Cowork Sarasota",
+   "city": "Sarasota",
+   "state": "FL",
+   "url": "https://www.boldlwp.com/locations/bold-cowork-sarasota",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7507,
+   "slug": "coworking-space-venice-koworx-venice",
+   "name": "Coworking Space Venice Koworx",
+   "city": "Venice",
+   "state": "FL",
+   "url": "https://www.koworxspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7511,
+   "slug": "coworklwr-lakewood-ranch",
+   "name": "Coworklwr",
+   "city": "Lakewood Ranch",
+   "state": "FL",
+   "url": "https://coworkfl.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7513,
+   "slug": "workspace225-pensacola",
+   "name": "Workspace225",
+   "city": "Pensacola",
+   "state": "FL",
+   "url": "https://workspace225.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7514,
+   "slug": "cowork-nnex-pensacola",
+   "name": "Cowork@Nnex",
+   "city": "Pensacola",
+   "state": "FL",
+   "url": "https://www.coworkannex.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7516,
+   "slug": "harbour-drive-executive-suites-naples",
+   "name": "Harbour Drive Executive Suites",
+   "city": "Naples",
+   "state": "FL",
+   "url": "http://www.naplesexecutive.net",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7517,
+   "slug": "fifth-avenue-executive-suites-naples",
+   "name": "Fifth Avenue Executive Suites",
+   "city": "Naples",
+   "state": "FL",
+   "url": "http://www.naplesexecutive.net",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7519,
+   "slug": "island-executive-suites-inc-marco-island",
+   "name": "Island Executive Suites Inc",
+   "city": "Marco Island",
+   "state": "FL",
+   "url": "http://marco1suites.com/index.html",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7523,
+   "slug": "colonnade-corp-center-coral-gables",
+   "name": "Colonnade Corp Center",
+   "city": "Coral Gables",
+   "state": "FL",
+   "url": "https://www.regus.com/en-us/united-states/florida/coral-gables/colonnade-building-807",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7525,
+   "slug": "platinum-business-center-coral-gables",
+   "name": "Platinum Business Center",
+   "city": "Coral Gables",
+   "state": "FL",
+   "url": "http://www.platinumbusinesscenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7526,
+   "slug": "lake-view-office-park-winter-park",
+   "name": "Lake View Office Park",
+   "city": "Winter Park",
+   "state": "FL",
+   "url": "https://www.serious-sandwiches.com/contact",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7530,
+   "slug": "palm-springs-executive-center-altamonte-springs",
+   "name": "Palm Springs Executive Center",
+   "city": "Altamonte Springs",
+   "state": "FL",
+   "url": "http://laurelsuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7535,
+   "slug": "senator-executive-center-north-miami-beach",
+   "name": "Senator Executive Center",
+   "city": "North Miami Beach",
+   "state": "FL",
+   "url": "https://www.senate.gov",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7536,
+   "slug": "altamonte-lakeside-executive-suites-altamonte-springs",
+   "name": "Altamonte Lakeside Executive Suites",
+   "city": "Altamonte Springs",
+   "state": "FL",
+   "url": "https://mjdsoffice.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7537,
+   "slug": "mjds-office-suites-altamonte-springs",
+   "name": "Mjds Office Suites",
+   "city": "Altamonte Springs",
+   "state": "FL",
+   "url": "http://mjdsoffice.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7539,
+   "slug": "island-virtual-office-saint-augustine",
+   "name": "Island Virtual Office",
+   "city": "Saint Augustine",
+   "state": "FL",
+   "url": "https://islandvirtualoffice.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7540,
+   "slug": "oviedo-coworking-llc-oviedo",
+   "name": "Oviedo Coworking Llc",
+   "city": "Oviedo",
+   "state": "FL",
+   "url": "https://oviedo-coworking-llc.business.site",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7543,
+   "slug": "viera-business-center-rockledge",
+   "name": "Viera Business Center",
+   "city": "Rockledge",
+   "state": "FL",
+   "url": "http://vierabusinesscenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7545,
+   "slug": "bos-business-center-miami",
+   "name": "Bos Business Center",
+   "city": "Miami",
+   "state": "FL",
+   "url": "https://bos.miami",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7546,
+   "slug": "office-co-international-coworking-miami",
+   "name": "Office&Co. International Coworking",
+   "city": "Miami",
+   "state": "FL",
+   "url": "https://officecous.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7548,
+   "slug": "workspace-suites-fort-walton-beach",
+   "name": "Workspace Suites",
+   "city": "Fort Walton Beach",
+   "state": "FL",
+   "url": "https://www.workspacefwb.com/contact",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7551,
+   "slug": "pipeline-fort-lauderdale-coworking-and-shared-offices-fort-lauderdale",
+   "name": "Pipeline Fort Lauderdale Coworking And Shared Offices",
+   "city": "Fort Lauderdale",
+   "state": "FL",
+   "url": "http://www.pipelineworkspaces.com/location/fort-lauderdale",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7554,
+   "slug": "eesha-exclusive-home-health-agency-orlando",
+   "name": "Eesha Exclusive  Home Health Agency",
+   "city": "Orlando",
+   "state": "FL",
+   "url": "http://www.regus.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7557,
+   "slug": "fresh-cowork-jacksonville",
+   "name": "Fresh Cowork",
+   "city": "Jacksonville",
+   "state": "FL",
+   "url": "https://www.freshcowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7558,
+   "slug": "kuna-co-working-jacksonville",
+   "name": "Kuna Co-Working",
+   "city": "Jacksonville",
+   "state": "FL",
+   "url": "https://kunacoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7560,
+   "slug": "ashley-executive-suites-orlando",
+   "name": "Ashley Executive Suites",
+   "city": "Orlando",
+   "state": "FL",
+   "url": "http://www.metrobusinesssuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7564,
+   "slug": "intelligent-office-products-boise",
+   "name": "Intelligent Office Products",
+   "city": "Boise",
+   "state": "ID",
+   "url": "https://www.iopintelligentspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7565,
+   "slug": "liberty-lake-coworking-liberty-lake",
+   "name": "Liberty Lake Coworking",
+   "city": "Liberty Lake",
+   "state": "ID",
+   "url": "https://llcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7566,
+   "slug": "burbity-workspaces-sullivan-valley-commons-spokane-valley",
+   "name": "Burbity Workspaces - Sullivan Valley Commons",
+   "city": "Spokane Valley",
+   "state": "ID",
+   "url": "https://burbity.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7568,
+   "slug": "fernwell-executive-suites-spokane",
+   "name": "Fernwell Executive Suites",
+   "city": "Spokane",
+   "state": "WA",
+   "url": "http://www.fernwell.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7572,
+   "slug": "office-suites-lexington",
+   "name": "Office Suites",
+   "city": "Lexington",
+   "state": "KY",
+   "url": "https://www.dlomgroup.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7575,
+   "slug": "office-suites-plus-inc-lexington",
+   "name": "Office Suites Plus, Inc.",
+   "city": "Lexington",
+   "state": "KY",
+   "url": "http://www.officesuitesplus.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7578,
+   "slug": "the-root-coworking-space-new-albany",
+   "name": "The Root, Coworking Space",
+   "city": "New Albany",
+   "state": "KY",
+   "url": "https://www.therootworkspace.com/contact",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7580,
+   "slug": "launch-louisville-louisville",
+   "name": "Launch Louisville",
+   "city": "Louisville",
+   "state": "KY",
+   "url": "https://www.launchloucoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7581,
+   "slug": "elite-excentre-office-park-louisville",
+   "name": "Elite Excentre Office Park",
+   "city": "Louisville",
+   "state": "KY",
+   "url": "https://eliteexcentre.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7582,
+   "slug": "summit-executive-suites-llc-louisville",
+   "name": "Summit Executive Suites Llc",
+   "city": "Louisville",
+   "state": "KY",
+   "url": "https://summitexecutivesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7589,
+   "slug": "st-matthews-executive-suites-louisville",
+   "name": "St Matthews Executive Suites",
+   "city": "Louisville",
+   "state": "KY",
+   "url": "http://www.stmattexecsuites.com/contact-us.html",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7594,
+   "slug": "ment-cowork-bowling-green",
+   "name": "Ment Cowork",
+   "city": "Bowling Green",
+   "state": "KY",
+   "url": "https://mentcowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7595,
+   "slug": "fenley-office-suites-louisville",
+   "name": "Fenley Office Suites",
+   "city": "Louisville",
+   "state": "KY",
+   "url": "http://www.fenleyofficesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7601,
+   "slug": "adaptiv-work-space-missoula",
+   "name": "Adaptiv Work.Space",
+   "city": "Missoula",
+   "state": "MT",
+   "url": "https://missoulacoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7603,
+   "slug": "cowork-bozeman-bozeman",
+   "name": "Cowork Bozeman",
+   "city": "Bozeman",
+   "state": "MT",
+   "url": "https://www.bigskycowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7604,
+   "slug": "oz-bozeman-office-space-coworking-bozeman",
+   "name": "Oz Bozeman - Office Space | Coworking",
+   "city": "Bozeman",
+   "state": "MT",
+   "url": "https://ozbozeman.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7607,
+   "slug": "fountainhead-coworking-butte",
+   "name": "Fountainhead Coworking",
+   "city": "Butte",
+   "state": "MT",
+   "url": "https://www.fountainheadcoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7608,
+   "slug": "topfloor-coworking-helena",
+   "name": "Topfloor Coworking",
+   "city": "Helena",
+   "state": "MT",
+   "url": "https://topfloorhelena.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7612,
+   "slug": "atrium-cowork-kalispell",
+   "name": "Atrium Cowork",
+   "city": "Kalispell",
+   "state": "MT",
+   "url": "https://atriumcowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7613,
+   "slug": "montana-executive-office-suites-kalispell",
+   "name": "Montana Executive Office Suites",
+   "city": "Kalispell",
+   "state": "MT",
+   "url": "https://www.montanaoffices.com/contact",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7614,
+   "slug": "ascend-workspace-kalispell",
+   "name": "Ascend Workspace",
+   "city": "Kalispell",
+   "state": "MT",
+   "url": "https://ascendworkspace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7618,
+   "slug": "wellworth-coworking-space-saint-paul",
+   "name": "Wellworth Coworking Space",
+   "city": "Saint Paul",
+   "state": "MN",
+   "url": "https://www.wellworthcowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7621,
+   "slug": "studio-cowork-golden-valley",
+   "name": "Studio Cowork",
+   "city": "Golden Valley",
+   "state": "MN",
+   "url": "https://www.studiocowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7624,
+   "slug": "harper-co-working-saint-paul",
+   "name": "Harper Co-Working",
+   "city": "Saint Paul",
+   "state": "MN",
+   "url": "https://www.harpercoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7626,
+   "slug": "likeminds-shared-office-spaces-minneapolis",
+   "name": "Likeminds Shared Office Spaces",
+   "city": "Minneapolis",
+   "state": "MN",
+   "url": "http://likemindssharedofficespace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7627,
+   "slug": "executive-suites-of-minnesota-minneapolis",
+   "name": "Executive Suites Of Minnesota",
+   "city": "Minneapolis",
+   "state": "MN",
+   "url": "http://www.exsmn.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7629,
+   "slug": "1600-executive-suites-minneapolis",
+   "name": "1600 Executive Suites",
+   "city": "Minneapolis",
+   "state": "MN",
+   "url": "https://1600executivesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7630,
+   "slug": "mn-executive-office-suites-minneapolis",
+   "name": "Mn Executive Office Suites",
+   "city": "Minneapolis",
+   "state": "MN",
+   "url": "https://www.facebook.com/mnexecofc",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7632,
+   "slug": "assemble-shared-office-minneapolis",
+   "name": "Assemble Shared Office",
+   "city": "Minneapolis",
+   "state": "MN",
+   "url": "https://www.industriousoffice.com/chicago",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7634,
+   "slug": "evolve-workplace-saint-paul",
+   "name": "Evolve Workplace",
+   "city": "Saint Paul",
+   "state": "MN",
+   "url": "https://evolveworkplace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7639,
+   "slug": "collider-coworking-rochester",
+   "name": "Collider Coworking",
+   "city": "Rochester",
+   "state": "MN",
+   "url": "https://www.collider.mn",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7643,
+   "slug": "metro-office-park-bloomington",
+   "name": "Metro Office Park",
+   "city": "Bloomington",
+   "state": "MN",
+   "url": "https://www.hbgltd.com/commercial/metro-executive-center",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7647,
+   "slug": "lift-bridge-cowork-stillwater",
+   "name": "Lift Bridge Cowork",
+   "city": "Stillwater",
+   "state": "MN",
+   "url": "https://members.liftbridgecowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7648,
+   "slug": "apiary-coworking-saint-cloud",
+   "name": "Apiary Coworking",
+   "city": "Saint Cloud",
+   "state": "MN",
+   "url": "https://www.apiarycoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7650,
+   "slug": "executive-spaces-saint-cloud",
+   "name": "Executive Spaces",
+   "city": "Saint Cloud",
+   "state": "MN",
+   "url": "https://executive-spaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7651,
+   "slug": "kontor-cowork-eden-prairie",
+   "name": "Kontor Cowork",
+   "city": "Eden Prairie",
+   "state": "MN",
+   "url": "https://www.kontorcowork.com/contact",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7652,
+   "slug": "oak-shady-executive-suite-eden-prairie",
+   "name": "Oak Shady Executive Suite",
+   "city": "Eden Prairie",
+   "state": "MN",
+   "url": "https://woodysgrille.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7654,
+   "slug": "the-commons-an-uncommon-workplace-excelsior",
+   "name": "The Commons - An Uncommon Workplace",
+   "city": "Excelsior",
+   "state": "MN",
+   "url": "http://www.thecommonswp.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7657,
+   "slug": "summit-executive-office-suites-burnsville",
+   "name": "Summit Executive Office Suites",
+   "city": "Burnsville",
+   "state": "MN",
+   "url": "https://www.tcby.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7658,
+   "slug": "olio-coworking-hopkins",
+   "name": "Olio Coworking",
+   "city": "Hopkins",
+   "state": "MN",
+   "url": "https://oliocoworking.com/contact-us",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7659,
+   "slug": "workspace-on-3-mankato",
+   "name": "Workspace On 3",
+   "city": "Mankato",
+   "state": "MN",
+   "url": "https://workspaceon3.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7660,
+   "slug": "shared-spaces-mankato",
+   "name": "Shared Spaces",
+   "city": "Mankato",
+   "state": "MN",
+   "url": "https://www.mankatoareafoundation.com/community-impact/special-projects-and-programs/shared-spaces-a-center-for-nonprofit-collaboration",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7662,
+   "slug": "minnesota-business-center-saint-peter",
+   "name": "Minnesota Business Center",
+   "city": "Saint Peter",
+   "state": "MN",
+   "url": "https://www.westmager.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7664,
+   "slug": "apex-business-center-albertville",
+   "name": "Apex Business Center",
+   "city": "Albertville",
+   "state": "MN",
+   "url": "https://www.longhaultrucking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7665,
+   "slug": "getty-cowork-white-bear-lake",
+   "name": "Getty Cowork",
+   "city": "White Bear Lake",
+   "state": "MN",
+   "url": "https://www.gettycowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7666,
+   "slug": "commons-an-uncommon-workplace-excelsior",
+   "name": "Commons An Uncommon Workplace",
+   "city": "Excelsior",
+   "state": "MN",
+   "url": "https://www.thecommonswp.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7669,
+   "slug": "executive-suites-of-woodbury-saint-paul",
+   "name": "Executive Suites Of Woodbury",
+   "city": "Saint Paul",
+   "state": "MN",
+   "url": "http://www.exsmn.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7677,
+   "slug": "coworking-on-15th-ave-phoenix",
+   "name": "Coworking On 15Th Ave",
+   "city": "Phoenix",
+   "state": "AZ",
+   "url": "https://www.coworkingon15th.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7683,
+   "slug": "galvanize-phoenix-phoenix",
+   "name": "Galvanize Phoenix",
+   "city": "Phoenix",
+   "state": "AZ",
+   "url": "https://www.galvanize.com/coworking",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7685,
+   "slug": "start-west-mec-coworking-space-glendale",
+   "name": "Start@West-Mec Coworking Space",
+   "city": "Glendale",
+   "state": "AZ",
+   "url": "https://www.west-mec.edu/coworking",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7686,
+   "slug": "3323-professional-suites-coworking-space-executive-suites-gilbert",
+   "name": "3323 Professional Suites - Coworking Space - Executive Suites",
+   "city": "Gilbert",
+   "state": "AZ",
+   "url": "https://3323-professional-suites-coworking-space.business.site",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7689,
+   "slug": "wework-the-watermark-tempe",
+   "name": "Wework The Watermark",
+   "city": "Tempe",
+   "state": "AZ",
+   "url": "http://www.wework.com/buildings/the-watermark--phoenix",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7690,
+   "slug": "co-hoots-coworking-mesa-mesa",
+   "name": "Co+Hoots Coworking | Mesa",
+   "city": "Mesa",
+   "state": "AZ",
+   "url": "https://cohoots.com/locations/mesa",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7691,
+   "slug": "wework-block-23-phoenix",
+   "name": "Wework Block 23",
+   "city": "Phoenix",
+   "state": "AZ",
+   "url": "https://www.block23phx.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7693,
+   "slug": "elevate-coworking-phoenix",
+   "name": "Elevate Coworking",
+   "city": "Phoenix",
+   "state": "AZ",
+   "url": "http://elevatecoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7694,
+   "slug": "ez-spaces-gilbert",
+   "name": "Ez Spaces",
+   "city": "Gilbert",
+   "state": "AZ",
+   "url": "http://www.ezspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7695,
+   "slug": "copperpoint-tower-executive-suites-phoenix",
+   "name": "Copperpoint Tower Executive Suites",
+   "city": "Phoenix",
+   "state": "AZ",
+   "url": "http://www.scfaz.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7701,
+   "slug": "brings-coworking-tucson",
+   "name": "Brings Coworking",
+   "city": "Tucson",
+   "state": "AZ",
+   "url": "https://www.bringscoworking.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7704,
+   "slug": "spoke-coworking-tucson",
+   "name": "Spoke Coworking",
+   "city": "Tucson",
+   "state": "AZ",
+   "url": "https://spokecoworkingtucson.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7705,
+   "slug": "sabino-executive-suites-tucson",
+   "name": "Sabino Executive Suites",
+   "city": "Tucson",
+   "state": "AZ",
+   "url": "https://www.sabinoexecutivesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7706,
+   "slug": "intelligent-office-of-tucson-tucson",
+   "name": "Intelligent Office Of Tucson",
+   "city": "Tucson",
+   "state": "AZ",
+   "url": "https://www.intelligentoffice.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7707,
+   "slug": "wilmot-corporate-executive-suites-tucson",
+   "name": "Wilmot Corporate Executive Suites",
+   "city": "Tucson",
+   "state": "AZ",
+   "url": "https://wilmotcorp.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7709,
+   "slug": "concierge-executive-offices-tucson",
+   "name": "Concierge Executive Offices",
+   "city": "Tucson",
+   "state": "AZ",
+   "url": "https://ceo-concierge.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7711,
+   "slug": "thrive-coworking-for-women-gilbert",
+   "name": "Thrive Coworking For Women",
+   "city": "Gilbert",
+   "state": "AZ",
+   "url": "https://members.thriveaz.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7712,
+   "slug": "mac6-coworking-space-tempe",
+   "name": "Mac6 Coworking Space",
+   "city": "Tempe",
+   "state": "AZ",
+   "url": "https://mac6.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7715,
+   "slug": "az-cowork-scottsdale",
+   "name": "Az Cowork",
+   "city": "Scottsdale",
+   "state": "AZ",
+   "url": "http://www.azcowork.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7716,
+   "slug": "bravo-business-center-chandler",
+   "name": "Bravo Business Center",
+   "city": "Chandler",
+   "state": "AZ",
+   "url": "http://bravobusinesscenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7717,
+   "slug": "southwest-business-center-tempe",
+   "name": "Southwest Business Center",
+   "city": "Tempe",
+   "state": "AZ",
+   "url": "http://southwestbusinesscenter.net",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7718,
+   "slug": "baseline-executive-suites-tempe",
+   "name": "Baseline Executive Suites",
+   "city": "Tempe",
+   "state": "AZ",
+   "url": "http://baselineexecutivesuites.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7721,
+   "slug": "heirloom-co-workspace-gilbert",
+   "name": "Heirloom Co. Workspace",
+   "city": "Gilbert",
+   "state": "AZ",
+   "url": "https://heirloomcowork.com/coworking",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7724,
+   "slug": "nsi-executive-suites-mesa",
+   "name": "Nsi Executive Suites",
+   "city": "Mesa",
+   "state": "AZ",
+   "url": "http://www.executivesuitesaz.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7731,
+   "slug": "scottsdale-park-i-executive-suites-scottsdale",
+   "name": "Scottsdale Park I Executive Suites",
+   "city": "Scottsdale",
+   "state": "AZ",
+   "url": "https://hosesolutions.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7733,
+   "slug": "94-hundred-corporate-center-executive-suites-in-scottsdale-scottsdale",
+   "name": "94 Hundred Corporate Center - Executive Suites In Scottsdale",
+   "city": "Scottsdale",
+   "state": "AZ",
+   "url": "https://9400shea.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7735,
+   "slug": "executive-office-suites-scottsdale-scottsdale",
+   "name": "Executive Office Suites Scottsdale",
+   "city": "Scottsdale",
+   "state": "AZ",
+   "url": "https://www.fbi.gov",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7738,
+   "slug": "advantage-office-suites-scottsdale",
+   "name": "Advantage Office Suites",
+   "city": "Scottsdale",
+   "state": "AZ",
+   "url": "https://pacesetterworkspaces.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7745,
+   "slug": "the-nest-cowork-space-flagstaff",
+   "name": "The Nest Cowork Space",
+   "city": "Flagstaff",
+   "state": "AZ",
+   "url": "https://thedovespace.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7750,
+   "slug": "wingspace-coworking-prescott",
+   "name": "Wingspace Coworking",
+   "city": "Prescott",
+   "state": "AZ",
+   "url": "https://wingspace.biz",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7752,
+   "slug": "prescott-executive-offices-prescott",
+   "name": "Prescott Executive Offices",
+   "city": "Prescott",
+   "state": "AZ",
+   "url": "https://www.prescottexecutiveoffices.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7755,
+   "slug": "office-evolution-central-phnx-phoenix",
+   "name": "Office Evolution Central Phnx",
+   "city": "Phoenix",
+   "state": "AZ",
+   "url": "https://www.officeevolution.com/locations/central-phoenix",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7756,
+   "slug": "office-evolution-phoenix-phoenix",
+   "name": "Office Evolution Phoenix",
+   "city": "Phoenix",
+   "state": "AZ",
+   "url": "https://www.officeevolution.com/locations/north-phoenix",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7758,
+   "slug": "north-star-business-center-show-low",
+   "name": "North Star Business Center",
+   "city": "Show Low",
+   "state": "AZ",
+   "url": "https://www.northstarbusinesscenter.com",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7760,
+   "slug": "cornerstone-coworking-lawrenceville",
+   "name": "Cornerstone Coworking",
+   "city": "Lawrenceville",
+   "state": "GA",
+   "url": "https://cancollab.com/",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7763,
+   "slug": "inc-ubate-coworking-lynn",
+   "name": "Inc.ubate Coworking",
+   "city": "Lynn",
+   "state": "MA",
+   "url": "https://incubatecoworking.com/location-lynn",
+   "status": "ReadTimeout"
+  },
+  {
+   "id": 7768,
+   "slug": "office-evolution-fort-collins",
+   "name": "Office Evolution",
+   "city": "Fort Collins",
+   "state": "CO",
+   "url": "https://www.officeevolution.com/locations/fort-collins/",
+   "status": "ReadTimeout"
+  }
+ ]
+}

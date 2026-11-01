@@ -3,13 +3,13 @@
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
-import { Menu, X, Search, MapPin, User, LayoutDashboard } from "lucide-react"
+import { Menu, X, Search, MapPin, LayoutDashboard } from "lucide-react"
 import { cn } from "@/lib/cn"
 
 const navLinks = [
   { href: "/spaces", label: "Discover" },
   { href: "/cities", label: "Cities" },
-  { href: "/membership", label: "Pricing" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/list-your-space", label: "List Your Space" },
 ]
 
@@ -92,7 +92,7 @@ export default function Navbar() {
               <span>Search Spaces</span>
             </Link>
 
-            {user ? (
+            {user && (
               <div className="flex items-center gap-2">
                 <Link
                   href="/dashboard"
@@ -118,17 +118,19 @@ export default function Navbar() {
                   Sign Out
                 </button>
               </div>
-            ) : (
+            )}
+
+            {!user && (
               <Link
                 href="/login"
                 className={cn(
-                  "p-2 rounded-lg transition-all",
+                  "hidden sm:inline-flex items-center px-4 py-2 rounded-lg text-sm font-medium transition-all",
                   scrolled
-                    ? "text-navy-500/60 hover:text-navy-500 hover:bg-warm-100"
-                    : "text-white/80 hover:text-white hover:bg-white/10"
+                    ? "text-navy-500 hover:bg-warm-100"
+                    : "text-white hover:bg-white/10"
                 )}
               >
-                <User className="w-5 h-5" />
+                Sign In
               </Link>
             )}
 
@@ -169,7 +171,16 @@ export default function Navbar() {
               <Search className="w-4 h-4" />
               Search Spaces
             </Link>
-            {user ? (
+            {!user && (
+              <Link
+                href="/login"
+                onClick={() => setMobileOpen(false)}
+                className="block px-4 py-3 rounded-xl text-navy-500/70 hover:text-navy-500 hover:bg-warm-100 font-medium"
+              >
+                Sign In
+              </Link>
+            )}
+            {user && (
               <>
                 <Link
                   href="/dashboard"
@@ -185,14 +196,6 @@ export default function Navbar() {
                   Sign Out
                 </button>
               </>
-            ) : (
-              <Link
-                href="/login"
-                onClick={() => setMobileOpen(false)}
-                className="block px-4 py-3 rounded-xl text-navy-500/70 hover:text-navy-500 hover:bg-warm-100 font-medium"
-              >
-                Sign In
-              </Link>
             )}
           </div>
         </div>

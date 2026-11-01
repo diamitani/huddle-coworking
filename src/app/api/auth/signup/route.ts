@@ -13,9 +13,9 @@ export async function POST(request: Request) {
 
     const result = await signUp(email, password, name || "")
     return NextResponse.json(result)
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error("[signup error]", err)
-    const msg = err?.message || "Signup failed"
+    const msg = (err as Error)?.message || "Signup failed"
     if (msg.includes("UsernameExistsException")) {
       return NextResponse.json({ error: "An account with this email already exists." }, { status: 400 })
     }

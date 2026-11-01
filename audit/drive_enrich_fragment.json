@@ -1,0 +1,157 @@
+{
+ "drive_files_pulled": [
+  {
+   "name": "Coworking-Space-Alabama-[State]-Contacts.csv",
+   "rows": 67
+  },
+  {
+   "name": "Coworking-Space-Arizona-[State]-Contacts.csv",
+   "rows": 88
+  },
+  {
+   "name": "Coworking-Space-Colorado-[State]-Contacts.csv",
+   "rows": 106
+  },
+  {
+   "name": "Coworking-Space-Connecticut-[State]-Contacts.csv",
+   "rows": 155
+  },
+  {
+   "name": "Coworking-Space-Florida-[State]-Contacts.csv",
+   "rows": 288
+  },
+  {
+   "name": "Coworking-Space-Georgia-[State]-Contacts.csv",
+   "rows": 148
+  },
+  {
+   "name": "Coworking-Space-Hawaii-[State]-Contacts.csv",
+   "rows": 17
+  },
+  {
+   "name": "Coworking-Space-Idaho-[State]-Contacts.csv",
+   "rows": 17
+  },
+  {
+   "name": "Coworking-Space-Illinois-[State]-Contacts.csv",
+   "rows": 161
+  },
+  {
+   "name": "Coworking-Space-Iowa-[State]-Contacts.csv",
+   "rows": 16
+  },
+  {
+   "name": "Coworking-Space-Kansas-[State]-Contacts.csv",
+   "rows": 32
+  },
+  {
+   "name": "Coworking-Space-Kentucky-[State]-Contacts.csv",
+   "rows": 24
+  },
+  {
+   "name": "Coworking-Space-Louisiana-[State]-Contacts.csv",
+   "rows": 31
+  },
+  {
+   "name": "Coworking-Space-Maine-[State]-Contacts.csv",
+   "rows": 11
+  },
+  {
+   "name": "Coworking-Space-Massachusetts-[State]-Contacts.csv",
+   "rows": 59
+  },
+  {
+   "name": "Coworking-Space-Michigan-[State]-Contacts.csv",
+   "rows": 96
+  },
+  {
+   "name": "Coworking-Space-Minnesota-[State]-Contacts.csv",
+   "rows": 96
+  },
+  {
+   "name": "Coworking-Space-Missouri-[State]-Contacts.csv",
+   "rows": 43
+  },
+  {
+   "name": "Coworking-Space-Nebraska-[State]-Contacts.csv",
+   "rows": 8
+  },
+  {
+   "name": "Coworking-Space-Nevada-[State]-Contacts.csv",
+   "rows": 26
+  },
+  {
+   "name": "Coworking-Space-New-Hampshire-[State]-Contacts.csv",
+   "rows": 18
+  },
+  {
+   "name": "Coworking-Space-New-Jersey-[State]-Contacts.csv",
+   "rows": 105
+  },
+  {
+   "name": "Coworking-Space-New-Mexico-[State]-Contacts.csv",
+   "rows": 10
+  },
+  {
+   "name": "Coworking-Space-Ohio-[State]-Contacts.csv",
+   "rows": 99
+  },
+  {
+   "name": "Coworking-Space-Oklahoma-[State]-Contacts.csv",
+   "rows": 24
+  },
+  {
+   "name": "Coworking-Space-Oregon-[State]-Contacts.csv",
+   "rows": 24
+  },
+  {
+   "name": "Coworking-Space-Pennsylvania-[State]-Contacts.csv",
+   "rows": 99
+  },
+  {
+   "name": "coworking-Arkansas-[State]-Contacts.csv",
+   "rows": 45
+  },
+  {
+   "name": "coworking-Kansas-City-MO-Contacts.csv",
+   "rows": 43
+  },
+  {
+   "name": "coworking-spaces-Atlanta-GA-Contacts.csv",
+   "rows": 67
+  },
+  {
+   "name": "coworking-spaces-Boston-MA-Contacts.csv",
+   "rows": 45
+  },
+  {
+   "name": "coworking-spaces-Boston-NY-Contacts.csv",
+   "rows": 54
+  },
+  {
+   "name": "coworking-spaces-California-[State]-Contacts.csv",
+   "rows": 268
+  },
+  {
+   "name": "coworking-spaces-Chicago-IL-Contacts.csv",
+   "rows": 70
+  },
+  {
+   "name": "coworking-spaces-Los-Angeles-CA-Contacts.csv",
+   "rows": 71
+  },
+  {
+   "name": "coworking-spaces-New-York-NY-Contacts.csv",
+   "rows": 79
+  },
+  {
+   "name": "coworking-spaces-San-Francisco-CA-Contacts.csv",
+   "rows": 46
+  }
+ ],
+ "drive_rows_total": 2656,
+ "phones_enriched_from_drive": 14,
+ "outreach_contacts": 905,
+ "outreach_rows_processed": 1918,
+ "unmatched_contacts": 1375
+}

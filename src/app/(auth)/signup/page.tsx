@@ -1,9 +1,9 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import Link from "next/link"
-import { MapPin, Mail, Lock, User, ArrowRight, CheckCircle } from "lucide-react"
+import { MapPin, Mail, Lock, User, ArrowRight, CheckCircle, AlertCircle } from "lucide-react"
 import { Suspense } from "react"
 
 function SignupForm() {
@@ -18,6 +18,14 @@ function SignupForm() {
   const [code, setCode] = useState("")
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
+  const [configured, setConfigured] = useState<boolean | null>(null)
+
+  useEffect(() => {
+    fetch("/api/auth/status")
+      .then((r) => r.json())
+      .then((d) => setConfigured(Boolean(d.configured)))
+      .catch(() => setConfigured(false))
+  }, [])
 
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -144,6 +152,13 @@ function SignupForm() {
           <p className="text-warm-600 text-sm mb-1">Start finding and booking coworking spaces.</p>
           <p className="text-xs text-brand-600 font-medium mb-6">Free forever — no credit card required.</p>
 
+          {configured === false && (
+            <div className="flex gap-3 p-4 rounded-xl bg-warm-100 border border-warm-200 text-sm text-warm-700 mb-4">
+              <AlertCircle className="w-5 h-5 shrink-0 text-warm-500" />
+              <p>Accounts are being set up right now — check back soon. Everything else on Huddle works without an account.</p>
+            </div>
+          )}
+
           {error && (
             <div className="p-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-sm mb-4">
               {error}
@@ -196,7 +211,7 @@ function SignupForm() {
             </div>
             <button
               type="submit"
-              disabled={loading}
+              disabled={loading || configured === false}
               className="w-full bg-brand-500 text-white rounded-xl py-3 font-semibold hover:bg-brand-600 transition-all disabled:opacity-50 flex items-center justify-center gap-2"
             >
               {loading ? "Creating account..." : "Create Free Account"}

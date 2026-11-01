@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection"
+import TrackStrip from "@/components/TrackStrip"
 import FeaturesBanner from "@/components/FeaturesBanner"
 import HowItWorks from "@/components/HowItWorks"
 import FeaturedSpaces from "@/components/FeaturedSpaces"
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      <TrackStrip />
       <FeaturesBanner />
       <HowItWorks />
       <FeaturedSpaces />
