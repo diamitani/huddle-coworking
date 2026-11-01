@@ -1,6 +1,6 @@
 // Server component wrapper: SEO metadata, JSON-LD, canonical slug
 // redirects. The interactive UI lives in SpaceDetailClient.
-import { notFound, redirect } from "next/navigation"
+import { notFound, permanentRedirect } from "next/navigation"
 import type { Metadata } from "next"
 import { getSpaces, getSpaceBySlug, SITE_URL } from "@/lib/directory-server"
 import SpaceDetailClient from "./SpaceDetailClient"
@@ -44,8 +44,8 @@ export default async function SpacePage({
   const { slug } = await params
   const found = getSpaceBySlug(slug)
   if (!found) notFound()
-  // Old slugify(name) URLs redirect to the stored canonical slug.
-  if (!found.canonical) redirect(`/spaces/${found.space.slug}`)
+  // Old slugify(name) URLs redirect permanently to the stored canonical slug.
+  if (!found.canonical) permanentRedirect(`/spaces/${found.space.slug}`)
 
   const space = found.space
   const jsonLd: Record<string, unknown> = {
