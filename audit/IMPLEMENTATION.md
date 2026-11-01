@@ -93,10 +93,11 @@ The data agent staged Drive contact PII (`audit/drive_contacts_raw/`, `operator_
 
 ## Phase 3 — Verify + ship
 
-- `next build`: clean (SSG: 1,000 listing + 482 city pages). `eslint`: 0 errors (12 pre-existing `<img>`/exhaustive-deps warnings).
-- Smoke-tested locally: home, /spaces, listing page (SEO title + JSON-LD), city page, sitemap.xml (1,491 URLs), robots.txt; API paths: 503-honest (no store), 400 validation, honeypot fake-ok, admin 401.
-- Independent testing agent: PENDING (spawn after final data lands).
-- Push to `main` → auto-deploys to huddleco.work: PENDING final data.
+- `npx tsc --noEmit`: clean. `npx eslint src/`: 0 errors (12 pre-existing `<img>`/exhaustive-deps warnings).
+- `npm run build`: clean — 1,518 static pages (1,000 `/spaces/[slug]` SSG + 482 `/cities/[city]`).
+- **Independent tester: UNCONDITIONAL PASS** (round 2, J-AR1 fix loop). Round 1 was conditional-pass with one real defect (legacy-slug redirect returned 307); fixed (`permanentRedirect()` → 308) and re-verified: fresh clone of `v1-turnaround-staging`, tsc/eslint/build clean, full smoke battery (home/spaces/listing+JSON-LD/city/sitemap/robots/login+signup honest-state/auth-status/inquiry-claim-newsletter validation/legacy-308/boring-keys/regression pages/data surgery) all pass. **Model-family disclosure: tester and builder are both Muse Spark (Meta) — the standing cross-model rule could NOT be satisfied (no mechanism to select a different model family); this was an independent same-family check (fresh checkout, builder's dir untouched), stated plainly.**
+- Push: `main` fast-forwarded to `0bb006f1` (tree_sync + 0-diff verified: 119 files, remote tree == local tree). Staging branch deleted after merge.
+- Deploy: Vercel `huddle-coworking` project is git-linked (production branch `main`) → auto-deploy on push. Verified live below.
 
 ## Sibling repos (mined; `audit/SIBLING-REPOS.md`)
 
